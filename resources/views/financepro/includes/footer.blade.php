@@ -717,7 +717,7 @@ $('#send_form').click(function(e){
                         $('#send_form').html('Submit Again');
                         document.getElementById("displayNone").style.display = "none";
                     }  else {
-                        window.location.href = "{{ route('signup_complete')}}";
+                        window.location.href = "#";
                     }
                     //--------------------------                    
                 } else {

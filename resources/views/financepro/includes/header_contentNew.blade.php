@@ -185,11 +185,11 @@
                                         <a href="{{ route('trader-blog') }}">Market Analysis<span class="fa fa-angle-down"></span></a>
                                         <!-- DROPDOWN MENU -->
                                         <ul class="dropdown-menu">
-                                            @foreach($TraderCategory as $category)
+                                            {{-- @foreach($TraderCategory as $category)
                                             <li class="">
                                                 <a href="{{ route('trader_category', $category->slug) }}">{{ $category->name }}</a>
                                             </li>
-                                            @endforeach
+                                            @endforeach --}}
                                         </ul>
                                     </li>
                                     
@@ -206,12 +206,12 @@
                                         <!-- DROPDOWN MENU -->
                                         <ul class="dropdown-menu">
                                         
-                                            @foreach($Category as $category)
+                                            {{-- @foreach($Category as $category)
                                                 <li class="{{ Request::is('uk')? 'active':'' }}">
                                                     <a href="{{ route('learning_category', $category->slug) }}">{{ $category->name }}</a>
                                                 </li>
                                                 
-                                            @endforeach
+                                            @endforeach --}}
                                            
                                         </ul>
                                     </li>

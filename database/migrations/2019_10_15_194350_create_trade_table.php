@@ -24,6 +24,12 @@ class CreateTradeTable extends Migration
             $table->string('profit_loss')->nullable();
             $table->timestamps();
         });
+        
+        
+        Schema::create('trader_blogs', function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->timestamps();
+        });
     }
 
     /**
