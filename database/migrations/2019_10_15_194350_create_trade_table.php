@@ -28,6 +28,14 @@ class CreateTradeTable extends Migration
         
         Schema::create('trader_blogs', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->integer('user_id');
+            $table->integer('trader_category_id')->nullable();
+            $table->string('name')->nullable();
+            $table->text('sub_title')->nullable();
+            $table->string('page_url');
+            $table->longText('detail')->nullable();
+            $table->string('image')->nullable();
+            $table->string('videoLink')->nullable();
             $table->timestamps();
         });
     }

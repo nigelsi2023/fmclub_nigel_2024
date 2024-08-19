@@ -366,7 +366,7 @@
 
                                         <ul class="dropdown-menu">
 
-                                            @foreach($TraderCategory as $category)
+                                            {{-- @foreach($TraderCategory as $category)
 
                                             <li class="">
 
@@ -374,7 +374,7 @@
 
                                             </li>
 
-                                            @endforeach
+                                            @endforeach --}}
 
                                         </ul>
 
@@ -404,7 +404,7 @@
 
                                         
 
-                                            @foreach($Category as $category)
+                                            {{-- @foreach($Category as $category)
 
                                                 <li class="{{ Request::is('uk')? 'active':'' }}">
 
@@ -414,7 +414,7 @@
 
                                                 
 
-                                            @endforeach
+                                            @endforeach --}}
 
                                            
 
