@@ -28,7 +28,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = '/';
 
     /**
      * Create a new controller instance.
@@ -48,11 +48,32 @@ class RegisterController extends Controller
      */
     protected function validator(array $data)
     {
+        /*echo json_encode($data);
+        exit;*/
         return Validator::make($data, [
             'name' => ['required', 'string', 'max:255'],
-            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+            'surname' => ['required', 'string', 'max:255'],
+            'username' => ['required', 'string', 'unique:users', 'max:255'],
+            'telephone' => ['required', 'string', 'unique:users', 'max:255'],
+            'email' => ['required', 'email', 'max:255', 'unique:users', 'confirmed'],
+            'role' => 'required|in:admin,agent,customer',
+            'address' => ['required', 'max:255'],
+            'dob' => ['required', 'string', 'max:255'],
+            'sex' => 'required|in:Male,Female',
             'password' => ['required', 'string', 'min:8', 'confirmed'],
+            'security_question' => ['required', 'string'],
+            'security_answer' => ['required', 'string'],
+            'occupation' => ['required', 'string'],
+            'buy_shares' => 'required|in:Yes,No',
+            'investing' => ['required', 'string', 'max:255'],
+            'trading_course' => 'required|in:Yes,No',
+            'trading_with' => ['required', 'string', 'max:255'],
+            'how_find' => ['required', 'string', 'max:255'],
+            'why_join' => ['required', 'string', 'max:255'],
+            'find_information' => ['required', 'string', 'max:255'],
         ]);
+        /*echo json_encode($data);
+        exit;*/
     }
 
     /**
@@ -65,8 +86,25 @@ class RegisterController extends Controller
     {
         return User::create([
             'name' => $data['name'],
+            'surname' => $data['surname'],
+            'username' => $data['username'],
+            'telephone' => $data['telephone'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
+			'security_question' => $data['security_question'],
+            'security_answer' => $data['security_answer'],
+            'role' => $data['role'],
+            'address' => $data['address'],
+            'dob' => $data['dob'],
+            'sex' => $data['sex'],
+            'occupation' => $data['occupation'],
+            'buy_shares' => $data['buy_shares'],
+            'investing' => $data['investing'],
+            'trading_course' => $data['trading_course'],
+            'trading_with' => $data['trading_with'],
+            'how_find' => $data['how_find'],
+            'why_join' => $data['why_join'],
+            'find_information' => $data['find_information'],
         ]);
     }
 }
