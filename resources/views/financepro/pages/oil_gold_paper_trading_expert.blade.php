@@ -974,9 +974,9 @@
 
 									    <?php if(!empty($signal->signal_img)){ ?>
 
-									        <!--<img src="{{ asset('public/images/signals/'.$signal->signal_img) }}" alt="{{$signal->item_name}}" width="120px;" id="myImg" />-->
+									        <!--<img src="{{ asset('images/signals/'.$signal->signal_img) }}" alt="{{$signal->item_name}}" width="120px;" id="myImg" />-->
 
-									        <img src="{{ asset('public/images/signals/'.$signal->signal_img) }}" alt="{{$signal->item_name}}" width="120px;" onclick="showme(this.src)" />
+									        <img src="{{ asset('images/signals/'.$signal->signal_img) }}" alt="{{$signal->item_name}}" width="120px;" onclick="showme(this.src)" />
 
 									    <?php } ?>   &nbsp;
 

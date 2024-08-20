@@ -636,7 +636,7 @@ function to_time_ago( $time ) {
                         				<!--<span class="flag-icon">-->
                         				<!--    <svg xmlns="http://www.w3.org/2000/svg"><use href="#flag-icons-us"></use></svg>-->
                         				<!--</span>-->
-                        				<img src="{{ asset('public/images/signals/'.$signal->signal_img) }}" height="25px" width="50px" />
+                        				<img src="{{ asset('images/signals/'.$signal->signal_img) }}" height="25px" width="50px" />
                         			</div>
                         			<div class="">
                         				<a href="javascript:void(0)" title="Free {{$signal->item_name}} Forex signal">{{$signal->item_name}}</a>

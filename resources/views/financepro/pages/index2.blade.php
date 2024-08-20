@@ -317,7 +317,7 @@
             <h2 style="text-align:left; margin-bottom:20px;font-size: 40px;font-weight: bold;"> Don't Miss a XAUUSD (Gold) Trade like this Again! </h2>
             <h3>Our most recent BIG WIN Trade</h3>
             
-           <img src="{{ asset('public/images/signals/'.$last30day1->signal_img) }}" class="img-responsive newmg" onclick="showme(this.src)">
+           <img src="{{ asset('images/signals/'.$last30day1->signal_img) }}" class="img-responsive newmg" onclick="showme(this.src)">
            <p>(click to enlarge)
            
         </div>

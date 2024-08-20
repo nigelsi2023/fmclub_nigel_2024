@@ -88,7 +88,7 @@
                                         <!-- IMAGE -->
                                       
                                         <div class="post-image">
-                                            <img class="img-responsive" src="{{ asset('public/uploads/blogs/'.$blog->image) }}" alt="" style="width:100%;" />
+                                            <img class="img-responsive" src="{{ asset('uploads/blogs/'.$blog->image) }}" alt="" style="width:100%;" />
                                             <div class="post-date-wrap">
                                                 <h6 class="post-date">{{ date("M", strtotime($blog->created_at)) }}<span>{{ date("d", strtotime($blog->created_at)) }}</span></h6>
                                             </div>

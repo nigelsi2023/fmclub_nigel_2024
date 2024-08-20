@@ -13,19 +13,19 @@
   
   <title>SB Admin - Dashboard</title>
   <!-- Admin Favicon Icon -->
-  <link rel="icon" type="text/icon" href="{{ asset('public/admin.png') }}">
+  <link rel="icon" type="text/icon" href="{{ asset('admin.png') }}">
 
   
   <!-- Custom fonts for this template-->
-  <link href="{{ asset('public/vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
+  <link href="{{ asset('vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
   <!-- Page level plugin CSS-->
-  <link href="{{ asset('public/vendor/datatables/dataTables.bootstrap4.css')}}" rel="stylesheet">
+  <link href="{{ asset('vendor/datatables/dataTables.bootstrap4.css')}}" rel="stylesheet">
 
   <!-- Summer Note -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote-bs4.css" rel="stylesheet">
 
   <!-- Custom styles for this template-->
-  <link href="{{ asset('public/css/sb-admin.css')}}" rel="stylesheet">
+  <link href="{{ asset('css/sb-admin.css')}}" rel="stylesheet">
   <style>
     li.nav-item.active {
         background: #343a40;
@@ -84,22 +84,22 @@
 <li class="nav-item dropdown no-arrow">
     <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       @if(Auth::user()->image == 'default.png')
-          <img src="{{ asset('public/uploads/default.png') }}" width="20" height="20" style="border-radius: 50%;" alt="Profile Image">
+          <img src="{{ asset('uploads/default.png') }}" width="20" height="20" style="border-radius: 50%;" alt="Profile Image">
       @elseif(Auth::user()->image == '')
-        <img src="{{ asset('public/uploads/default.png') }}" width="20" height="20" style="border-radius: 50%;" alt="Profile Image">
+        <img src="{{ asset('uploads/default.png') }}" width="20" height="20" style="border-radius: 50%;" alt="Profile Image">
       @else
-        <img src="{{ asset('public/uploads/users/'.Auth::user()->image) }}" width="20" height="20" style="border-radius: 50%">
+        <img src="{{ asset('uploads/users/'.Auth::user()->image) }}" width="20" height="20" style="border-radius: 50%">
       @endif
   </a>
   <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
 
       <a class="dropdown-item {{ Request::is('admin/profile')? 'active': '' }}" href="{{ route('admin.profile') }}">
         @if(Auth::user()->image == 'default.png')
-          <img src="{{ asset('public/uploads/default.png') }}" width="25" height="25" style="border-radius: 50%;" alt="Profile Image">
+          <img src="{{ asset('uploads/default.png') }}" width="25" height="25" style="border-radius: 50%;" alt="Profile Image">
         @elseif(Auth::user()->image == '')
-          <img src="{{ asset('public/uploads/default.png') }}" width="25" height="25" style="border-radius: 50%;" alt="Profile Image">
+          <img src="{{ asset('uploads/default.png') }}" width="25" height="25" style="border-radius: 50%;" alt="Profile Image">
         @else
-          <img src="{{ asset('public/uploads/users/'.Auth::user()->image) }}" width="25" height="25" style="border-radius: 50%">
+          <img src="{{ asset('uploads/users/'.Auth::user()->image) }}" width="25" height="25" style="border-radius: 50%">
         @endif
         
         {{ Auth::user()->name }}
@@ -461,15 +461,15 @@
 </div>
 
 <!-- Bootstrap core JavaScript-->
-<script src="{{ asset('public/vendor/jquery/jquery.min.js') }}"></script>
-<script src="{{ asset('public/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+<script src="{{ asset('vendor/jquery/jquery.min.js') }}"></script>
+<script src="{{ asset('vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
 
 <!-- Core plugin JavaScript-->
-<script src="{{ asset('public/vendor/jquery-easing/jquery.easing.min.js') }}"></script>
+<script src="{{ asset('vendor/jquery-easing/jquery.easing.min.js') }}"></script>
 
 <!-- Page level plugin JavaScript-->
-<script src="{{ asset('public/vendor/datatables/jquery.dataTables.js') }}"></script>
-<script src="{{ asset('public/vendor/datatables/dataTables.bootstrap4.js') }}"></script>
+<script src="{{ asset('vendor/datatables/jquery.dataTables.js') }}"></script>
+<script src="{{ asset('vendor/datatables/dataTables.bootstrap4.js') }}"></script>
 
 <script type="text/javascript">
     var t2 = $('#dataTable2').DataTable({
@@ -663,12 +663,12 @@
 
 
 <!-- Custom scripts for all pages-->
-<script src="{{ asset('public/js/sb-admin.min.js') }}"></script>
+<script src="{{ asset('js/sb-admin.min.js') }}"></script>
 
 <!-- Demo scripts for this page-->
-<script src="{{ asset('public/vendor/datatables/datatables-demo.js') }}"></script>
-<script type="text/javascript" src="{{ asset('public/vendor/tinymce/tinymce.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('public/vendor/tinymce/init-tinymce.js') }}"></script>
+<script src="{{ asset('vendor/datatables/datatables-demo.js') }}"></script>
+<script type="text/javascript" src="{{ asset('vendor/tinymce/tinymce.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('vendor/tinymce/init-tinymce.js') }}"></script>
 <!-- Summer Note -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote-bs4.js"></script>
 

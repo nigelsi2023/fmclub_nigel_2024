@@ -111,7 +111,7 @@
                                                 </iframe> 
                                             @else
                                             <a href="{{ route('fulltraderpost', $blog->page_url) }}">
-                                                <img class="img-responsive" src="{{ asset('public/uploads/traders/'.$blog->image) }}" width="1300" height="800" alt="" />
+                                                <img class="img-responsive" src="{{ asset('uploads/traders/'.$blog->image) }}" width="1300" height="800" alt="" />
                                             </a>
                                             @endif
                                             <div class="post-date-wrap">

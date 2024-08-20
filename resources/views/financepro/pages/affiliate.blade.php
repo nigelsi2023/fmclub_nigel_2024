@@ -660,7 +660,7 @@
         <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
             <div class="content-box">
                 <div class="inner">
-                    <img src="{{asset('public/images/affiliateimage/affiliate1.png')}}" alt="">
+                    <img src="{{asset('images/affiliateimage/affiliate1.png')}}" alt="">
                     <h5 class="title">Sign Up</h5>
                     <p class="text">Create an affiliate Account, it's Easy and Free</p>
                 </div>
@@ -669,7 +669,7 @@
         <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
             <div class="content-box">
                 <div class="inner">
-                    <img src="{{asset('public/images/affiliateimage/affiliate2.png')}}" alt="">
+                    <img src="{{asset('images/affiliateimage/affiliate2.png')}}" alt="">
                     <h5 class="title">Start Referring</h5>
                     <p class="text">Receive a unique link you can Share anywhere</p>
                 </div>
@@ -678,7 +678,7 @@
         <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
             <div class="content-box">
                 <div class="inner">
-                    <img src="{{asset('public/images/affiliateimage/affiliate3.png')}}" alt="">
+                    <img src="{{asset('images/affiliateimage/affiliate3.png')}}" alt="">
                     <h5 class="title">Get Paid</h5>
                     <p class="text">Earn $100 payment for every customer that signs up for a paid package.</p>
                 </div>

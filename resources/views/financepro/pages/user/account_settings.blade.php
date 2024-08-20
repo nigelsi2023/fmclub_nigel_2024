@@ -63,11 +63,11 @@
                     <!-- TITLE -->
                    <div class="col-md-2 col-sm-2 bottom-padding-sm">
                         @if(Auth::user()->image == 'default.png')
-                        	<img src="{{ asset('public/uploads/default.png') }}" width="100" height="100" class="img-responsive img-circle" alt="Profile Image">
+                        	<img src="{{ asset('uploads/default.png') }}" width="100" height="100" class="img-responsive img-circle" alt="Profile Image">
                         @elseif(Auth::user()->image == '')
-                        	<img src="{{ asset('public/uploads/default.png') }}" width="100" height="100" class="img-responsive img-circle" alt="Profile Image">
+                        	<img src="{{ asset('uploads/default.png') }}" width="100" height="100" class="img-responsive img-circle" alt="Profile Image">
                         @else
-                        	<img src="{{ asset('public/uploads/users/'.Auth::user()->image) }}" width="100" height="100" class="img-responsive img-circle" alt="Profile Image">
+                        	<img src="{{ asset('uploads/users/'.Auth::user()->image) }}" width="100" height="100" class="img-responsive img-circle" alt="Profile Image">
                         @endif
                     </div>
                     <div class="col-md-10 col-sm-10 border">

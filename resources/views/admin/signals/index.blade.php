@@ -67,7 +67,7 @@
 							</td>
 							<td>{{ $signal->item_name }}</td>
 							
-							<td><img src="{{ asset('public/images/signals/'.$signal->signal_img) }}" alt="{{$signal->item_name}}" width="80px;" onclick="showme(this.src)"></td>
+							<td><img src="{{ asset('images/signals/'.$signal->signal_img) }}" alt="{{$signal->item_name}}" width="80px;" onclick="showme(this.src)"></td>
 							<td>{{ $signal->open_price }}</td>
 							<td>{{ $signal->target_price }}</td>
 							<td>{{ $signal->stop_loss }}</td>

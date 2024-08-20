@@ -352,7 +352,7 @@ This website uses cookies in order to provide you with the best experience. By v
 
     <!-- <script type="text/javascript" src="{{ asset('financepro/js/jquery.js') }}"></script> -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script type="text/javascript" src="{{ asset('public/financepro/js/bootstrap.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('financepro/js/bootstrap.min.js') }}"></script>
     @if(!Request::is('/'))
     <script src="public/vendor/datatables/jquery.dataTables.js"></script>
     <script src="public/vendor/datatables/dataTables.bootstrap4.js"></script>
@@ -561,18 +561,18 @@ if(cookie_consent != ""){
 
     
 
-    <script type="text/javascript" src="{{ asset('public/financepro/js/bootstrapValidator.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('public/financepro/js/jquery.mmenu.min.all.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('public/financepro/js/jquery.sticky.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('public/financepro/js/jquery.easing.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('public/financepro/js/jquery.appear.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('public/financepro/js/owl.carousel.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('public/financepro/js/count-to.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('public/financepro/js/google.map.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('public/financepro/js/custom.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('financepro/js/bootstrapValidator.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('financepro/js/jquery.mmenu.min.all.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('financepro/js/jquery.sticky.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('financepro/js/jquery.easing.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('financepro/js/jquery.appear.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('financepro/js/owl.carousel.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('financepro/js/count-to.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('financepro/js/google.map.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('financepro/js/custom.js') }}"></script>
     @if(!Request::is('/'))
-    <script type="text/javascript" src="{{ asset('public/vendor/tinymce/tinymce.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('public/vendor/tinymce/init-tinymce.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('vendor/tinymce/tinymce.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('vendor/tinymce/init-tinymce.js') }}"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     @endif
     <!-- Data Tables -->

@@ -17,7 +17,7 @@
                 <!-- <img class="media-object" src= "{{ asset($blog->image) }}"> -->
                 <div class="row">
                     <div class="col-md-6 col-md-offset-3">
-                      <img class="img-responsive" src="{{ asset('public/uploads/blogs/'.$blog->image) }}" height="auto" width="100%">
+                      <img class="img-responsive" src="{{ asset('uploads/blogs/'.$blog->image) }}" height="auto" width="100%">
                   </div>
                 </div>
                 <br><br>

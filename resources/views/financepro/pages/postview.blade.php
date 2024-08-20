@@ -29,7 +29,7 @@
             <div class="post border-bottom-style-1 bottom-margin-vsm bottom-padding-sm">
                 <!-- IMAGE -->
                 <div class="post-image">
-                    <img class="img-responsive" src="{{ asset('public/uploads/blogs/'.$blog->image) }}" width="1300" height="800" alt="" />
+                    <img class="img-responsive" src="{{ asset('uploads/blogs/'.$blog->image) }}" width="1300" height="800" alt="" />
                 </div>
                 
                 <p>{!! $blog->detail !!}</p>
@@ -85,7 +85,7 @@
                         <div class="item">
                             <!-- IMAGE -->
                             <div class="feature-image">
-                                <img class="img-responsive" width="960" height="640" src="{{ asset('public/uploads/blogs/'.$post->image) }}" alt="post" />
+                                <img class="img-responsive" width="960" height="640" src="{{ asset('uploads/blogs/'.$post->image) }}" alt="post" />
                             </div>
                             <div class="feature-text text-left">
                                 <!-- TITLE -->

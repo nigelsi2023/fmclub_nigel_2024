@@ -12,13 +12,13 @@
 	<title>SB Admin - Login</title>
 
 	<!-- Admin Favicon Icon -->
-	<link rel="icon" type="text/icon" href="{{ asset('public/admin.png') }}">
+	<link rel="icon" type="text/icon" href="{{ asset('admin.png') }}">
 
 	<!-- Custom fonts for this template-->
-	<link href="{{ asset('public/vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet" type="text/css">
+	<link href="{{ asset('vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet" type="text/css">
 
 	<!-- Custom styles for this template-->
-	<link href="{{ asset('public/css/sb-admin.css') }}" rel="stylesheet">
+	<link href="{{ asset('css/sb-admin.css') }}" rel="stylesheet">
 
 </head>
 
@@ -111,11 +111,11 @@
 </div>
 
 <!-- Bootstrap core JavaScript-->
-<script src="{{ asset('public/vendor/jquery/jquery.min.js') }}"></script>
-<script src="{{ asset('public/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+<script src="{{ asset('vendor/jquery/jquery.min.js') }}"></script>
+<script src="{{ asset('vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
 
 <!-- Core plugin JavaScript-->
-<script src="{{ asset('public/vendor/jquery-easing/jquery.easing.min.js') }}"></script>
+<script src="{{ asset('vendor/jquery-easing/jquery.easing.min.js') }}"></script>
 
 </body>
 

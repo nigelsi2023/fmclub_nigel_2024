@@ -36,7 +36,7 @@
                         </iframe> 
                     @else
                     <a href="{{$blog->videoLink}}">
-                        <img class="img-responsive" src="{{ asset('public/uploads/traders/'.$blog->image) }}" width="1300" height="800" alt="" />
+                        <img class="img-responsive" src="{{ asset('uploads/traders/'.$blog->image) }}" width="1300" height="800" alt="" />
                     </a>
                     @endif
                 </div>
@@ -114,7 +114,7 @@
                         <!-- IMAGE -->
                         <div class="feature-image">
                             <a href="   ">
-                                <img class="img-responsive" width="960" height="640" src="{{ asset('public/uploads/traders/'.$post->image) }}" alt="post" />
+                                <img class="img-responsive" width="960" height="640" src="{{ asset('uploads/traders/'.$post->image) }}" alt="post" />
                             </a>
                             
                         </div>

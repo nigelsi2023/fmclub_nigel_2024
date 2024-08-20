@@ -45,7 +45,7 @@
                                     </div>
                                     <div class="col-lg-5">
                                         <div class="client-bio text-center">
-                                            <img class="img-responsive" src="{{ asset('public/sl-1.jpg') }}" alt="img-slider" width="700" height="700">
+                                            <img class="img-responsive" src="{{ asset('sl-1.jpg') }}" alt="img-slider" width="700" height="700">
                                         </div>
                                     </div>
                                 </div>
@@ -66,7 +66,7 @@
                                     </div>
                                     <div class="col-lg-5">
                                         <div class="client-bio text-center">
-                                            <img class="img-responsive" src="{{ asset('public/sl-2.jpg') }}" alt="img-slider" width="700" height="700">
+                                            <img class="img-responsive" src="{{ asset('sl-2.jpg') }}" alt="img-slider" width="700" height="700">
                                         </div>
                                     </div>
                                 </div>
@@ -87,7 +87,7 @@
                                     </div>
                                     <div class="col-lg-5">
                                         <div class="client-bio text-center">
-                                            <img class="img-responsive" src="{{ asset('public/sl-3.jpg') }}" alt="img-slider" width="700" height="700">
+                                            <img class="img-responsive" src="{{ asset('sl-3.jpg') }}" alt="img-slider" width="700" height="700">
                                         </div>
                                     </div>
                                 </div>

@@ -83,7 +83,7 @@
                                         <!-- IMAGE -->
                                         <div class="post-image">
                                             <a href="{{ route('fullpost', $blog->page_url) }}">
-                                                <img class="img-responsive" src="{{ asset('public/uploads/blogs/'.$blog->image) }}" width="1300" height="200px" alt="" />
+                                                <img class="img-responsive" src="{{ asset('uploads/blogs/'.$blog->image) }}" width="1300" height="200px" alt="" />
                                             </a>
                                             
                                             <div class="post-date-wrap">

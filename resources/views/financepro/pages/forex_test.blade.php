@@ -430,7 +430,7 @@ img.img-responsive.newmg {
         <div class="col-md-8 col-xs-6">
             <h2 style="text-align:left; margin-bottom:20px;font-size: 40px;font-weight: bold;"> Don't Miss a Trade like this Again! </h2>
             
-           <img src="{{ asset('public/images/signals/'.$last30day1->signal_img) }}" class="img-responsive newmg" onclick="showme(this.src)">
+           <img src="{{ asset('images/signals/'.$last30day1->signal_img) }}" class="img-responsive newmg" onclick="showme(this.src)">
            
         </div>
         
@@ -641,8 +641,8 @@ img.img-responsive.newmg {
 									<td >
 									    <div style="display:flex;">
 									    <?php if(!empty($signal->signal_img)){ ?>
-									        <!--<img src="{{ asset('public/images/signals/'.$signal->signal_img) }}" alt="{{$signal->item_name}}" width="120px;" id="myImg" />-->
-									        <img src="{{ asset('public/images/signals/'.$signal->signal_img) }}" alt="{{$signal->item_name}}" width="120px;" onclick="showme(this.src)" />
+									        <!--<img src="{{ asset('images/signals/'.$signal->signal_img) }}" alt="{{$signal->item_name}}" width="120px;" id="myImg" />-->
+									        <img src="{{ asset('images/signals/'.$signal->signal_img) }}" alt="{{$signal->item_name}}" width="120px;" onclick="showme(this.src)" />
 									    <?php } ?>   &nbsp;
 									    <div>
     									    <?php if($signal->signal_type == 'vip'){ ?>
