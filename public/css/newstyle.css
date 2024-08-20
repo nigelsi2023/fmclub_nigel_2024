@@ -1,0 +1,14 @@
+.widget-icon-box .icon-box:hover .fa, .widget-icon-box .icon-box:hover .icon-box-subtitle {
+    color: #ddd;
+}
+
+
+.widget-icon-box .icon-box>.fa {
+    font-size: 40px;
+    float: left;
+    margin-right: 10px;
+}
+
+.text-color, .text-color, .text-color h1, .text-color h2, .text-color h3, .text-color h4, .text-color h5, .text-color h6, .text-color p, .text-color a, .text-color, h1.text-color, h2.text-color, h3.text-color, h4.text-color, h5.text-color, h6.text-color, p.text-color, a.text-color, .footer.dark-bg a:hover, .recent-item:hover a .recent-title, .breadcrumb > .active, .page-header.default, .play-video a:hover:before, .header-transparent .toggle-close, ul.check-list li:before, .counter-icon, .typo-darks, .typo-darks a, .typo-darks h1, .typo-darks h2, .typo-darks h3, .typo-darks h4, .typo-darks h5, .typo-darks h6, .typo-darks p, .icon-box .fa, .icon-box, .number-counter:after, .zozo-social-share-icons li a, .owl-carousel.dots-dark .owl-dots .owl-dot span, .owl-theme .owl-nav>div {
+    color: #1c6f7b;
+}

@@ -1,0 +1,1433 @@
+html {
+  font-size: 87.5%; }
+
+.inContentProviderSingle.inContentColor--learnbonds .inContentProviderSingle--wrapper {
+  border: 1px solid #d3d3d3;
+  padding: 28px 15px; }
+  .inContentProviderSingle.inContentColor--learnbonds .inContentProviderSingle--wrapper .container {
+    margin: 0 !important; }
+
+.inContentProviderSingle.inContentColor--learnbonds .inContentProviderSingle--button a {
+  background-color: #3fd3bb;
+  color: #ffffff !important;
+  text-decoration: none; }
+  .inContentProviderSingle.inContentColor--learnbonds .inContentProviderSingle--button a:hover {
+    background-color: #38bda7 !important; }
+
+.inContentProviderSingle.inContentColor--kryptoszene .inContentProviderSingle--wrapper {
+  background-color: #F6F6FA;
+  padding: 28px 15px; }
+  .inContentProviderSingle.inContentColor--kryptoszene .inContentProviderSingle--wrapper .container {
+    margin: 0 !important; }
+
+.inContentProviderSingle.inContentColor--kryptoszene .inContentProviderSingle--button a {
+  background-color: #EB9A11;
+  color: #ffffff !important;
+  text-decoration: none; }
+  .inContentProviderSingle.inContentColor--kryptoszene .inContentProviderSingle--button a:hover {
+    background-color: #efae40 !important; }
+
+.inContentProviderSingle.inContentColor--insidebitcoins .inContentProviderSingle--wrapper {
+  background-color: #F6F6FA;
+  padding: 28px 15px; }
+  .inContentProviderSingle.inContentColor--insidebitcoins .inContentProviderSingle--wrapper .container {
+    margin: 0 !important; }
+
+.inContentProviderSingle.inContentColor--insidebitcoins .inContentProviderSingle--button a {
+  background-color: #ec6707;
+  color: #ffffff !important;
+  text-decoration: none; }
+  .inContentProviderSingle.inContentColor--insidebitcoins .inContentProviderSingle--button a:hover {
+    background-color: #c75706 !important; }
+
+.inContentProviderSingle.inContentColor--insidebitcoins .inContentProviderSingle--rating .rating--star-container {
+  width: 6.78571rem;
+  height: 1.35714rem;
+  background-image: url("/wp-content/plugins/in-content-provider/Library/assets/images/whitestar.png");
+  background-repeat: repeat-x;
+  background-size: 1.35714rem 1.35714rem;
+  z-index: 1; }
+
+.inContentProviderSingle.inContentColor--insidebitcoins .inContentProviderSingle--rating .rating--star {
+  height: 1.35714rem;
+  background-image: url("../../Library/assets/images/star.png");
+  background-repeat: repeat-x;
+  background-position: 0 100%;
+  background-size: 1.35714rem 1.35714rem;
+  z-index: 1; }
+
+  .inContentProviderSingle.inContentColor--learn2trade .inContentProviderSingle--rating .rating--star-container {
+    width: 6.78571rem;
+    height: 1.35714rem;
+    background-image: url("/wp-content/plugins/in-content-provider/Library/assets/images/whitestar.png");
+    background-repeat: repeat-x;
+    background-size: 1.35714rem 1.35714rem;
+    z-index: 1; }
+  
+  .inContentProviderSingle.inContentColor--learn2trade .inContentProviderSingle--rating .rating--star {
+    height: 1.35714rem;
+    background-image: url("/wp-content/plugins/in-content-provider/Library/assets/images/star.png");
+    background-repeat: repeat-x;
+    background-position: 0 100%;
+    background-size: 1.35714rem 1.35714rem;
+    z-index: 1; }
+  
+
+.inContentProviderSingle.inContentColor--learn2trade .inContentProviderSingle--wrapper {
+  border: 1px solid #CCCCCC;
+  padding: 28px 15px; }
+  .inContentProviderSingle.inContentColor--learn2trade .inContentProviderSingle--wrapper .container {
+    margin: 0 !important; }
+
+.inContentProviderSingle.inContentColor--learn2trade .inContentProviderSingle--button a {
+  background-color: #0AA1C6 !important;
+  color: #ffffff !important;
+  text-decoration: none; }
+  .inContentProviderSingle.inContentColor--learn2trade .inContentProviderSingle--button a:hover {
+    background-color: #0786a5 !important; }
+
+.inContentProviderSingle--title {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 20px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.15px !important;
+  line-height: 24px !important;
+  margin: 0 !important; }
+  @media (max-width: 576px) {
+    .inContentProviderSingle--title {
+      text-align: center; } }
+
+.inContentProviderSingle--list {
+  list-style: none;
+  margin: 0 !important;
+  padding: 0 !important; }
+  .inContentProviderSingle--list li {
+    font-family: "Source Sans Pro", sans-serif;
+    padding-left: 2.2rem;
+    padding-bottom: .41667rem;
+    position: relative;
+    font-weight: 300;
+    font-size: 15px;
+    font-weight: normal;
+    letter-spacing: 0.27px; }
+    .inContentProviderSingle--list li::before {
+      content: '\f00c';
+      font-family: 'FontAwesome';
+      position: absolute;
+      left: 0;
+      top: -4px;
+      font-size: 1.23333rem;
+      color: #55a200; }
+
+.inContentProviderSingle--rating .rating--holder {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; }
+  @media (max-width: 576px) {
+    .inContentProviderSingle--rating .rating--holder {
+      justify-content: center;
+      padding: 10px 0; } }
+
+.inContentProviderSingle--rating .rating--text {
+  font-size: 10px;
+  font-weight: normal;
+  letter-spacing: 1.5px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #969595;
+  margin-right: 15px;
+  margin-bottom: 0px !important; }
+
+.inContentProviderSingle--img {
+  width: 190px; }
+
+.inContentProviderSingle--button {
+  margin: 18px auto 15px auto; }
+  .inContentProviderSingle--button a {
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    width: 241px;
+    font-family: "Source Sans Pro", sans-serif;
+    border-radius: 3px;
+    padding: 10px 25px;
+    display: inline-block; }
+
+.inContentProviderSingle--disclaimerText {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 11px;
+  font-weight: normal;
+  letter-spacing: 0px;
+  line-height: 14px;
+  text-align: center; }
+
+html {
+  font-size: 87.5%; }
+
+.inContentProviderLogoShortcode.inContentColor--learnbonds .inContentProviderLogoShortcode--wrapper {
+  border: 1px solid #d3d3d3;
+  padding: 28px 15px; }
+  .inContentProviderLogoShortcode.inContentColor--learnbonds .inContentProviderLogoShortcode--wrapper .container {
+    margin: 0 !important; }
+
+.inContentProviderLogoShortcode.inContentColor--kryptoszene .inContentProviderLogoShortcode--wrapper {
+  background-color: #F6F6FA;
+  padding: 28px 15px; }
+  .inContentProviderLogoShortcode.inContentColor--kryptoszene .inContentProviderLogoShortcode--wrapper .container {
+    margin: 0 !important; }
+
+.inContentProviderLogoShortcode.inContentColor--insidebitcoins .inContentProviderLogoShortcode--wrapper {
+  background-color: #F6F6FA;
+  padding: 28px 15px; }
+  .inContentProviderLogoShortcode.inContentColor--insidebitcoins .inContentProviderLogoShortcode--wrapper .container {
+    margin: 0 !important; }
+
+.inContentProviderLogoShortcode--title p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 20px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.15px !important;
+  line-height: 24px !important;
+  text-align: center !important;
+  margin-bottom: 2rem !important; }
+
+.inContentProviderLogoShortcode--disclaimer-text {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  letter-spacing: 0.27px;
+  line-height: 20px;
+  text-align: center;
+  padding: 1rem 0; }
+
+.inContentProviderLogoShortcode--provider-logos {
+  display: flex;
+  flex-flow: row wrap;
+  padding: .3em;
+  max-width: 100%;
+  justify-content: center; }
+  .inContentProviderLogoShortcode--provider-logos--img-item.small {
+    flex: 0 0 110px;
+    max-width: 110px;
+    margin: 1em; }
+    @media (max-width: 768px) {
+      .inContentProviderLogoShortcode--provider-logos--img-item.small {
+        margin: 1em; } }
+    @media (max-width: 580px) {
+      .inContentProviderLogoShortcode--provider-logos--img-item.small {
+        flex: 0 0 108px;
+        max-width: 108px; } }
+    @media (max-width: 320px) {
+      .inContentProviderLogoShortcode--provider-logos--img-item.small {
+        flex: 0 0 75px !important;
+        max-width: 75px !important; } }
+  .inContentProviderLogoShortcode--provider-logos--img-item.large {
+    flex: 0 0 130px;
+    max-width: 130px;
+    margin: 1em 2.4em; }
+    @media (max-width: 768px) {
+      .inContentProviderLogoShortcode--provider-logos--img-item.large {
+        margin: 1em; } }
+    @media (max-width: 580px) {
+      .inContentProviderLogoShortcode--provider-logos--img-item.large {
+        flex: 0 0 108px;
+        max-width: 108px; } }
+    @media (max-width: 320px) {
+      .inContentProviderLogoShortcode--provider-logos--img-item.large {
+        flex: 0 0 75px !important;
+        max-width: 75px !important; } }
+  .inContentProviderLogoShortcode--provider-logos--img-item--img {
+    display: block;
+    height: auto;
+    padding: 6px;
+    width: 100%; }
+
+html {
+  font-size: 87.5%; }
+
+.inContentProviderStatic.inContentColor--learnbonds .inContentProviderStatic--wrapper {
+  padding: 12px 0px; }
+  .inContentProviderStatic.inContentColor--learnbonds .inContentProviderStatic--wrapper .container {
+    margin: 0 !important; }
+
+.inContentProviderStatic.inContentColor--learnbonds .inContentProviderStatic--button a {
+  background-color: #3fd3bb;
+  color: #ffffff !important;
+  text-decoration: none; }
+  .inContentProviderStatic.inContentColor--learnbonds .inContentProviderStatic--button a:hover {
+    background-color: #38bda7 !important; }
+
+.inContentProviderStatic.inContentColor--kryptoszene .inContentProviderStatic--wrapper {
+  padding: 12px 0px; }
+  .inContentProviderStatic.inContentColor--kryptoszene .inContentProviderStatic--wrapper .container {
+    margin: 0 !important; }
+
+.inContentProviderStatic.inContentColor--kryptoszene .inContentProviderStatic--button a {
+  background-color: #EB9A11;
+  color: #ffffff !important;
+  text-decoration: none; }
+  .inContentProviderStatic.inContentColor--kryptoszene .inContentProviderStatic--button a:hover {
+    background-color: #efae40 !important; }
+
+.inContentProviderStatic.inContentColor--insidebitcoins .inContentProviderStatic--wrapper {
+  padding: 12px 0px; }
+  .inContentProviderStatic.inContentColor--insidebitcoins .inContentProviderStatic--wrapper .container {
+    margin: 0 !important; }
+
+.inContentProviderStatic.inContentColor--insidebitcoins .inContentProviderStatic--button a {
+  background-color: #ec6707;
+  color: #ffffff !important;
+  text-decoration: none; }
+  .inContentProviderStatic.inContentColor--insidebitcoins .inContentProviderStatic--button a:hover {
+    background-color: #c75706 !important; }
+
+.inContentProviderStatic.inContentColor--insidebitcoins .inContentProviderStatic--rating--star-container {
+  width: 6.78571rem;
+  height: 1.35714rem;
+  background-image: url("../../Library/assets/images/whitestar.png");
+  background-repeat: repeat-x;
+  background-size: 1.35714rem 1.35714rem;
+  z-index: 1; }
+
+.inContentProviderStatic.inContentColor--insidebitcoins .inContentProviderStatic--rating--star {
+  height: 1.35714rem;
+  background-image: url("../../Library/assets/images/star.png");
+  background-repeat: repeat-x;
+  background-position: 0 100%;
+  background-size: 1.35714rem 1.35714rem;
+  z-index: 1; }
+
+  .inContentProviderStatic.inContentColor--learn2trade .inContentProviderStatic--rating .rating--star-container {
+    width: 6.78571rem;
+    height: 1.35714rem;
+    background-image: url("/wp-content/plugins/in-content-provider/Library/assets/images/whitestar.png");
+    background-repeat: repeat-x;
+    background-size: 1.35714rem 1.35714rem;
+    z-index: 1; }
+  
+  .inContentProviderStatic.inContentColor--learn2trade .inContentProviderStatic--rating .rating--star {
+    height: 1.35714rem;
+    background-image: url("/wp-content/plugins/in-content-provider/Library/assets/images/star.png");
+    background-repeat: repeat-x;
+    background-position: 0 100%;
+    background-size: 1.35714rem 1.35714rem;
+    z-index: 1; }
+
+
+.inContentProviderStatic.inContentColor--learn2trade .inContentProviderStatic--wrapper {
+  padding: 28px 15px; }
+  .inContentProviderStatic.inContentColor--learn2trade .inContentProviderStatic--wrapper .container {
+    margin: 0 !important; }
+
+.inContentProviderStatic.inContentColor--learn2trade .inContentProviderStatic--button a {
+  background-color: #0AA1C6 !important;
+  color: #ffffff !important;
+  text-decoration: none; }
+  .inContentProviderStatic.inContentColor--learn2trade .inContentProviderStatic--button a:hover {
+    background-color: #0786a5 !important; }
+
+.inContentProviderStatic--title {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 20px !important;
+  font-weight: normal !important;
+  letter-spacing: 0.15px !important;
+  line-height: 24px !important;
+  margin: 0 !important;
+  padding-bottom: 14px !important;
+  border-bottom: 1px solid #d3d3d3 !important; }
+  @media (max-width: 576px) {
+    .inContentProviderStatic--title {
+      text-align: left;
+      padding-bottom: 13px !important; } }
+
+.inContentProviderStatic--rating .rating--holder {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; }
+  @media (max-width: 576px) {
+    .inContentProviderStatic--rating .rating--holder {
+      justify-content: center;
+      padding: 10px 0; } }
+
+.inContentProviderStatic--rating .rating--text {
+  color: #969595;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 10px;
+  font-weight: normal;
+  letter-spacing: 1.5px;
+  line-height: 24px;
+  width: auto;
+  text-align: left;
+  text-transform: uppercase;
+  margin-right: 5px;
+  margin-bottom: 0px;
+  left: 0; }
+  @media only screen and (min-width: 768px) {
+    .inContentProviderStatic--rating .rating--text {
+      line-height: 24px; } }
+
+.inContentProviderStatic--descriptions p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  letter-spacing: 0px;
+  line-height: 20px; }
+
+.inContentProviderStatic--descriptions img {
+  margin-bottom: 15px; }
+
+@media (max-width: 580px) {
+  .inContentProviderStatic--provider-logo {
+    text-align: center;
+    margin: 1rem auto; } }
+
+@media (min-width: 768px) {
+  .inContentProviderStatic--provider-logo img {
+    width: 190px; } }
+
+.inContentProviderStatic--pros-list {
+  list-style: none;
+  margin: 0 !important;
+  padding: 0 !important; }
+  .inContentProviderStatic--pros-list li {
+    font-family: "Source Sans Pro", sans-serif;
+    padding-left: 2.2rem;
+    padding-bottom: .41667rem;
+    position: relative;
+    font-weight: 300;
+    font-size: 15px;
+    font-weight: normal;
+    letter-spacing: 0.27px; }
+    .inContentProviderStatic--pros-list li::before {
+      content: '\f00c';
+      font-family: 'FontAwesome';
+      position: absolute;
+      left: 0;
+      top: -4px;
+      font-size: 1.23333rem;
+      color: #55a200; }
+
+.inContentProviderStatic--cons-list {
+  list-style: none;
+  margin: 0 !important;
+  padding: 0 !important; }
+  @media (max-width: 580px) {
+    .inContentProviderStatic--cons-list {
+      margin-top: 1rem !important; } }
+  .inContentProviderStatic--cons-list li {
+    font-family: "Source Sans Pro", sans-serif;
+    padding-left: 2.2rem;
+    padding-bottom: .41667rem;
+    position: relative;
+    font-weight: 300;
+    font-size: 15px;
+    font-weight: normal;
+    letter-spacing: 0.27px; }
+    .inContentProviderStatic--cons-list li::before {
+      content: '\f00d';
+      font-family: 'FontAwesome';
+      position: absolute;
+      left: 0;
+      top: -2px;
+      font-size: 1.23333rem;
+      color: #d3000d; }
+
+.inContentProviderStatic--button {
+  margin: 0px auto 15px auto; }
+  .inContentProviderStatic--button a {
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    width: 241px;
+    font-family: "Source Sans Pro", sans-serif;
+    border-radius: 3px;
+    padding: 10px 25px;
+    display: inline-block; }
+    @media (max-width: 576px) {
+      .inContentProviderStatic--button a {
+        width: 252px !important; } }
+
+.inContentProviderStatic--disclaimerText {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 11px;
+  font-weight: normal;
+  letter-spacing: 0px;
+  line-height: 14px;
+  text-align: left; }
+  @media (max-width: 576px) {
+    .inContentProviderStatic--disclaimerText {
+      text-align: center;
+      width: 252px !important;
+      margin: 0 auto; } }
+
+html {
+  font-size: 87.5%; }
+
+.inContentSidebarProviderList {
+  padding: 1.07143rem 0rem;
+  display: block; }
+  .inContentSidebarProviderList--title {
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 23px;
+    text-transform: uppercase;
+    color: #a5a5a5; }
+  .inContentSidebarProviderList--list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: block; }
+    .inContentSidebarProviderList--list li {
+      padding: 15px 0;
+      border-bottom: 1px solid #e3e3f0; }
+    .inContentSidebarProviderList--list--link {
+      display: flex;
+      text-decoration: none;
+      text-transform: capitalize;
+      color: #2a2a2a;
+      align-items: center; }
+      .inContentSidebarProviderList--list--link .pl-70 {
+        padding-left: 70px !important; }
+      .inContentSidebarProviderList--list--link:hover {
+        text-decoration: none !important; }
+      .inContentSidebarProviderList--list--link--logo {
+        border-radius: 0px;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+        width: 70px;
+        margin-right: 8px; }
+      .inContentSidebarProviderList--list--link--title {
+        font-size: 14px;
+        font-weight: normal;
+        letter-spacing: 0px;
+        line-height: 17px; }
+  .inContentSidebarProviderList--disclaimer-text {
+    font-size: 10px;
+    font-weight: normal;
+    letter-spacing: 0px;
+    line-height: 14px;
+    padding: 8px 0 0 0; }
+
+html {
+  font-size: 87.5%; }
+
+a.btn.btn {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: bolder; }
+  a.btn.btn.full-width {
+    width: 100%; }
+  a.btn.btn-learnbonds-secondary {
+    background-color: #ffffff !important;
+    color: #3fd3bb !important;
+    border: 1px solid #3fd3bb !important; }
+    a.btn.btn-learnbonds-secondary:hover {
+      background-color: #3fd3bb !important;
+      color: #ffffff !important; }
+  a.btn.btn-kryptoszene-secondary {
+    background-color: #ffffff !important;
+    color: #EB9A11 !important;
+    border: 1px solid #EB9A11 !important; }
+    a.btn.btn-kryptoszene-secondary:hover {
+      background-color: #efae40 !important;
+      color: #ffffff !important; }
+  a.btn.btn-insidebitcoins-secondary {
+    background-color: #ffffff !important;
+    color: #ec6707 !important;
+    border: 1px solid #ec6707 !important; }
+    a.btn.btn-insidebitcoins-secondary:hover {
+      background-color: #c75706 !important;
+      color: #ffffff !important; }
+
+.c-providerBox--investment .c-providerBox {
+  width: 100%;
+  position: relative;
+  padding: 15px;
+  border: 1px solid #d3d3d3; }
+  .c-providerBox--investment .c-providerBox--learnbonds.reviewers-choice {
+    border: 1px solid #3fd3bb;
+    border-bottom: 5px solid #3fd3bb; }
+    .c-providerBox--investment .c-providerBox--learnbonds.reviewers-choice .reviewers-choice-label {
+      border: 1px solid #3fd3bb; }
+  .c-providerBox--investment .c-providerBox--learnbonds .c-providerBox--viewMore-btn {
+    color: #3fd3bb; }
+  .c-providerBox--investment .c-providerBox--kryptoszene.reviewers-choice {
+    border: 1px solid #EB9A11;
+    border-bottom: 5px solid #EB9A11; }
+    .c-providerBox--investment .c-providerBox--kryptoszene.reviewers-choice .reviewers-choice-label {
+      border: 1px solid #EB9A11; }
+  .c-providerBox--investment .c-providerBox--kryptoszene .c-providerBox--viewMore-btn {
+    color: #EB9A11; }
+  .c-providerBox--investment .c-providerBox--insidebitcoins.reviewers-choice {
+    border: 1px solid #ec6707;
+    border-bottom: 5px solid #ec6707; }
+    .c-providerBox--investment .c-providerBox--insidebitcoins.reviewers-choice .reviewers-choice-label {
+      border: 1px solid #ec6707; }
+  .c-providerBox--investment .c-providerBox--insidebitcoins .c-providerBox--viewMore-btn {
+    color: #ec6707; }
+  .c-providerBox--investment .c-providerBox--insidebitcoins .c-providerBox--title-rating .rating--star-container {
+    width: 6.78571rem;
+    height: 1.35714rem;
+    background-image: url("../../Library/assets/images/whitestar.png");
+    background-repeat: repeat-x;
+    background-size: 1.35714rem 1.35714rem;
+    z-index: 1; }
+  .c-providerBox--investment .c-providerBox--insidebitcoins .c-providerBox--title-rating .rating--star {
+    height: 1.35714rem;
+    background-image: url("../../Library/assets/images/star.png");
+    background-repeat: repeat-x;
+    background-position: 0 100%;
+    background-size: 1.35714rem 1.35714rem;
+    z-index: 1; }
+  .c-providerBox--investment .c-providerBox.reviewers-choice {
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 35px 15px 15px;
+    margin-top: 20px; }
+    .c-providerBox--investment .c-providerBox.reviewers-choice .reviewers-choice-label {
+      text-align: center;
+      width: 200px;
+      height: 40px;
+      position: absolute;
+      left: -1px;
+      top: -20px;
+      background-color: #ffffff;
+      font-family: "Source Sans Pro", sans-serif; }
+      .c-providerBox--investment .c-providerBox.reviewers-choice .reviewers-choice-label img {
+        height: 100%; }
+  .c-providerBox--investment .c-providerBox--title-row {
+    width: 100%;
+    margin-bottom: 10px; }
+  .c-providerBox--investment .c-providerBox--title-name {
+    display: inline-block;
+    width: 100%;
+    font-size: 17px;
+    font-weight: 600;
+    text-align: center;
+    font-family: "Source Sans Pro", sans-serif; }
+  .c-providerBox--investment .c-providerBox--title-rating {
+    display: inline-block;
+    width: 29%;
+    font-family: "Source Sans Pro", sans-serif; }
+    .c-providerBox--investment .c-providerBox--title-rating .rating--star-container {
+      display: inline-block;
+      vertical-align: top; }
+  .c-providerBox--investment .c-providerBox--details {
+    display: inline-block; }
+    .c-providerBox--investment .c-providerBox--details-ctas {
+      width: 100%;
+      padding: 0 10px;
+      margin-bottom: 15px; }
+      .c-providerBox--investment .c-providerBox--details-ctas .btn {
+        width: 44%;
+        padding-left: 0;
+        padding-right: 0; }
+        .c-providerBox--investment .c-providerBox--details-ctas .btn:first-of-type {
+          margin: 0 7% 0 3%; }
+    .c-providerBox--investment .c-providerBox--details-logo {
+      width: 59%;
+      margin-bottom: 15px;
+      padding: 5px 22px 5px 12px; }
+    .c-providerBox--investment .c-providerBox--details-rating {
+      padding: 6px 0px;
+      width: 41%; }
+    .c-providerBox--investment .c-providerBox--details-data {
+      width: 100%;
+      font-weight: 600;
+      margin-bottom: 15px;
+      padding: 0 15px; }
+      .c-providerBox--investment .c-providerBox--details-data--creditScore {
+        display: none; }
+      .c-providerBox--investment .c-providerBox--details-data--label {
+        width: 59%;
+        display: inline-block;
+        font-size: 13px;
+        color: #9d9d9d;
+        font-family: "Source Sans Pro", sans-serif; }
+      .c-providerBox--investment .c-providerBox--details-data--value {
+        width: 39%;
+        display: inline-block;
+        font-size: 13px;
+        font-family: "Source Sans Pro", sans-serif; }
+  .c-providerBox--investment .c-providerBox .c-providerBox--disclaimer-row {
+    margin: 10px 0; }
+  .c-providerBox--investment .c-providerBox .c-providerBox--disclaimer-text {
+    font-size: 12px;
+    text-align: center;
+    font-family: "Source Sans Pro", sans-serif; }
+  .c-providerBox--investment .c-providerBox .c-providerBox--viewMore-row {
+    width: 100%;
+    text-align: center; }
+  .c-providerBox--investment .c-providerBox .c-providerBox--viewMore-btn {
+    font-size: 12px;
+    color: #2679C9;
+    position: relative; }
+    .c-providerBox--investment .c-providerBox .c-providerBox--viewMore-btn:after {
+      font-family: 'FontAwesome';
+      margin-left: 5px;
+      font-size: 10px;
+      vertical-align: top;
+      position: absolute;
+      top: 0; }
+    .c-providerBox--investment .c-providerBox .c-providerBox--viewMore-btn:first-of-type:after {
+      content: '\f078'; }
+    .c-providerBox--investment .c-providerBox .c-providerBox--viewMore-btn:last-of-type:after {
+      content: '\f077'; }
+    .c-providerBox--investment .c-providerBox .c-providerBox--viewMore-btn:hover {
+      text-decoration: none; }
+    .c-providerBox--investment .c-providerBox .c-providerBox--viewMore-btn.show {
+      display: inline-block; }
+    .c-providerBox--investment .c-providerBox .c-providerBox--viewMore-btn.hide {
+      display: none; }
+  .c-providerBox--investment .c-providerBox--footer {
+    height: 0;
+    overflow: hidden; }
+    .c-providerBox--investment .c-providerBox--footer.open {
+      height: auto; }
+    .c-providerBox--investment .c-providerBox--footer-data:first-of-type {
+      margin-top: 15px;
+      border-top: 1px solid #d3d3d3;
+      padding-top: 20px; }
+    .c-providerBox--investment .c-providerBox--footer-data--label {
+      font-weight: 600;
+      font-size: 12px;
+      margin-bottom: 5px;
+      font-family: "Source Sans Pro", sans-serif; }
+    .c-providerBox--investment .c-providerBox--footer-data--value ul {
+      padding-right: 30px; }
+      .c-providerBox--investment .c-providerBox--footer-data--value ul li {
+        font-size: 12px;
+        line-height: 22px;
+        color: #2a2a2a;
+        font-family: "Source Sans Pro", sans-serif; }
+        .c-providerBox--investment .c-providerBox--footer-data--value ul li.pro-con-tick, .c-providerBox--investment .c-providerBox--footer-data--value ul li.pro-con-cross {
+          list-style: none;
+          position: relative; }
+          .c-providerBox--investment .c-providerBox--footer-data--value ul li.pro-con-tick:before, .c-providerBox--investment .c-providerBox--footer-data--value ul li.pro-con-cross:before {
+            position: absolute;
+            font-family: 'FontAwesome';
+            position: absolute;
+            left: -20px;
+            top: 0;
+            font-size: 14px; }
+        .c-providerBox--investment .c-providerBox--footer-data--value ul li.pro-con-tick::before {
+          content: '\f00c';
+          color: #55a200; }
+        .c-providerBox--investment .c-providerBox--footer-data--value ul li.pro-con-cross:before {
+          content: '\f00d';
+          color: #ec6707; }
+
+.view-more-providers-spinner {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  width: 96%;
+  height: 94%;
+  background-color: #ffffff;
+  display: none; }
+  .view-more-providers-spinner:before {
+    position: absolute;
+    width: 72px;
+    top: -14px;
+    height: 127%;
+    left: 50%;
+    content: '';
+    background-image: url("../../Library/assets/images/loading-spinner.gif");
+    background-size: 100%;
+    transform: translateX(-50%); }
+
+@media (min-width: 768px) {
+  .c-providerBox--investment .c-providerBox--title-name {
+    display: inline-block;
+    width: 70%;
+    font-size: 19px;
+    font-weight: 600;
+    text-align: left; }
+  .c-providerBox--investment .c-providerBox--title-rating {
+    text-align: right; }
+  .c-providerBox--investment .c-providerBox--details {
+    vertical-align: top;
+    border-right: 1px solid #F6F6FA; }
+    .c-providerBox--investment .c-providerBox--details:last-of-type {
+      border-right: none; }
+    .c-providerBox--investment .c-providerBox--details-logo {
+      width: 20%;
+      text-align: center;
+      padding: 5px 12px;
+      margin-bottom: 0; }
+      .c-providerBox--investment .c-providerBox--details-logo img {
+        width: 90%; }
+    .c-providerBox--investment .c-providerBox--details-data {
+      width: 21%;
+      margin-bottom: 0;
+      padding: 0 5px; }
+      .c-providerBox--investment .c-providerBox--details-data--label, .c-providerBox--investment .c-providerBox--details-data--value {
+        width: 100%;
+        text-align: center; }
+      .c-providerBox--investment .c-providerBox--details-data--label {
+        font-size: 12px; }
+      .c-providerBox--investment .c-providerBox--details-data--value {
+        font-size: 18px;
+        font-weight: 700; }
+    .c-providerBox--investment .c-providerBox--details-ctas {
+      width: 17%;
+      margin-bottom: 0; }
+      .c-providerBox--investment .c-providerBox--details-ctas .btn {
+        padding: 7px 0 !important;
+        margin-bottom: 4px;
+        width: 90%;
+        float: right; }
+        .c-providerBox--investment .c-providerBox--details-ctas .btn-primary {
+          margin: 0 0 4px 0; }
+  .c-providerBox--investment .c-providerBox--footer.open {
+    border-top: 1px solid #F6F6FA;
+    margin-top: 20px;
+    padding-top: 20px; }
+  .c-providerBox--investment .c-providerBox--footer-data {
+    width: 32%;
+    display: inline-block;
+    vertical-align: top; }
+    .c-providerBox--investment .c-providerBox--footer-data:first-of-type {
+      margin-top: 0;
+      border-top: none;
+      padding-top: 0; }
+    .c-providerBox--investment .c-providerBox--footer-data--value ul {
+      padding-left: 25px; }
+  .c-providerBox--investment .c-providerBox.wide .c-providerBox--details-logo {
+    width: 16%; }
+  .c-providerBox--investment .c-providerBox.wide .c-providerBox--details-data {
+    width: 17%; }
+  .c-providerBox--investment .c-providerBox.wide .c-providerBox--details-ctas {
+    width: 14%; } }
+
+@media (min-width: 992px) {
+  .page .c-providerBox--investment .c-providerBox--details-logo {
+    width: 18%;
+    padding: 5px; }
+  .page .c-providerBox--investment .c-providerBox--details-data {
+    width: 16%;
+    padding: 0 6px; }
+  .page .c-providerBox--investment .c-providerBox--details-ctas {
+    width: 17%; }
+  .page .c-providerBox--investment.wide .c-providerBox--details-data--creditScore {
+    display: inline-block; } }
+
+html {
+  font-size: 87.5%; }
+
+a.btn.btn {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: bolder; }
+  a.btn.btn.full-width {
+    width: 100%; }
+  a.btn.btn-learnbonds-secondary {
+    background-color: #ffffff !important;
+    color: #3fd3bb !important;
+    border: 1px solid #3fd3bb !important; }
+    a.btn.btn-learnbonds-secondary:hover {
+      background-color: #3fd3bb !important;
+      color: #ffffff !important; }
+  a.btn.btn-kryptoszene-secondary {
+    background-color: #ffffff !important;
+    color: #EB9A11 !important;
+    border: 1px solid #EB9A11 !important; }
+    a.btn.btn-kryptoszene-secondary:hover {
+      background-color: #efae40 !important;
+      color: #ffffff !important; }
+  a.btn.btn-insidebitcoins-secondary {
+    background-color: #ffffff !important;
+    color: #ec6707 !important;
+    border: 1px solid #ec6707 !important; }
+    a.btn.btn-insidebitcoins-secondary:hover {
+      background-color: #c75706 !important;
+      color: #ffffff !important; }
+
+.c-providerBox--loans .c-providerBox {
+  width: 100%;
+  position: relative;
+  padding: 15px;
+  border: 1px solid #d3d3d3; }
+  .c-providerBox--loans .c-providerBox--learnbonds.reviewers-choice {
+    border: 1px solid #3fd3bb;
+    border-bottom: 5px solid #3fd3bb; }
+    .c-providerBox--loans .c-providerBox--learnbonds.reviewers-choice .reviewers-choice-label {
+      border: 1px solid #3fd3bb; }
+  .c-providerBox--loans .c-providerBox--learnbonds .c-providerBox--viewMore-btn {
+    color: #3fd3bb !important; }
+  .c-providerBox--loans .c-providerBox--kryptoszene.reviewers-choice {
+    border: 1px solid #EB9A11;
+    border-bottom: 5px solid #EB9A11; }
+    .c-providerBox--loans .c-providerBox--kryptoszene.reviewers-choice .reviewers-choice-label {
+      border: 1px solid #EB9A11; }
+  .c-providerBox--loans .c-providerBox--kryptoszene .c-providerBox--viewMore-btn {
+    color: #EB9A11; }
+  .c-providerBox--loans .c-providerBox--insidebitcoins.reviewers-choice {
+    border: 1px solid #ec6707;
+    border-bottom: 5px solid #ec6707; }
+    .c-providerBox--loans .c-providerBox--insidebitcoins.reviewers-choice .reviewers-choice-label {
+      border: 1px solid #ec6707; }
+  .c-providerBox--loans .c-providerBox--insidebitcoins .c-providerBox--viewMore-btn {
+    color: #ec6707; }
+  .c-providerBox--loans .c-providerBox--insidebitcoins .c-providerBox--title-rating .rating--star-container {
+    width: 6.78571rem;
+    height: 1.35714rem;
+    background-image: url("../../Library/assets/images/whitestar.png");
+    background-repeat: repeat-x;
+    background-size: 1.35714rem 1.35714rem;
+    z-index: 1; }
+  .c-providerBox--loans .c-providerBox--insidebitcoins .c-providerBox--title-rating .rating--star {
+    height: 1.35714rem;
+    background-image: url("../../Library/assets/images/star.png");
+    background-repeat: repeat-x;
+    background-position: 0 100%;
+    background-size: 1.35714rem 1.35714rem;
+    z-index: 1; }
+  .c-providerBox--loans .c-providerBox.reviewers-choice {
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 35px 15px 15px;
+    margin-top: 20px; }
+    .c-providerBox--loans .c-providerBox.reviewers-choice .reviewers-choice-label {
+      text-align: center;
+      width: 200px;
+      height: 40px;
+      position: absolute;
+      left: -1px;
+      top: -20px;
+      background-color: #ffffff;
+      font-family: "Source Sans Pro", sans-serif; }
+      .c-providerBox--loans .c-providerBox.reviewers-choice .reviewers-choice-label img {
+        height: 100%; }
+  .c-providerBox--loans .c-providerBox--title-row {
+    width: 100%;
+    margin-bottom: 10px; }
+  .c-providerBox--loans .c-providerBox--title-name {
+    display: inline-block;
+    width: 100%;
+    font-size: 17px;
+    font-weight: 600;
+    text-align: center;
+    font-family: "Source Sans Pro", sans-serif; }
+  .c-providerBox--loans .c-providerBox--title-rating {
+    display: inline-block;
+    width: 29%;
+    font-family: "Source Sans Pro", sans-serif; }
+    .c-providerBox--loans .c-providerBox--title-rating .rating--star-container {
+      display: inline-block;
+      vertical-align: top; }
+  .c-providerBox--loans .c-providerBox--details {
+    display: inline-block; }
+    .c-providerBox--loans .c-providerBox--details-ctas {
+      width: 100%;
+      padding: 0 10px;
+      margin-bottom: 15px; }
+      .c-providerBox--loans .c-providerBox--details-ctas .btn {
+        width: 44%;
+        padding-left: 0;
+        padding-right: 0; }
+        .c-providerBox--loans .c-providerBox--details-ctas .btn:first-of-type {
+          margin: 0 7% 0 3%; }
+    .c-providerBox--loans .c-providerBox--details-logo {
+      width: 59%;
+      margin-bottom: 15px;
+      padding: 5px 22px 5px 12px; }
+    .c-providerBox--loans .c-providerBox--details-rating {
+      padding: 6px 0px;
+      width: 41%; }
+    .c-providerBox--loans .c-providerBox--details-data {
+      width: 100%;
+      font-weight: 600;
+      margin-bottom: 15px;
+      padding: 0 15px; }
+      .c-providerBox--loans .c-providerBox--details-data--creditScore {
+        display: none; }
+      .c-providerBox--loans .c-providerBox--details-data--label {
+        width: 59%;
+        display: inline-block;
+        font-size: 13px;
+        color: #9d9d9d;
+        font-family: "Source Sans Pro", sans-serif; }
+      .c-providerBox--loans .c-providerBox--details-data--value {
+        width: 39%;
+        display: inline-block;
+        font-size: 13px;
+        font-family: "Source Sans Pro", sans-serif; }
+  .c-providerBox--loans .c-providerBox .c-providerBox--disclaimer-row {
+    margin: 10px 0; }
+  .c-providerBox--loans .c-providerBox .c-providerBox--disclaimer-text {
+    font-size: 12px;
+    text-align: center;
+    font-family: "Source Sans Pro", sans-serif; }
+  .c-providerBox--loans .c-providerBox .c-providerBox--viewMore-row {
+    width: 100%;
+    text-align: center; }
+  .c-providerBox--loans .c-providerBox .c-providerBox--viewMore-btn {
+    font-size: 12px;
+    color: #2679C9;
+    position: relative;
+    margin-top: 15px; }
+    .c-providerBox--loans .c-providerBox .c-providerBox--viewMore-btn:after {
+      font-family: 'FontAwesome';
+      margin-left: 5px;
+      font-size: 10px;
+      vertical-align: top;
+      position: absolute;
+      top: 0; }
+    .c-providerBox--loans .c-providerBox .c-providerBox--viewMore-btn:first-of-type:after {
+      content: '\f078'; }
+    .c-providerBox--loans .c-providerBox .c-providerBox--viewMore-btn:last-of-type:after {
+      content: '\f077'; }
+    .c-providerBox--loans .c-providerBox .c-providerBox--viewMore-btn:hover {
+      text-decoration: none; }
+    .c-providerBox--loans .c-providerBox .c-providerBox--viewMore-btn.show {
+      display: inline-block; }
+    .c-providerBox--loans .c-providerBox .c-providerBox--viewMore-btn.hide {
+      display: none; }
+  .c-providerBox--loans .c-providerBox--footer {
+    height: 0;
+    overflow: hidden; }
+    .c-providerBox--loans .c-providerBox--footer.open {
+      height: auto; }
+    .c-providerBox--loans .c-providerBox--footer-data:first-of-type {
+      margin-top: 15px;
+      border-top: 1px solid #d3d3d3;
+      padding-top: 20px; }
+    .c-providerBox--loans .c-providerBox--footer-data--label {
+      font-weight: 600;
+      font-size: 12px;
+      margin-bottom: 5px;
+      font-family: "Source Sans Pro", sans-serif; }
+    .c-providerBox--loans .c-providerBox--footer-data--value ul {
+      padding-right: 30px; }
+      .c-providerBox--loans .c-providerBox--footer-data--value ul li {
+        font-size: 12px;
+        line-height: 22px;
+        color: #2a2a2a;
+        font-family: "Source Sans Pro", sans-serif; }
+        .c-providerBox--loans .c-providerBox--footer-data--value ul li.pro-con-tick, .c-providerBox--loans .c-providerBox--footer-data--value ul li.pro-con-cross {
+          list-style: none;
+          position: relative; }
+          .c-providerBox--loans .c-providerBox--footer-data--value ul li.pro-con-tick:before, .c-providerBox--loans .c-providerBox--footer-data--value ul li.pro-con-cross:before {
+            position: absolute;
+            font-family: 'FontAwesome';
+            position: absolute;
+            left: -20px;
+            top: 0;
+            font-size: 14px; }
+        .c-providerBox--loans .c-providerBox--footer-data--value ul li.pro-con-tick::before {
+          content: '\f00c';
+          color: #55a200; }
+        .c-providerBox--loans .c-providerBox--footer-data--value ul li.pro-con-cross:before {
+          content: '\f00d';
+          color: #ec6707; }
+
+.view-more-providers-spinner {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  width: 96%;
+  height: 94%;
+  background-color: #ffffff;
+  display: none; }
+  .view-more-providers-spinner:before {
+    position: absolute;
+    width: 72px;
+    top: -14px;
+    height: 127%;
+    left: 50%;
+    content: '';
+    background-image: url("../../Library/assets/images/loading-spinner.gif");
+    background-size: 100%;
+    transform: translateX(-50%); }
+
+@media (min-width: 768px) {
+  .c-providerBox--loans .c-providerBox--title-name {
+    display: inline-block;
+    width: 70%;
+    font-size: 19px;
+    font-weight: 600;
+    text-align: left; }
+  .c-providerBox--loans .c-providerBox--title-rating {
+    text-align: right; }
+    .c-providerBox--loans .c-providerBox--title-rating .rating--star-container {
+      margin-left: 0.57143rem; }
+  .c-providerBox--loans .c-providerBox--details {
+    vertical-align: top;
+    border-right: 1px solid #F6F6FA; }
+    .c-providerBox--loans .c-providerBox--details:last-of-type {
+      border-right: none; }
+    .c-providerBox--loans .c-providerBox--details-logo {
+      width: 20%;
+      text-align: center;
+      padding: 5px 12px;
+      margin-bottom: 0; }
+      .c-providerBox--loans .c-providerBox--details-logo img {
+        width: 90%; }
+    .c-providerBox--loans .c-providerBox--details-data {
+      width: 21%;
+      margin-bottom: 0;
+      padding: 0 5px; }
+      .c-providerBox--loans .c-providerBox--details-data--label, .c-providerBox--loans .c-providerBox--details-data--value {
+        width: 100%;
+        text-align: center; }
+      .c-providerBox--loans .c-providerBox--details-data--label {
+        font-size: 12px; }
+      .c-providerBox--loans .c-providerBox--details-data--value {
+        font-size: 18px;
+        font-weight: 700; }
+    .c-providerBox--loans .c-providerBox--details-ctas {
+      width: 17%;
+      margin-bottom: 0; }
+      .c-providerBox--loans .c-providerBox--details-ctas .btn {
+        padding: 7px 0 !important;
+        margin-bottom: 4px;
+        width: 90%;
+        float: right; }
+        .c-providerBox--loans .c-providerBox--details-ctas .btn-primary {
+          margin: 0 0 15px 0; }
+  .c-providerBox--loans .c-providerBox .c-providerBox--viewMore-row {
+    margin-top: 15px; }
+  .c-providerBox--loans .c-providerBox--footer.open {
+    border-top: 1px solid #F6F6FA;
+    margin-top: 20px;
+    padding-top: 20px; }
+  .c-providerBox--loans .c-providerBox--footer-data {
+    width: 32%;
+    display: inline-block;
+    vertical-align: top; }
+    .c-providerBox--loans .c-providerBox--footer-data:first-of-type {
+      margin-top: 0;
+      border-top: none;
+      padding-top: 0; }
+    .c-providerBox--loans .c-providerBox--footer-data--value ul {
+      padding-left: 25px; }
+  .c-providerBox--loans .c-providerBox.wide .c-providerBox--details-logo {
+    width: 16%; }
+  .c-providerBox--loans .c-providerBox.wide .c-providerBox--details-data {
+    width: 17%; }
+  .c-providerBox--loans .c-providerBox.wide .c-providerBox--details-ctas {
+    width: 14%; } }
+
+@media (min-width: 992px) {
+  .page .c-providerBox--loans .c-providerBox--details-logo {
+    width: 18%;
+    padding: 5px; }
+  .page .c-providerBox--loans .c-providerBox--details-data {
+    width: 21%;
+    padding: 0 6px; }
+  .page .c-providerBox--loans .c-providerBox--details-ctas {
+    width: 17%; }
+  .page .c-providerBox--loans .c-providerBox.wide .c-providerBox--details-data {
+    width: 16%; }
+  .page .c-providerBox--loans .c-providerBox.wide .c-providerBox--details-data--creditScore {
+    display: inline-block; } }
+
+html {
+  font-size: 87.5%; }
+
+a.btn.btn {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: bolder; }
+  a.btn.btn.full-width {
+    width: 100%; }
+  a.btn.btn-learnbonds-secondary {
+    background-color: #ffffff !important;
+    color: #3fd3bb !important;
+    border: 1px solid #3fd3bb !important; }
+    a.btn.btn-learnbonds-secondary:hover {
+      background-color: #3fd3bb !important;
+      color: #ffffff !important; }
+  a.btn.btn-kryptoszene-secondary {
+    background-color: #ffffff !important;
+    color: #EB9A11 !important;
+    border: 1px solid #EB9A11 !important; }
+    a.btn.btn-kryptoszene-secondary:hover {
+      background-color: #efae40 !important;
+      color: #ffffff !important; }
+  a.btn.btn-insidebitcoins-secondary {
+    background-color: #ffffff !important;
+    color: #ec6707 !important;
+    border: 1px solid #ec6707 !important; }
+    a.btn.btn-insidebitcoins-secondary:hover {
+      background-color: #c75706 !important;
+      color: #ffffff !important; }
+
+.c-providerBox--savings .c-providerBox {
+  width: 100%;
+  position: relative;
+  padding: 15px;
+  border: 1px solid #d3d3d3; }
+  .c-providerBox--savings .c-providerBox--learnbonds.reviewers-choice {
+    border: 1px solid #3fd3bb;
+    border-bottom: 5px solid #3fd3bb; }
+    .c-providerBox--savings .c-providerBox--learnbonds.reviewers-choice .reviewers-choice-label {
+      border: 1px solid #3fd3bb; }
+  .c-providerBox--savings .c-providerBox--learnbonds .c-providerBox--viewMore-btn {
+    color: #3fd3bb; }
+  .c-providerBox--savings .c-providerBox--kryptoszene.reviewers-choice {
+    border: 1px solid #EB9A11;
+    border-bottom: 5px solid #EB9A11; }
+    .c-providerBox--savings .c-providerBox--kryptoszene.reviewers-choice .reviewers-choice-label {
+      border: 1px solid #EB9A11; }
+  .c-providerBox--savings .c-providerBox--kryptoszene .c-providerBox--viewMore-btn {
+    color: #EB9A11; }
+  .c-providerBox--savings .c-providerBox--insidebitcoins.reviewers-choice {
+    border: 1px solid #ec6707;
+    border-bottom: 5px solid #ec6707; }
+    .c-providerBox--savings .c-providerBox--insidebitcoins.reviewers-choice .reviewers-choice-label {
+      border: 1px solid #ec6707; }
+  .c-providerBox--savings .c-providerBox--insidebitcoins .c-providerBox--viewMore-btn {
+    color: #ec6707; }
+  .c-providerBox--savings .c-providerBox--insidebitcoins .c-providerBox--title-rating .rating--star-container {
+    width: 6.78571rem;
+    height: 1.35714rem;
+    background-image: url("../../Library/assets/images/whitestar.png");
+    background-repeat: repeat-x;
+    background-size: 1.35714rem 1.35714rem;
+    z-index: 1; }
+  .c-providerBox--savings .c-providerBox--insidebitcoins .c-providerBox--title-rating .rating--star {
+    height: 1.35714rem;
+    background-image: url("../../Library/assets/images/star.png");
+    background-repeat: repeat-x;
+    background-position: 0 100%;
+    background-size: 1.35714rem 1.35714rem;
+    z-index: 1; }
+  .c-providerBox--savings .c-providerBox.reviewers-choice {
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 35px 15px 15px;
+    margin-top: 20px; }
+    .c-providerBox--savings .c-providerBox.reviewers-choice .reviewers-choice-label {
+      text-align: center;
+      width: 200px;
+      height: 40px;
+      position: absolute;
+      left: -1px;
+      top: -20px;
+      background-color: #ffffff;
+      font-family: "Source Sans Pro", sans-serif; }
+      .c-providerBox--savings .c-providerBox.reviewers-choice .reviewers-choice-label img {
+        height: 100%; }
+  .c-providerBox--savings .c-providerBox--title-row {
+    width: 100%;
+    margin-bottom: 10px; }
+  .c-providerBox--savings .c-providerBox--title-name {
+    display: inline-block;
+    width: 100%;
+    font-size: 17px;
+    font-weight: 600;
+    text-align: center;
+    font-family: "Source Sans Pro", sans-serif; }
+  .c-providerBox--savings .c-providerBox--title-rating {
+    display: inline-block;
+    width: 29%;
+    font-family: "Source Sans Pro", sans-serif; }
+    .c-providerBox--savings .c-providerBox--title-rating .rating--star-container {
+      display: inline-block;
+      vertical-align: top; }
+  .c-providerBox--savings .c-providerBox--details {
+    display: inline-block; }
+    .c-providerBox--savings .c-providerBox--details-ctas {
+      width: 100%;
+      padding: 0 10px;
+      margin-bottom: 15px; }
+      .c-providerBox--savings .c-providerBox--details-ctas .btn {
+        width: 44%;
+        padding-left: 0;
+        padding-right: 0; }
+        .c-providerBox--savings .c-providerBox--details-ctas .btn:first-of-type {
+          margin: 0 7% 0 3%; }
+    .c-providerBox--savings .c-providerBox--details-logo {
+      width: 59%;
+      margin-bottom: 15px;
+      padding: 5px 22px 5px 12px; }
+    .c-providerBox--savings .c-providerBox--details-rating {
+      padding: 6px 0px;
+      width: 41%; }
+      .c-providerBox--savings .c-providerBox--details-rating .rating-star-label {
+        margin-bottom: 5px; }
+    .c-providerBox--savings .c-providerBox--details-data {
+      width: 100%;
+      font-weight: 600;
+      margin-bottom: 15px;
+      padding: 0 15px; }
+      .c-providerBox--savings .c-providerBox--details-data--creditScore {
+        display: none; }
+      .c-providerBox--savings .c-providerBox--details-data--label {
+        width: 59%;
+        display: inline-block;
+        font-size: 13px;
+        color: #9d9d9d;
+        font-family: "Source Sans Pro", sans-serif;
+        vertical-align: top; }
+      .c-providerBox--savings .c-providerBox--details-data--value {
+        width: 39%;
+        display: inline-block;
+        font-size: 13px;
+        font-family: "Source Sans Pro", sans-serif; }
+  .c-providerBox--savings .c-providerBox .c-providerBox--disclaimer-row {
+    margin: 10px 0; }
+  .c-providerBox--savings .c-providerBox .c-providerBox--disclaimer-text {
+    font-size: 12px;
+    text-align: center;
+    font-family: "Source Sans Pro", sans-serif; }
+  .c-providerBox--savings .c-providerBox .c-providerBox--viewMore-row {
+    width: 100%;
+    text-align: center; }
+  .c-providerBox--savings .c-providerBox .c-providerBox--viewMore-btn {
+    font-size: 12px;
+    color: #299281;
+    position: relative; }
+    .c-providerBox--savings .c-providerBox .c-providerBox--viewMore-btn:after {
+      font-family: 'FontAwesome';
+      margin-left: 5px;
+      font-size: 10px;
+      vertical-align: top;
+      position: absolute;
+      top: 0; }
+    .c-providerBox--savings .c-providerBox .c-providerBox--viewMore-btn:first-of-type:after {
+      content: '\f078'; }
+    .c-providerBox--savings .c-providerBox .c-providerBox--viewMore-btn:last-of-type:after {
+      content: '\f077'; }
+    .c-providerBox--savings .c-providerBox .c-providerBox--viewMore-btn:hover {
+      text-decoration: none; }
+    .c-providerBox--savings .c-providerBox .c-providerBox--viewMore-btn.show {
+      display: inline-block; }
+    .c-providerBox--savings .c-providerBox .c-providerBox--viewMore-btn.hide {
+      display: none; }
+  .c-providerBox--savings .c-providerBox--footer {
+    height: 0;
+    overflow: hidden; }
+    .c-providerBox--savings .c-providerBox--footer.open {
+      height: auto; }
+    .c-providerBox--savings .c-providerBox--footer-data:first-of-type {
+      margin-top: 15px;
+      border-top: 1px solid #d3d3d3;
+      padding-top: 20px; }
+    .c-providerBox--savings .c-providerBox--footer-data--label {
+      font-weight: 600;
+      font-size: 12px;
+      margin-bottom: 5px;
+      font-family: "Source Sans Pro", sans-serif; }
+    .c-providerBox--savings .c-providerBox--footer-data--value ul {
+      padding-right: 30px; }
+      .c-providerBox--savings .c-providerBox--footer-data--value ul li {
+        font-size: 12px;
+        line-height: 22px;
+        color: #2a2a2a;
+        font-family: "Source Sans Pro", sans-serif; }
+        .c-providerBox--savings .c-providerBox--footer-data--value ul li.pro-con-tick, .c-providerBox--savings .c-providerBox--footer-data--value ul li.pro-con-cross {
+          list-style: none;
+          position: relative; }
+          .c-providerBox--savings .c-providerBox--footer-data--value ul li.pro-con-tick:before, .c-providerBox--savings .c-providerBox--footer-data--value ul li.pro-con-cross:before {
+            position: absolute;
+            font-family: 'FontAwesome';
+            position: absolute;
+            left: -20px;
+            top: 0;
+            font-size: 14px; }
+        .c-providerBox--savings .c-providerBox--footer-data--value ul li.pro-con-tick::before {
+          content: '\f00c';
+          color: #55a200; }
+        .c-providerBox--savings .c-providerBox--footer-data--value ul li.pro-con-cross:before {
+          content: '\f00d';
+          color: #ec6707; }
+
+.view-more-providers-spinner {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  width: 96%;
+  height: 94%;
+  background-color: #ffffff;
+  display: none; }
+  .view-more-providers-spinner:before {
+    position: absolute;
+    width: 72px;
+    top: -14px;
+    height: 127%;
+    left: 50%;
+    content: '';
+    background-image: url("../../Library/assets/images/loading-spinner.gif");
+    background-size: 100%;
+    transform: translateX(-50%); }
+
+@media (min-width: 768px) {
+  .c-providerBox--savings .c-providerBox--title-name {
+    display: inline-block;
+    width: 70%;
+    font-size: 19px;
+    font-weight: 600;
+    text-align: left; }
+  .c-providerBox--savings .c-providerBox--title-rating {
+    text-align: right; }
+    .c-providerBox--savings .c-providerBox--title-rating .rating--star-container {
+      margin-left: 8px; }
+  .c-providerBox--savings .c-providerBox--details {
+    vertical-align: top;
+    border-right: 1px solid #F6F6FA; }
+    .c-providerBox--savings .c-providerBox--details:last-of-type {
+      border-right: none; }
+    .c-providerBox--savings .c-providerBox--details-logo {
+      width: 22%;
+      text-align: center;
+      padding: 5px 12px;
+      margin-bottom: 0; }
+      .c-providerBox--savings .c-providerBox--details-logo img {
+        width: 90%; }
+    .c-providerBox--savings .c-providerBox--details-data {
+      width: 26%;
+      margin-bottom: 0;
+      padding: 0 5px; }
+      .c-providerBox--savings .c-providerBox--details-data--label, .c-providerBox--savings .c-providerBox--details-data--value {
+        width: 100%;
+        text-align: center; }
+      .c-providerBox--savings .c-providerBox--details-data--label {
+        font-size: 12px; }
+      .c-providerBox--savings .c-providerBox--details-data--value {
+        font-size: 18px;
+        font-weight: 700; }
+    .c-providerBox--savings .c-providerBox--details-ctas {
+      width: 100%;
+      margin-bottom: 0;
+      text-align: center; }
+      .c-providerBox--savings .c-providerBox--details-ctas .btn {
+        padding: 7px 0 !important;
+        margin-bottom: 4px;
+        width: 20%; }
+        .c-providerBox--savings .c-providerBox--details-ctas .btn:first-of-type {
+          margin: 0 3% 0 3%; }
+        .c-providerBox--savings .c-providerBox--details-ctas .btn-primary {
+          margin: 0 0 10px 0; }
+  .c-providerBox--savings .c-providerBox--footer.open {
+    border-top: 1px solid #F6F6FA;
+    margin-top: 20px;
+    padding-top: 20px; }
+  .c-providerBox--savings .c-providerBox--footer-data {
+    width: 32%;
+    display: inline-block;
+    vertical-align: top; }
+    .c-providerBox--savings .c-providerBox--footer-data:first-of-type {
+      margin-top: 0;
+      border-top: none;
+      padding-top: 0; }
+    .c-providerBox--savings .c-providerBox--footer-data--value ul {
+      padding-left: 25px; }
+  .c-providerBox--savings .c-providerBox.wide .c-providerBox--details-logo {
+    width: 16%; }
+  .c-providerBox--savings .c-providerBox.wide .c-providerBox--details-data {
+    width: 17%; }
+  .c-providerBox--savings .c-providerBox.wide .c-providerBox--details-ctas {
+    width: 14%; } }
+
+@media (min-width: 992px) {
+  .c-providerBox--savings .c-providerBox--details-logo {
+    width: 16%;
+    padding: 5px; }
+  .c-providerBox--savings .c-providerBox--details-data {
+    width: 23%;
+    padding: 0 6px; }
+  .c-providerBox--savings .c-providerBox--details-ctas {
+    width: 13%;
+    padding: 0 0 0 6px;
+    text-align: right; }
+    .c-providerBox--savings .c-providerBox--details-ctas .btn {
+      float: right;
+      width: 90%; } }
