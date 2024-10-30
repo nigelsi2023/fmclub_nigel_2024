@@ -185,11 +185,15 @@
                                         <a href="{{ route('trader-blog') }}">Market Analysis<span class="fa fa-angle-down"></span></a>
                                         <!-- DROPDOWN MENU -->
                                         <ul class="dropdown-menu">
-                                            {{-- @foreach($TraderCategory as $category)
-                                            <li class="">
-                                                <a href="{{ route('trader_category', $category->slug) }}">{{ $category->name }}</a>
-                                            </li>
-                                            @endforeach --}}
+                                            @php
+                                                $traderCategories = \App\TraderCategory::all();
+                                            @endphp
+
+                                            @foreach($traderCategories as $category)
+                                                <li class="">
+                                                    <a href="{{ route('trader_category', $category->slug) }}">{{ $category->name }}</a>
+                                                </li>
+                                            @endforeach
                                         </ul>
                                     </li>
                                     

@@ -359,26 +359,20 @@
                                     
 
                                     <li class="dropdown {{ Request::is('trader-blog')? 'active':'' }}">
-
                                         <a href="{{ route('trader-blog') }}">Market Analysis<span class="fa fa-angle-down"></span></a>
-
                                         <!-- DROPDOWN MENU -->
-
                                         <ul class="dropdown-menu">
+                                            @php
+                                                $traderCategories = \App\TraderCategory::all();
+                                            @endphp
 
-                                            {{-- @foreach($TraderCategory as $category)
-
-                                            <li class="">
-
-                                                <a href="{{ route('trader_category', $category->slug) }}">{{ $category->name }}</a>
-
-                                            </li>
-
-                                            @endforeach --}}
-
+                                            @foreach($traderCategories as $category)
+                                                <li class="">
+                                                    <a href="{{ route('trader_category', $category->slug) }}">{{ $category->name }}</a>
+                                                </li>
+                                            @endforeach
                                         </ul>
-
-                                    </li>      
+                                    </li>
 
                                     
 
