@@ -25,7 +25,7 @@ class ForexSignalsNEWController extends Controller
         
         $signals1 = DB::table('signals')->select('item_name', 'open_price', 'stop_loss', 'target_price', 'status')->get();
         // $signals = DB::table('signals')->orderBy('signal_date','DESC')->simplePaginate(20);
-        $signals = DB::table('signals')->orderBy('id','DESC')->simplePaginate(20);
+        $signals = DB::table('signals')->orderBy('created_at','desc')->simplePaginate(20);
         // $countRow = count($signals);
         $countRow  = DB::table('signals')->count();
         $liveCount = DB::table('signals')->WHERE('status',0)->count();
