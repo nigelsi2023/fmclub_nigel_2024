@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use DB;
+use Exception;
 use App\Subscribe;
 use Illuminate\Http\Request;
 
@@ -23,16 +24,24 @@ class AdminSubscriberController extends Controller
 
     public function delete($id){
         Subscribe::find($id)->delete();
-        return redirect()->back()->with('message', 'Subscriber Successfully Deleted');
+        return redirect()->back()->with('message', 'Subscriber Deleted Successfully');
     }
     
     //new
-     public function deleteselected(Request $request)
+    public function deleteselected(Request $request)
     {
-        $ids = $request->ids;
-        DB::table("subscribes")->whereIn('id',explode(",",$ids))->delete();
-        // dd($request);
-        return redirect()->back()->with('message', 'Selected Subscriber Successfully Deleted');
+        $ids = explode(",",$request->ids);
+        
+        // dd($request->ids, $ids);
+        try {
+            if (is_array($ids) && !empty($ids)) {
+                Subscribe::whereIn('id', $ids)->delete();
+                return redirect()->back()->with('message', 'Selected Subscriber Deleted Successfully.');
+            }
+            return redirect()->back()->with('error', 'No valid IDs provided.');
+        } catch (Exception $e) {
+            return redirect()->back()->with('error', $e->getMessage());
+        }
     }
     
 }
