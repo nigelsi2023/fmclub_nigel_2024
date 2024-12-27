@@ -173,21 +173,18 @@ class PostController extends Controller
     
     public function fulldata2($id)
     {
-        
-        $blog = Trader_blog::where('page_url',$id)->get()->first();
+		$blog = Trader_blog::where('id', $id)->firstOrFail();
+        // dd($id, $blog->toArray());
         
         $page_title = $blog->name;
         $page_subtitle = $blog->sub_title;
-        
-        /*if(Auth::check()){*/
+		
         $trader_category = DB::table('trader_categories')->orderBy('name', 'asc')->get();
-        //$blog = Trader_blog::find($id);
+        
         $comments = DB::table('trader_comments')->where('commentable_id', $blog->id)->get()->count();
         $blogs = DB::table('trader_blogs')->orderBy('created_at', 'desc')->limit(5)->get();
         $posts = DB::table('trader_blogs')->inRandomOrder(3)->get();
+
         return view('financepro.pages.trader_postview', compact('blog','blogs', 'posts', 'comments', 'trader_category','page_title','page_subtitle'));
-      /*}else{
-        return redirect('login')->with('success', 'You need to Log In to see the information on this page');
-      }*/
     }
 }
