@@ -99,7 +99,7 @@ class SignalController extends Controller
                 $values = $this->calculateValues($signal);
 
                 if ($inform_subscriber == "Yes") {
-                    $this->informSubscribers($Signal_name, $Signal_open, $Signal_trgt, $Signal_stop, $Risk_Reward, $values);
+                    $this->populateEmailQueue($signal, $Signal_name, $Signal_open, $Signal_trgt, $Signal_stop, $Risk_Reward, $values);
                 }
             });
         } catch (\Exception $e) {
@@ -121,42 +121,44 @@ class SignalController extends Controller
         }
     }
 
-    private function informSubscribers($Signal_name, $Signal_open, $Signal_trgt, $Signal_stop, $Risk_Reward, $values)
+    private function populateEmailQueue($signal, $Signal_name, $Signal_open, $Signal_trgt, $Signal_stop, $Risk_Reward, $values)
     {
         $allUsers = Order::select(['id', 'fname', 'email', 'package_id', 'payment_status'])->get();
 
         foreach ($allUsers as $user) {
-            $usermail = $user->email;
-            $user_name = $user->fname;
-            $subject = $user_name . ' - New Trade Idea for You - ' . $Signal_name;
+            $emailTemplate = $user->payment_status == 1 && $user->package_id > 1 
+                ? 'emails.SendSignalToUsers' 
+                : 'emails.SendSignalToFreeUsers';
 
-            $data = [
+            $emailData = [
                 'Signal_name' => $Signal_name,
                 'Signal_open' => $Signal_open,
                 'Signal_trgt' => $Signal_trgt,
                 'Signal_stop' => $Signal_stop,
                 'Risk_Reward' => $Risk_Reward,
                 'values'      => $values,
-                'user_name'   => $user_name,
+                'user_name'   => $user->fname,
                 'user_pymnt'  => $user->payment_status,
                 'user_pakge'  => $user->package_id,
-                'usermail'    => $usermail,
+                'usermail'    => $user->email,
+                'email_template' => $emailTemplate,
             ];
 
-            $emailTemplate = $user->payment_status == 1 && $user->package_id > 1 
-                ? 'emails.SendSignalToUsers' 
-                : 'emails.SendSignalToFreeUsers';
-
-            try {
-                Mail::send($emailTemplate, $data, function ($message) use ($usermail, $subject) {
-                    $message->to($usermail)->subject($subject);
-                    $message->from('nasir.financialmarketsclub@gmail.com', 'Financial Markets Club');
-                });
-            } catch (\Exception $e) {
-                dd('Failed to send mail: ' . $e->getMessage());
-            }
+            // Insert into email queue table with signal_id
+            DB::table('email_queue')->insert([
+                'signal_id'     => $signal->id,        // Storing the signal_id
+                'user_email'    => $user->email,
+                'user_name'     => $user->fname,
+                'email_subject' => "{$user->fname} - New Trade Idea for You - {$Signal_name}",
+                'email_body'    => json_encode($emailData), // Store email data as JSON
+                'is_failed'     => false,
+                'created_at'    => now(),
+                'updated_at'    => now(),
+            ]);
         }
     }
+
+
 
 
 
