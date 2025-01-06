@@ -142,7 +142,7 @@
                             <div class="post border-bottom-style-1 bottom-margin-sm bottom-padding-sm">
                                 <div class="post-title bottom-line bottom-margin-vsm">
                                     <!-- POST TITLE -->
-                                    <h4 class="font-weight-lbold text-capitalize"><a class="text-color-hover" href="{{ route('fulltraderpost', $blog->page_url) }}">{{ $blog->trader_name }}</a></h4>
+                                    <h4 class="font-weight-lbold text-capitalize"><a class="text-color-hover" href="{{ route('fulltraderpost', $blog->trader_id) }}">{{ $blog->trader_name }}</a></h4>
                                 </div>
                                 <!-- META -->
                                 <ul class="meta-list">
@@ -165,10 +165,10 @@
                                     <li><i class="fa fa-share-alt text-color ileft"></i></li>
                                     <li>
                                         <ul class="zozo-social-share-icons share-box typo-darks no-left-padding">
-                                              <li class="facebook"><a onclick="window.open('https://www.facebook.com/sharer/sharer.php?u={{ route('fulltraderpost', $blog->page_url) }}', '_blank', 'location=yes,height=570,width=520,scrollbars=yes,status=yes');" data-title="facebook" title="facebook">
+                                              <li class="facebook"><a onclick="window.open('https://www.facebook.com/sharer/sharer.php?u={{ route('fulltraderpost', $blog->trader_id) }}', '_blank', 'location=yes,height=570,width=520,scrollbars=yes,status=yes');" data-title="facebook" title="facebook">
                                                     <i class="fa fa-facebook"></i></a></li>
-                                            <li class="twitter"><a onclick="window.open('https://twitter.com/intent/tweet?text={{ route('fulltraderpost', $blog->page_url) }}', '_blank', 'location=yes,height=570,width=520,scrollbars=yes,status=yes');"  title="twitter"><i class="fa fa-twitter"></i></a></li>
-                                            <li class="linkedin"><a onclick="window.open('https://www.linkedin.com/shareArticle?mini=true&url={{ route('fulltraderpost', $blog->page_url) }}', '_blank', 'location=yes,height=570,width=520,scrollbars=yes,status=yes');">
+                                            <li class="twitter"><a onclick="window.open('https://twitter.com/intent/tweet?text={{ route('fulltraderpost', $blog->trader_id) }}', '_blank', 'location=yes,height=570,width=520,scrollbars=yes,status=yes');"  title="twitter"><i class="fa fa-twitter"></i></a></li>
+                                            <li class="linkedin"><a onclick="window.open('https://www.linkedin.com/shareArticle?mini=true&url={{ route('fulltraderpost', $blog->trader_id) }}', '_blank', 'location=yes,height=570,width=520,scrollbars=yes,status=yes');">
                                                         <i class="fa fa-linkedin"></i></a></li>
                                             
                                         </ul>
@@ -183,7 +183,7 @@
                                                     src="{{ $blog->videoLink }}">
                                                 </iframe> 
                                             @else
-                                            <a href="{{ route('fulltraderpost', $blog->page_url) }}">
+                                            <a href="{{ route('fulltraderpost', $blog->trader_id) }}">
                                                 <img class="img-responsive" src="{{ asset('uploads/traders/'.$blog->image) }}" width="1300" height="200px" alt="" />
                                             </a>
                                             @endif
@@ -200,7 +200,7 @@
                                         @else
                                             <p>{!! $blog->detail !!}</p>
                                         @endif
-                                        <a href="{{ route('fulltraderpost', $blog->page_url) }}" class="btn typo-light btn-hv-dark theme-bg">Read More</a>
+                                        <a href="{{ route('fulltraderpost', $blog->trader_id) }}" class="btn typo-light btn-hv-dark theme-bg">Read More</a>
                                     </div>
                                 </div>
                             </div>
@@ -245,7 +245,7 @@
                                         <ul class="typo-lights list-unstyled text-capitalize">
                                             @foreach($desc_blogs as $blog)
                                             <li  class="border-bottom-style-2 bottom-margin-vsm">
-                                                <a href="{{ route('fulltraderpost', $blog->page_url) }}">{{ $blog->name }}</a>
+                                                <a href="{{ route('fulltraderpost', $blog->id) }}">{{ $blog->name }}</a>
                                             </li>
                                             @endforeach
                                         </ul>
