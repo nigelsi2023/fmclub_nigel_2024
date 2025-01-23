@@ -1,10 +1,10 @@
 @extends('layouts.financepro2')
 <!--mac-->
-@section('meta_title', 'Reliable Forex Signals for only $1 per day')
-@section('meta_desc', 'Follow our Expert Traders with 20 years experience, and copy the trades we are doing on Forex,
-Commodities and Stock Market')
-@section('meta_kewy', 'forex trading strategies, forex trading for beginners, forex trading signals, forex signals,
-forex trading tips, free forex signals, learn forex trading, trading signals, best forex signals, forex day trading')
+@section('meta_title', 'Reliable Copy Trading from Corporate Traders')
+@section('meta_desc', 'Follow our Expert Traders with 22 years experience, and copy the trades we are doing on Crude
+Oil, forex pair XBRUSD')
+@section('meta_kewy', 'forex trading strategies, forex trading for beginners, forex trading tips, SOCIAL TRADING, social
+trader, ccopy trading, Copy trader, Copier trading, Copy trading platforms, Copytrader, Forex copy trading')
 <!--mac-->
 @section('content')
 
@@ -187,8 +187,8 @@ forex trading tips, free forex signals, learn forex trading, trading signals, be
             }
 
             @media only screen and (max-width: 700px) {
-                h1 {
-                    font-size: 30px;
+                h1, h2 {
+                    font-size: 30px !important;
                     line-height: 1.3;
                 }
                 .modal-content {
@@ -274,20 +274,23 @@ forex trading tips, free forex signals, learn forex trading, trading signals, be
                 .content-outer {
                     padding-bottom: 0px;
                 }
+                .choose-plan-click2 {
+                    margin-bottom: 30px;
+                }
             }
         </style>
         <section class="top-banner" style="background:url({{asset('uploads/imgs/2020/04/banner-img-1.jpg')}})">
             <div class="container">
                 <div class="row">
                     <div class="banner-left-top">
-                        <h1>Quality XAUUSD Forecast, XAUUSD Technical Analysis</h1>
-                        <h5 class="text-white">Check our History. High Accuracy XAUUSD Forex Signals. <br />
-                            100 - 500 pips per Trade. We don't do small risky trades.</h5>
+                        <h1>Copy Trade, All our Corporate Trades</h1>
+                        <h5 class="text-white">Imagine being able to Copy all Trades done by Pro Traders<br />
+                            Become a Profitable Trader in 2025, by Copying our Trades.</h5>
                         <div class="fs-bnr-btn2">
-                            <a class="choose-plan-click2" href="{{ route('go-vip') }}" target="__blank">Get My Free
-                                XAUUSD Forex Signal Now </a>
+                            <a class="choose-plan-click2" href="{{ route('go-vip') }}" target="__blank">Start Copy
+                                Trading for FREE, Now</a>
                             <br />
-                            <p style="text-align:center; color:#FFF">Free for first 50 Customers Only</p>
+                            <p style="text-align:center; color:#FFF">Hurry! Free for first 50 Customers Only</p>
                         </div>
                         <div class="hottopics-section">
 
@@ -296,8 +299,8 @@ forex trading tips, free forex signals, learn forex trading, trading signals, be
                     <div class="banner-right-top">
                         <div class="detail-box mb25 broker-top">
                             <div class="top-broker">
-                                <h2><span><i class="fa fa-star" aria-hidden="true"></i></span>Latest XAUUSD (Gold) Forex
-                                    Signals</h2>
+                                <h2><span><i class="fa fa-star" aria-hidden="true"></i></span>Latest XBRUSD (Oil) Trades
+                                    for Copying</h2>
                             </div>
                             <div class="broker-list">
                                 <div class="table-borderless broker-table">
@@ -355,6 +358,33 @@ forex trading tips, free forex signals, learn forex trading, trading signals, be
                     </div>
                 </div>
             </div>
+        </section>
+
+
+        <!--first banner-->
+        <section class="listen-to-customer">
+            <div class="container" style="margin-top: 30px;">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2> Listen to a Customer with Many Years Experience in Forex Trading
+                        </h2>
+
+                        <h4>Experienced Forex Traders like Howard think it is important to follow Corporate Traders, and
+                            Copy Trades. <br /><br />Do you want to keep experimenting with the Stock Market, or do you
+                            want to actually make Profits?
+                        </h4>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card" style="background: transparent; ">
+                            <div class="card-body"> <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/JV_Wmsygmpw" frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </section>
 
 
@@ -426,7 +456,7 @@ forex trading tips, free forex signals, learn forex trading, trading signals, be
 
                 <div class="col-md-8 col-xs-6">
                     <h2 style="text-align:left; margin-bottom:20px;font-size: 40px;font-weight: bold;"> Don't Miss a
-                        XAUUSD (Gold) Trade like this Again! </h2>
+                        XBRUSD (Crude Oil) Trade like this Again! </h2>
                     <h3>Our most recent BIG WIN Trade</h3>
 
                     <img src="{{ asset('images/signals/'.$last30day1->signal_img) }}" class="img-responsive newmg"
@@ -486,9 +516,10 @@ forex trading tips, free forex signals, learn forex trading, trading signals, be
 
             <div class="fs-bnr-btn23 dont-miss-out-anymore">
                 <h2 style="text-align:center;margin-top: 70px;font-size: 40px;margin-bottom: -25px;font-weight: bold;">
-                    Don't Miss Out Anymore. Join us for FREE Today. </h2>
-                <a class="choose-plan-click2" href="{{ route('go-vip') }}" target="__blank">Get My Gold Forex Signals
-                    for Free Now</a>
+                    Discover a New Life as a Profitable Trader in 2025. <br />Start Copy Trading our Company Trades
+                    today. </h2>
+                <a class="choose-plan-click2" href="{{ route('go-vip') }}" target="__blank">Start Copy Trading for FREE,
+                    Now</a>
                 <br />
                 <p style="text-align:center; color:#FFF">Free for first 50 Customers Only</p>
             </div>
@@ -497,78 +528,6 @@ forex trading tips, free forex signals, learn forex trading, trading signals, be
 
 
 
-        <!--first banner-->
-        <section class="listen-to-customer">
-            <div class="container" style="margin-top: 30px;">
-                <div class="row">
-                    <div class="col-md-6">
-
-                        <h2> Listen to a Customer with Many Years Experience in XAUUSD Forex Trading
-                        </h2>
-
-                        <h4>Experience
-
-                            d Forex Traders like Howard think it is important to follow our XAUUSD Forex Signals.
-                            <br /><br />Do you think you should also be using our Gold Trading Signals to improve your
-                            Profits?
-                        </h4>
-
-
-                    </div>
-                    <div class="col-md-6">
-                        <div class="card" style="background: transparent; ">
-                            <div class="card-body"> <iframe width="560" height="315"
-                                    src="https://www.youtube.com/embed/JV_Wmsygmpw" frameborder="0"
-                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    allowfullscreen></iframe></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
-
-        <!--first banner-->
-        <section class="mysection bg-image bottom-padding-md typo-light" data-stellar-background-ratio="0.5"
-            width="100%" data-background="{{ asset('/images/newgreen.jpg') }}">
-            <div class="overlay-dark" style="z-index: -1;"></div>
-            <div class="container" style="margin-top: 30px;">
-                <div class="row">
-                    <div class="col-md-6">
-
-                        <h1> Discover Big Profits
-                            <br />
-                            With Reliable <br />XAUUSD Forecast and Technical Analysis
-                        </h1>
-                        <h2>From Traders <br />with 20 Years Experience</h2>
-
-                    </div>
-                    <div class="col-md-6">
-                        <div class="card" style="background: transparent; ">
-                            <div class="card-body">
-                                <iframe width="100%" height="315" src="https://www.youtube.com/embed/X1Va1hWnf6Y"
-                                    frameborder="0"
-                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="fs-bnr-btn23 do-you-want-to-see">
-                <h2 style="text-align:center;margin-top: 70px;font-size: 40px;margin-bottom: -25px;font-weight: bold;">
-                    Do you want to see ALL our Trade History? </h2>
-                <br />
-                <p> Go head we show everything. Our XAUUSD Forecast is Accurate and Profitable. <br /> We Help our
-                    clients make big profits. Click the button below to see all our Historical Trades</p>
-
-                <a class="choose-plan-click2" href="{{ route('forex-signal') }}" target="__blank">Go to XAUUSD Forecast
-                    HISTORY</a>
-            </div>
-
-        </section>
 
 
 
@@ -576,127 +535,62 @@ forex trading tips, free forex signals, learn forex trading, trading signals, be
             <div class="outer-container">
                 <div class="outer-row">
                     <div class="left-wrapper">
-                        <section class="hero-section"
-                            style="background:url(../cdn.statically.io/img/learn2.trade/f%3dauto%2cq%3d10/wp-content/uploads/2019/10/banner-img2.jpg)0 0 no-repeat;">
-                            <div class="content">
-                                <div class="home-left-form">
-                                    <div class="home-banner-form banner-form">
-                                        <h3>
-                                            Is it Worth Paying To Copy All our Trades - For You to Become a Profitable
-                                            Trader?
-                                        </h3>
-                                    </div>
-                                    <ul class="telegrame_list">
-                                        <li>Real Time Alert when we Trade</li>
-                                        <li>Full Trade Details, Price, Target, Stop Loss</li>
-                                        <li>Trading Signals on Telegram</li>
-                                        <li>Copy us directly using MT4 platform</li>
-                                        <!-- <li>Real-time alerts, all via Telegram!</li> -->
-                                    </ul>
-                                    <a class="telegram_btn" href="{{ route('go-vip') }}" target="__blank">Get My XAUUSD
-                                        Forex Signals for FREE Now</a>
-                                    <br />
-                                    <p style="text-align:center; color:#FFF">Free for first 50 Customers Only</p>
-                                </div>
-                                <div class="notifications-right">
-                                    <div class="notifications-top notifications">
-                                        <div class="notifications-img"><img
-                                                src="{{ asset('uploads/imgs/2020/04/notifications.png')}}" alt=""></div>
-                                        <h3>notifications </h3>
-                                        <p>Immediate alerts to your email</p>
-                                    </div>
-                                    <div class="notifications-top leading">
-                                        <div class="notifications-img"><img
-                                                src="{{ asset('uploads/imgs/2020/04/MarketLeading.png')}}" alt=""></div>
-                                        <h3>Market Leading</h3>
-                                        <p>Between 1-3 Accurate, Profitable Signals Per Day!</p>
-                                    </div>
-                                    <img src="{{ asset('uploads/imgs/2020/04/Insert-Artwork.png')}}" alt="">
-                                    <div class="notifications-top experts">
-                                        <div class="notifications-img"><img
-                                                src="{{ asset('uploads/imgs/2020/04/Bitcoin.png')}}" alt=""></div>
-                                        <h3>Forex Experts</h3>
-                                        <p>Daily Technical Analysis and Trading Tips</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
+                        <!--first banner-->
 
-
-
-
-                        <section class="adbox-section3">
+                        <div class="container" style="margin-top: 30px;">
                             <div class="row">
-                                <div class="col-sm-12">
-                                    <div class="adbox-section2-inner">
-                                        <div class="forexnews forexnews-home">
-                                            <p>&nbsp;</p>
-                                            <h2>&nbsp;</h2>
-                                            <p>
-                                                <center></center>
-                                            </p>
-                                            <p>
-                                                <center></center>
-                                            </p>
-                                        </div>
-                                    </div>
+                                <div class="col-md-6">
+
+                                    <h1> Discover Big Profits
+
+                                        With Reliable <br /><br />Forex Copy Trading and Technical Analysis</h1>
+                                    <h2>From Pro Traders with 22 Years Experience</h2>
+
                                 </div>
-                            </div>
-                        </section>
-                    </div>
-                    <div class="right-wrapper">
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div class="sidebar">
-                                    <div class="trade-again-outer">
+                                <div class="col-md-6">
+                                    <div class="card" style="background: transparent; ">
+                                        <div class="card-body">
+                                            <iframe width="100%" height="315"
+                                                src="https://www.youtube.com/embed/8mpqRELw18I?si=9xpDHypYeR78uGtX"
+                                                frameborder="0"
+                                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
 
-                                        <div class="trade-again-inner">
-                                            <div class="step-outer">
-                                                <div class="step-left-img"><img
-                                                        src="{{asset('uploads/imgs/step-1.png')}}" alt=""></div>
-                                                <div class="step-right">
-                                                    <span>Step 1</span>
-                                                    <h5>Signal Notification</h5>
-                                                    <p>Real-time signal notifications whenever a signal is opened,
-                                                        closes or Updated</p>
-                                                </div>
-                                            </div>
-                                            <div class="step-outer">
-                                                <div class="step-left-img"><img
-                                                        src="{{asset('uploads/imgs/step-2.png')}}" alt=""></div>
-                                                <div class="step-right">
-                                                    <span>Step 2</span>
-                                                    <h5>Get Alerts</h5>
-                                                    <p>Immediate alerts to your email and mobile phone.</p>
-                                                </div>
-                                            </div>
-                                            <div class="step-outer">
-                                                <div class="step-left-img"><img
-                                                        src="{{asset('uploads/imgs/step-3.png')}}" alt=""></div>
-                                                <div class="step-right">
-                                                    <span>Step 3</span>
-                                                    <h5>Entry Price Levels</h5>
-                                                    <p>Entry price level for every signal Just choose one of our Top
-                                                        Brokers in the list above to get all this free.</p>
-                                                </div>
-                                            </div>
-                                            <div class="premium-inn"> <a href="{{ route('go-vip') }}" target="__blank"
-                                                    class="see-more">Go Premium</a></div>
+
+
+
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
+
+                        <div class="fs-bnr-btn23">
+                            <h2
+                                style="text-align:center;margin-top: 70px;font-size: 40px;margin-bottom: -25px;font-weight: bold;">
+                                Do you want to see ALL our Trade History? </h2>
+                            <br />
+                            <p> Go head we show everything. Our XBRUSD Forecast is Accurate and Profitable. <br /> We
+                                Help our clients make big profits. Click the button below to see all our Historical
+                                Trades</p>
+
+                            <a class="choose-plan-click2" href="{{ route('forex-signal') }}" target="__blank">Go to
+                                Forex Trade HISTORY</a>
+                        </div>
+
+                        </section>
+
+
+
+
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="modal" id="modal">
-        <div class="close" id="close">&times;</div>
-        <img id="modal-image" class="modal-content">
-        <div class="caption"></div>
-    </div>
-    @endsection
+        <div class="modal" id="modal">
+            <div class="close" id="close">&times;</div>
+            <img id="modal-image" class="modal-content">
+            <div class="caption"></div>
+        </div>
+        @endsection

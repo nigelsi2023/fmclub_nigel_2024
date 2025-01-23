@@ -40,6 +40,34 @@
     #back-to-top.show {
         margin-right: 17px;
     }
+    
+
+    @media (max-width: 992px) {
+        .navbar-collapse.collapse.show.in {
+            display: block !important;
+        }
+    }
+
+    @media only screen and (max-width: 700px) {
+        .top-header {
+            padding-top: 0px;
+        }
+        .navbar-brand .hidden-md .hidden-lg {
+            margin-top: 15px !important;
+        }
+        #sticker.sticky-navigation.visible-nav {
+            top: 15px;
+        }
+        #nav-menu.navbar-collapse.collapse.show.in {
+            display: block !important;
+            margin-top: 45px;
+            width: 100%;
+            margin-left: 5px;
+        }
+        #nav-menu.navbar-collapse.collapse.show.in .nav.navbar-nav {
+            width: 100%;
+        }
+    }
 </style>
 
 <!-- PAGE WRAPPER -->
@@ -53,7 +81,8 @@
                 <div class="container">
                     <!-- NAVBAR HEADER -->
                     <div class="navbar-header logo-contact-details">
-                        <a class="navbar-toggle" href="#nav-menu">
+                        {{-- <a class="navbar-toggle" data-bs-toggle="collapse" data-bs-target="#nav-menu" href="#nav-menu"> --}}
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-menu" aria-expanded="false" aria-controls="navbar">
                             <span class="sr-only">Toggle navigation</span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
@@ -90,12 +119,12 @@
                     <div class="container">
                         <!-- TOGGLE ICON -->
                         <div class="navbar-header">
-                            <a class="navbar-toggle" href="#nav-menu">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-menu" aria-expanded="false" aria-controls="navbar">
                                 <span class="sr-only">Toggle navigation</span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
-                            </a>
+                            </button>
 
                             <a class="navbar-brand hidden-md hidden-lg" href="">
                                 <img src="https://financialmarkets.club/images/logo.png" class="img-responsive" alt="logo" width="200" height="40">
@@ -201,3 +230,6 @@
     <!-- /.CONTENT WRAPPER -->
 </div>
 <!-- /.PAGE WRAPPER -->
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
