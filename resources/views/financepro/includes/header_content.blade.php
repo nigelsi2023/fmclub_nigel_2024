@@ -79,6 +79,10 @@
             <!-- HEADER LOGO SECTION -->
             <div class="typo-dark hidden-xs border-bottom-style-2">
                 <div class="container">
+                    <a class="navbar-brand hidden-sm no-left-padding logo" href="{{ route('index') }}">
+                        <img src="{{ asset('images/db.png') }}" alt="Logo">
+                        <strong>FinancialMarkets<span style="color: #24CAE2">Club</span></strong>
+                    </a>
                     <!-- NAVBAR HEADER -->
                     <div class="navbar-header logo-contact-details">
                         {{-- <a class="navbar-toggle" data-bs-toggle="collapse" data-bs-target="#nav-menu" href="#nav-menu"> --}}
