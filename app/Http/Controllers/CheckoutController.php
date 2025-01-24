@@ -19,14 +19,15 @@ class CheckoutController extends Controller
      */
     public function index($id)
     {
-        //
         $page_title = "Checkout Page | Financial Markets Club";
         $packageId  = $id;
         $package    = Package::WHERE('id',$id)->first();
         $countries  = Country::all();
+
         // $ip = $_SERVER['REMOTE_ADDR'];
         // $location = json_decode(file_get_contents("http://ipinfo.io/{$ip}/json"));
-        // dd($location->country);
+        // dd($ip, $location, $countries[0], $package);
+        
         return view('financepro.pages.checkout',compact('packageId','page_title','package','countries'));
     }
 
@@ -48,52 +49,53 @@ class CheckoutController extends Controller
      */
     public function store(Request $request)
     {
-        //
-        // echo 'Package';
-        // dd($request); 
-        
-        // $this->validate( $request, [
-        //     'package_id'    => 'required',
-        //     'fname'         => 'required',
-        //     'lname'         => 'required',
-        //     'companyName'   => 'required',
-        //     'email'         => 'required|email',
-        //     'mobile'        => 'required',
-        //     'address'       => 'required',
-        //     'country'       => 'required',
-        //     'state'         => 'required',
-        //     'zip'           => 'required',
-        //     'paymentMethod' => 'required',
-        //     'cardName'      => 'required',
-        //     'cardNumber'    => 'required|numeric',
-        //     'cardExp'       => 'required|numeric|max:4',
-        //     'cardCVV'       => 'required|numeric|max:3'
-        // ]);
+        $request->validate([
+            'package_id' => 'required|integer',
+            'fname' => 'required|string|max:255',
+            'lname' => 'required|string|max:255',
+            'companyName' => 'nullable|string|max:255',
+            'email' => 'required|email|max:255',
+            'mobile' => 'required|string|max:255',
+            'address' => 'required|string',
+            'country' => 'required|string|max:255',
+            'state' => 'nullable|string|max:255',
+            'zip' => 'nullable|string|max:255',
+            'paymentMethod' => 'nullable|string|max:255',
+            'terms' => 'required|integer',
+        ]);
 
-        $order = New Order();
-        
-        $order->package_id    = $request->package_id;
-        $order->fname         = $request->fname;
-        $order->lname         = $request->lname;
-        $order->companyName   = $request->companyName;
-        $order->email         = $request->email;
-        $order->mobile        = $request->mobile;
-        $order->address       = $request->address;
-        $order->country       = $request->country;
-        $order->state         = $request->state;
-        $order->zip           = $request->zip;
-        $order->paymentMethod = $request->paymentMethod;
-        $order->cardName      = $request->cardName;
-        $order->cardNumber    = $request->cardNumber;
-        $order->cardExp       = $request->cardExp;
-        $order->cardCVV       = $request->cardCVV;
-        $order->is_approved   = 0;
-        
-        // echo 'Package';
-        // dd($order); 
+        $latestId = Order::latest()->pluck('id')->first();
+
+        $order = new Order();
+        $order->id = $latestId + 1;
+        $order->package_id = $request->package_id;
+        $order->fname = $request->fname;
+        $order->lname = $request->lname;
+        $order->companyName = $request->companyName ?? null;
+        $order->email = $request->email;
+        $order->mobile = $request->mobile;
+        $order->address = $request->address;
+        $order->country = $request->country;
+        $order->terms = $request->terms;
+        $order->state = $request->state ?? null;
+        $order->zip = $request->zip ?? null;
+        $order->paymentMethod = $request->paymentMethod ?? null;
+        $order->cardName = $request->cardName ?? null;
+        $order->cardNumber = $request->cardNumber ?? null;
+        $order->cardExp = $request->cardExp ?? null;
+        $order->cardCVV = $request->cardCVV ?? null;
+        $order->is_approved = 0;
+
         $order->save();
-		
-        return redirect()->back()->with('message', 'Order Placed Successfully.');
+
+        // Return JSON response for AJAX
+        return response()->json([
+            'status' => true,
+            'message' => 'Order Placed Successfully.',
+            'data' => [
+                'package_id' => $order->package_id,
+            ],
+        ]);
     }
 
     /**
