@@ -1,12 +1,35 @@
 @extends('layouts.financepro_content')
 <!--mac-->
-@section('meta_title', 'All our Latest Forex Signals for $1 per day')
-@section('meta_desc', 'High accuracy rate and up to date forex signals for for XAUUSD, XBRUSD, EURUSD, GBPUSD')
-@section('meta_kewy', 'forex trading strategies, forex trading for beginners, forex trading signals, forex signals,
-forex trading tips, free forex signals, learn forex trading, trading signals, best forex signals, forex day trading')
+@section('meta_title', 'All our Latest Copy Trade for XBRUSD')
+@section('meta_desc', 'High accuracy rate and up to date Copy Tradesfor XBRUSD - Brent Crude Oil')
+@section('meta_kewy', 'forex trading strategies, forex trading for beginners, forex trading tips, SOCIAL TRADING, social
+trader, ccopy trading, Copy trader, Copier trading, Copy trading platforms, Copytrader, Forex copy trading')
 <!--mac-->
+@section('content')
 
+<!-- PAGE HEADING SECTION -->
+<section class="page-header minimal page-title-left light-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-left">
+                <!-- TITLE-->
+                <h2 class="text-uppercase" data-animated="fadeInLeftBig" data-animation-delay="400">Forex Copy Trading
+                    History</h2>
+                <!-- BREADCRUMB-->
 
+                <ul class="breadcrumb">
+                    <li>
+                        <a href="{{ route('index') }}">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Signals</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
 
 <style type="text/css">
     .image {
@@ -115,12 +138,6 @@ forex trading tips, free forex signals, learn forex trading, trading signals, be
 
         to {
             transform: scale(1);
-        }
-    }
-
-    @media only screen and (max-width: 700px) {
-        .modal-content {
-            width: 100%;
         }
     }
 
@@ -376,32 +393,30 @@ forex trading tips, free forex signals, learn forex trading, trading signals, be
         border: none !important;
         padding: 0px !important;
     }
+
+
+    @media only screen and (max-width: 700px) {
+        h1, h2 {
+            font-size: 30px !important;
+            line-height: 1.3;
+        }
+        .modal-content {
+            width: 100%;
+        }
+        .otpo {
+            margin-left: 20px;
+            float: none;
+            margin-top: 10px;
+            text-align: center;
+        }
+        .otpo:last-child {
+            margin-bottom: 50px;
+        }
+        .table-responsive {
+            overflow-x: auto !important;
+        }
+    }
 </style>
-
-@section('content')
-
-<!-- PAGE HEADING SECTION -->
-<section class="page-header minimal page-title-left light-bg">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 text-left">
-                <!-- TITLE-->
-                <h2 class="text-uppercase" data-animated="fadeInLeftBig" data-animation-delay="400">Forex Signals</h2>
-                <!-- BREADCRUMB-->
-
-                <ul class="breadcrumb">
-                    <li>
-                        <a href="{{ route('index') }}">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">Signals</a>
-                    </li>
-
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
 
 
 
@@ -413,14 +428,14 @@ forex trading tips, free forex signals, learn forex trading, trading signals, be
 
 
         <div class="col-md-8 col-xs-6">
-            <h2 style="text-align:left; margin-bottom:20px;font-size: 50px;"> Signal Summary </h2>
+            <h2 style="text-align:left; margin-bottom:20px;font-size: 50px;"> Forex Trade Summary </h2>
 
             <div class="otpo">
-                <h5 class="sg-colors">Total Signals</h5>
+                <h5 class="sg-colors">Total Trades</h5>
                 <div class="countery" data-cp-percentagey="{{$countRow}}" data-cp-color="#24CAE2"></div>
             </div>
             <div class="otpo">
-                <h5 class="sg-colors">Live Signals</h5>
+                <h5 class="sg-colors">Live Trades</h5>
                 <div class="countery" data-cp-percentagey="{{$liveCount}}" data-cp-color="#24CAE2"></div>
             </div>
             <div class="otpo">
@@ -502,8 +517,9 @@ forex trading tips, free forex signals, learn forex trading, trading signals, be
 
     </div>
     <div class="fs-bnr-btn2">
-        <a class="choose-plan-click2" href="{{ route('go-vip') }}" target="__blank">Get My Froex Signals for Free
-            Now</a>
+        <a class="choose-plan-click2" href="{{ route('go-vip') }}" target="__blank">Start Copy Trading for FREE, Now</a>
+        <br />
+        <p style="text-align:center; color:#FFF">Hurry! Free for first 50 Customers Only</p>
     </div>
 </section>
 <!--End First banner-->
@@ -513,12 +529,11 @@ forex trading tips, free forex signals, learn forex trading, trading signals, be
 
 
 <!--3rd banner-->
-<div class="container-fluid nopadd">
+<!--<div class="container-fluid nopadd">
     <div class="row">
-        <div class="col-md-12"><img src="https://financialmarkets.club/images/new111.jpg" class="img-responsive"
-                style="width: 100%;"></div>
+        <div class="col-md-12"><img src="https://financialmarkets.club/images/new111.jpg" class="img-responsive" style="width: 100%;"></div> 
     </div>
-</div>
+</div>-->
 <!--End 3rd banner-->
 
 
@@ -529,181 +544,188 @@ forex trading tips, free forex signals, learn forex trading, trading signals, be
 <section id="why-choose" class="">
 
 
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <div class=col-md-12 style="text-align:center">
                 <br />
                 <br />
-                <h1>Below is a Full History of all our Forex Signals</h1>
+                <h1>Below is a Full History of all our XBRUSD Trades - Start Copying Today</h1>
                 <br />
                 <br />
             </div>
-            <div class="col-md-9 bottom-margin-md">
+            <div class="col-md-12 bottom-margin-md">
                 <div class="col-md-12">
                     <!--<p>We have analysis available for the following <b>Currencies</b> companies.</p>-->
                     <!--<p>Our Professional UK Trader is analysing new companies every day so please come back and check every day for new analysis which will help you make better investment decisions and help you make more profit in the <b>Currencies</b>.</p>-->
 
-                    <table class="table">
-                        <thead>
-                            <th>Chart</th>
-                            <th>Date</th>
-                            <th>Name</th>
-                            <th>Open Price</th>
-                            <th>Target Price</th>
-                            <th>Stop Loss</th>
-                            <th>Risk</th>
-                            <th>Pips</th>
-                            <!--<th>Closed Price</th>-->
-                            <th style="width: 30px"></th>
-                        </thead>
-
-                        <tbody>
-                            @if($signals)
-                            @foreach($signals as $signal)
-                            <!--sammy 7/13/2022-->
-                            <?php //if($signal->item_name == 'XAU/USD' || $signal->item_name == 'XBR/USD'){ ?>
-                            <tr>
-                                <td>
-                                    <div style="display:flex;">
-                                        <?php if(!empty($signal->signal_img)){ ?>
-                                        <!--<img src="{{ asset('images/signals/'.$signal->signal_img) }}" alt="{{$signal->item_name}}" width="120px;" id="myImg" />-->
-                                        <img src="{{ asset('images/signals/'.$signal->signal_img) }}"
-                                            alt="{{$signal->item_name}}" width="120px;" onclick="showme(this.src)" />
-                                        <?php } ?> &nbsp;
-                                        <div>
-                                            <?php if($signal->signal_type == 'vip'){ ?>
-                                            <span class="label label-success"
-                                                style="padding:5px 15px; background-color:orange;">VIP</span>
-                                            <?php } else { ?>
-                                            <span class="label label-danger"
-                                                style="padding:5px 10px; background-color:gray;">FREE</span>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <th>Chart</th>
+                                <th></th>
+                                <th>Date</th>
+                                <th>Name</th>
+                                <th>Open Price</th>
+                                <th>Target Price</th>
+                                <th>Stop Loss</th>
+                                <th>Risk</th>
+                                <th>Pips</th>
+                                <!--<th>Closed Price</th>-->
+                                <th style="width: 30px"></th>
+                            </thead>
+    
+                            <tbody>
+                                @if($signals)
+                                @foreach($signals as $signal)
+                                <!--sammy 7/13/2022-->
+                                <?php //if($signal->item_name == 'XAU/USD' || $signal->item_name == 'XBR/USD'){ ?>
+                                <tr>
+                                    <td>
+                                        <div style="display:flex;">
+                                            <?php if(!empty($signal->signal_img)){ ?>
+                                            <!--<img src="{{ asset('images/signals/'.$signal->signal_img) }}" alt="{{$signal->item_name}}" width="120px;" id="myImg" />-->
+                                            <img src="{{ asset('images/signals/'.$signal->signal_img) }}"
+                                                alt="{{$signal->item_name}}" width="120px;" onclick="showme(this.src)" />
                                             <?php } ?>
                                         </div>
-                                    </div>
-
-                                </td>
-
-
-                                <td>
-                                    <?= date('d/m/y', strtotime($signal->signal_date)); ?>
-                                </td>
-
-
-
-                                <td style="">
-                                    <span style="float:left;">{{$signal->item_name}} &nbsp;</span>
-                                    <span>
-
-
-
-                                        <!--mac-->
-                                        <?php if($signal->target_price > $signal->open_price){  ?>
-
-                                        <?php if($signal->status == 0 and $signal->signal_type == 'vip' ){
-    									           echo " ";
-    									       }else{ ?>
-                                        <img src="{{ asset('/uploads/profit.png') }}" alt="Profit" width="20px" />
-
-
-
-                                        <?php  } } else {  ?>
-
-                                        <?php if($signal->signal_type == 'vip' && $signal->status == 0 ){
-    									           echo " ";
-    									       }else{ ?>
-                                        <img src="{{ asset('/uploads/loss.png') }}" alt="Loss" width="20px" />
-
-                                        <?php }} ?>
-                                        <!--mac-->
-
-
-                                    </span>
-                                </td>
-
-
-
-                                <?php if($signal->signal_privacy == 'private'){ ?>
-                                <td><a href="{{ route('go-vip') }}" target="__blank" class="govp">Go VIP to See</a></td>
-                                <td><a href="{{ route('go-vip') }}" target="__blank" class="govp">Go VIP to See</a></td>
-                                <td><a href="{{ route('go-vip') }}" target="__blank" class="govp">Go VIP to See</a></td>
-                                <?php } else{ ?>
-                                <td>{{$signal->open_price}}</td>
-                                <td>{{$signal->target_price}}</td>
-                                <td>{{$signal->stop_loss}}</td>
-                                <?php } ?>
-
-
-
-
-                                <!--sammy-->
-                                <td> {{abs(round(($signal->target_price - $signal->open_price)
-                                    /($signal->open_price-$signal->stop_loss) , 0))}} : 1 </td>
-
-
-
-                                <!--mac-->
-                                <?php if($signal->item_name == 'XAU/USD' || $signal->item_name == 'SP500' || $signal->item_name == 'US2000' || $signal->item_name == 'DJIA'){ ?>
-
-                                <?php if($signal->status == '2'){ ?>
-                                <td> {{abs(round($signal->open_price - $signal->stop_loss, 4))*10}}</td>
-                                <?php } else{ ?>
-                                <td> {{abs(round($signal->open_price - $signal->target_price, 4))*10}}</td>
-                                <?php } ?>
-
-                                <?php } else if($signal->item_name == 'NASDAQ'){ ?>
-
-                                <?php if($signal->status == '2'){ ?>
-                                <td> {{abs(round($signal->open_price - $signal->stop_loss, 4))*10}}</td>
-                                <?php } else{ ?>
-                                <td> {{abs(round($signal->open_price - $signal->target_price, 4))*10}}</td>
-                                <?php } ?>
-
-                                <?php } else if($signal->item_name == 'XBR/USD'){ ?>
-
-                                <?php if($signal->status == '2'){ ?>
-                                <td> {{abs(round($signal->open_price - $signal->stop_loss, 4))*100}}</td>
-                                <?php } else{ ?>
-                                <td> {{abs(round($signal->open_price - $signal->target_price, 4))*100}}</td>
-                                <?php } ?>
-
-                                <?php } else{ ?>
-
-                                <?php if($signal->status == '2'){ ?>
-                                <td> {{abs(round($signal->open_price - $signal->stop_loss, 4))*10000}}</td>
-                                <?php } else{ ?>
-                                <td> {{abs(round($signal->open_price - $signal->target_price, 4))*10000}}</td>
-                                <?php } ?>
-
-                                <?php } ?>
-                                <!--mac-->
-
-
-                                <!--<td> {{$signal->open_price - $signal->target_price}}</td>-->
-                                <!--R = absolute value [ ((target price - open price)  / open price - stop loss) ]-->
-
-
-                                <!--<td>{{$signal->closed_price}}</td>-->
-
-
-                                <td>
-                                    <?php if($signal->status == 1){ ?>
-                                    <span class="label label-success"
-                                        style="padding:5px 15px; background-color:green;">Profit</span>
-                                    <?php } elseif($signal->status == 2) { ?>
-                                    <span class="label label-danger"
-                                        style="padding:5px 10px; background-color:red;">Stopped</span>
-                                    <?php } else { ?>
-                                    <span class="label label-danger"
-                                        style="padding:5px 18px; background-color:gray;">Live</span>
+                                    </td>
+                                    <td>
+                                        <div style="display:flex;">
+                                            <div>
+                                                <?php if($signal->signal_type == 'vip'){ ?>
+                                                <span class="label label-success"
+                                                    style="padding:5px 15px; background-color:orange;">VIP</span>
+                                                <?php } else { ?>
+                                                <span class="label label-danger"
+                                                    style="padding:5px 10px; background-color:gray;">FREE</span>
+                                                <?php } ?>
+                                            </div>
+                                        </div>    
+                                    </td>
+    
+    
+                                    <td>
+                                        <?= date('d/m/y', strtotime($signal->signal_date)); ?>
+                                    </td>
+    
+    
+    
+                                    <td style="">
+                                        <span style="float:left;">{{$signal->item_name}} &nbsp;</span>
+                                        <span>
+    
+    
+    
+                                            <!--mac-->
+                                            <?php if($signal->target_price > $signal->open_price){  ?>
+    
+                                            <?php if($signal->status == 0 and $signal->signal_type == 'vip' ){
+                                                       echo " ";
+                                                   }else{ ?>
+                                            <img src="{{ asset('/uploads/profit.png') }}" alt="Profit" width="20px" />
+    
+    
+    
+                                            <?php  } } else {  ?>
+    
+                                            <?php if($signal->signal_type == 'vip' && $signal->status == 0 ){
+                                                       echo " ";
+                                                   }else{ ?>
+                                            <img src="{{ asset('/uploads/loss.png') }}" alt="Loss" width="20px" />
+    
+                                            <?php }} ?>
+                                            <!--mac-->
+    
+    
+                                        </span>
+                                    </td>
+    
+    
+    
+                                    <?php if($signal->signal_privacy == 'private'){ ?>
+                                    <td><a href="{{ route('go-vip') }}" target="__blank" class="govp">Go VIP to See</a></td>
+                                    <td><a href="{{ route('go-vip') }}" target="__blank" class="govp">Go VIP to See</a></td>
+                                    <td><a href="{{ route('go-vip') }}" target="__blank" class="govp">Go VIP to See</a></td>
+                                    <?php } else{ ?>
+                                    <td>{{$signal->open_price}}</td>
+                                    <td>{{$signal->target_price}}</td>
+                                    <td>{{$signal->stop_loss}}</td>
                                     <?php } ?>
-                                </td>
+    
+    
+    
+    
+                                    <!--sammy-->
+                                    <td> {{abs(round(($signal->target_price - $signal->open_price)
+                                        /($signal->open_price-$signal->stop_loss) , 0))}} : 1 </td>
+    
+    
+    
+                                    <!--mac-->
+                                    <?php if($signal->item_name == 'XAU/USD' || $signal->item_name == 'SP500' || $signal->item_name == 'US2000' || $signal->item_name == 'DJIA'){ ?>
+    
+                                    <?php if($signal->status == '2'){ ?>
+                                    <td> {{abs(round($signal->open_price - $signal->stop_loss, 4))*10}}</td>
+                                    <?php } else{ ?>
+                                    <td> {{abs(round($signal->open_price - $signal->target_price, 4))*10}}</td>
+                                    <?php } ?>
+    
+                                    <?php } else if($signal->item_name == 'NASDAQ'){ ?>
+    
+                                    <?php if($signal->status == '2'){ ?>
+                                    <td> {{abs(round($signal->open_price - $signal->stop_loss, 4))*10}}</td>
+                                    <?php } else{ ?>
+                                    <td> {{abs(round($signal->open_price - $signal->target_price, 4))*10}}</td>
+                                    <?php } ?>
+    
+                                    <?php } else if($signal->item_name == 'XBR/USD'){ ?>
+    
+                                    <?php if($signal->status == '2'){ ?>
+                                    <td> {{abs(round($signal->open_price - $signal->stop_loss, 4))*100}}</td>
+                                    <?php } else{ ?>
+                                    <td> {{abs(round($signal->open_price - $signal->target_price, 4))*100}}</td>
+                                    <?php } ?>
+    
+                                    <?php } else{ ?>
+    
+                                    <?php if($signal->status == '2'){ ?>
+                                    <td> {{abs(round($signal->open_price - $signal->stop_loss, 4))*10000}}</td>
+                                    <?php } else{ ?>
+                                    <td> {{abs(round($signal->open_price - $signal->target_price, 4))*10000}}</td>
+                                    <?php } ?>
+    
+                                    <?php } ?>
+                                    <!--mac-->
+    
+    
+                                    <!--<td> {{$signal->open_price - $signal->target_price}}</td>-->
+                                    <!--R = absolute value [ ((target price - open price)  / open price - stop loss) ]-->
+    
+    
+                                    <!--<td>{{$signal->closed_price}}</td>-->
+    
+    
+                                    <td>
+                                        <?php if($signal->status == 1){ ?>
+                                        <span class="label label-success"
+                                            style="padding:5px 15px; background-color:green;">Profit</span>
+                                        <?php } elseif($signal->status == 2) { ?>
+                                        <span class="label label-danger"
+                                            style="padding:5px 10px; background-color:red;">Stopped</span>
+                                        <?php } else { ?>
+                                        <span class="label label-danger"
+                                            style="padding:5px 18px; background-color:gray;">Live</span>
+                                        <?php } ?>
+                                    </td>
+    
+                                    <!--<td><a class = "btn typo-light btn-square btn-hv-dark theme-bg btn-sm" href="#" style="color: #fff;font-size: 15px;"><i class="fa fa-eye" aria-hidden="true"></i></a></td>-->
+                                </tr>
+                                <?php //} ?>
+                                @endforeach
+                            </tbody>
+                        </table>
+                    </div>
 
-                                <!--<td><a class = "btn typo-light btn-square btn-hv-dark theme-bg btn-sm" href="#" style="color: #fff;font-size: 15px;"><i class="fa fa-eye" aria-hidden="true"></i></a></td>-->
-                            </tr>
-                            <?php //} ?>
-                            @endforeach
-                        </tbody>
-                    </table>
                     <div class="container">
                         <div class="row">
                             <div style="float:right;">{{ $signals->links() }}</div>
@@ -725,48 +747,7 @@ forex trading tips, free forex signals, learn forex trading, trading signals, be
                 </div>
             </div>
 
-            <!-- SIDEBAR -->
-            <div class="col-md-3 sidebar">
 
-                <!-- <div class="border-rounded col-md-12 theme-bg  bottom-margin-sm section-title">
-                            <h2 class="widget-title no-bottom-padding typo-light text-uppercase">Do you need any help?</h2>
-                            <p class="no-bottom-padding typo-light">My job is to help professionals to achieve their financial goals whilst having adequate protection along the way.</p>
-                            <a href="contact-us.html" class="btn btn-hv-dark btn-hv-dark btn-icon-right light-bg bottom-margin-sm"> Contact Now</a>
-                        </div> -->
-
-                <div class="row">
-                    <div class="recent-block col-md-12">
-                        <h5 class="legend col-md-12">Categories</h5>
-                        <!-- ITEM-->
-                        <div class="clearfix col-md-12">
-                            <ul class="typo-lights list-unstyled text-capitalize">
-                                @foreach($trader_category as $category)
-                                <li class="border-bottom-style-2 bottom-margin-vsm">
-                                    <a href="{{ route('trader_category', $category->slug) }}">{{ $category->name }}</a>
-                                </li>
-                                @endforeach
-                            </ul>
-                        </div>
-
-                    </div>
-
-                    <div class="recent-block col-md-12">
-                        <h5 class="legend col-md-12">Recent Post</h5>
-                        <!-- ITEM-->
-                        <div class="clearfix col-md-12">
-                            <ul class="typo-lights list-unstyled text-capitalize">
-                                @foreach($desc_blogs as $blog)
-                                <li class="border-bottom-style-2 bottom-margin-vsm">
-                                    <a href="{{ route('fulltraderpost',$blog->page_url) }}">{{ $blog->name }}</a>
-                                </li>
-                                @endforeach
-                            </ul>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <!-- SIDEBAR END -->
         </div>
     </div>
 </section>
