@@ -291,7 +291,7 @@ trader, ccopy trading, Copy trader, Copier trading, Copy trading platforms, Copy
         </style>
 
         <section class="top-banner" style="position: relative; overflow: hidden; background-color: #33333340;">
-            <img src="{{asset('uploads/imgs/2020/04/banner-img-1.jpg')}}" alt="Virtual Employees" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
+            <img src="{{asset('uploads/imgs/2020/04/banner-img-1.jpg')}}" alt="No Image Found" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
             <div class="container">
                 <div class="row">
                     <div class="banner-left-top">

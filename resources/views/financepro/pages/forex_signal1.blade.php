@@ -396,22 +396,28 @@ trader, ccopy trading, Copy trader, Copier trading, Copy trading platforms, Copy
 
 
     @media only screen and (max-width: 700px) {
-        h1, h2 {
+
+        h1,
+        h2 {
             font-size: 30px !important;
             line-height: 1.3;
         }
+
         .modal-content {
             width: 100%;
         }
+
         .otpo {
             margin-left: 20px;
             float: none;
             margin-top: 10px;
             text-align: center;
         }
+
         .otpo:last-child {
             margin-bottom: 50px;
         }
+
         .table-responsive {
             overflow-x: auto !important;
         }
@@ -421,12 +427,11 @@ trader, ccopy trading, Copy trader, Copier trading, Copy trading platforms, Copy
 
 
 <!--First banner-->
-<section class="mysection bg-image bottom-padding-md typo-light" data-stellar-background-ratio="0.5"
-    data-background="{{ asset('/images/bannerbackground1.jpg') }}">
+<section class="mysection bg-image bottom-padding-md typo-light" style="position: relative; overflow: hidden; background-color: #33333340;">
+    <img src="{{asset('images/bannerbackground1.jpg')}}" alt="No Image Found" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
+
     <div class="overlay-darker" style="z-index: -1;"></div>
     <div class="container">
-
-
         <div class="col-md-8 col-xs-6">
             <h2 style="text-align:left; margin-bottom:20px;font-size: 50px;"> Forex Trade Summary </h2>
 
@@ -443,8 +448,6 @@ trader, ccopy trading, Copy trader, Copier trading, Copy trading platforms, Copy
                 <div class="counterx" data-cp-percentagex="{{$profitCount / ($profitCount + $lossCount) *100}}"
                     data-cp-color="#24CAE2"></div>
             </div>
-
-
         </div>
 
         <div class="col-md-4 col-xs-6">
@@ -461,32 +464,32 @@ trader, ccopy trading, Copy trader, Copier trading, Copy trading platforms, Copy
                         $total_ppip = $total_lpip = 0;
                       ?>
                             @foreach($signals1 as $signal)
-                            <?php if($signal->item_name == 'XAU/USD' || $signal->item_name == 'SP500' || $signal->item_name == 'US2000' || $signal->item_name == 'DJIA'){ 
-						    if($signal->status == '2'){ 
+                            <?php if($signal->item_name == 'XAU/USD' || $signal->item_name == 'SP500' || $signal->item_name == 'US2000' || $signal->item_name == 'DJIA'){
+						    if($signal->status == '2'){
 						        $total_lpip +=  abs(round($signal->open_price - $signal->stop_loss, 4))*10;
 						    } elseif($signal->status == '1'){
 						        $total_ppip += abs(round($signal->open_price - $signal->target_price, 4))*10;
-						    } 
-						} else if($signal->item_name == 'NASDAQ'){ 
-						    if($signal->status == '2'){ 
+						    }
+						} else if($signal->item_name == 'NASDAQ'){
+						    if($signal->status == '2'){
 						        $total_lpip +=  abs(round($signal->open_price - $signal->stop_loss, 4))*10;
 						    } elseif($signal->status == '1'){
 						        $total_ppip += abs(round($signal->open_price - $signal->target_price, 4))*10;
-						    } 
-					    } else if($signal->item_name == 'XBR/USD'){ 
-						    
-						    if($signal->status == '2'){ 
+						    }
+					    } else if($signal->item_name == 'XBR/USD'){
+
+						    if($signal->status == '2'){
 						        $total_lpip +=  abs(round($signal->open_price - $signal->stop_loss, 4))*100;
 						    } elseif($signal->status == '1'){
 						        $total_ppip += abs(round($signal->open_price - $signal->target_price, 4))*100;
-						    } 
-						} else{ 
-						    
-						    if($signal->status == '2'){ 
+						    }
+						} else{
+
+						    if($signal->status == '2'){
 						        $total_lpip +=  abs(round($signal->open_price - $signal->stop_loss, 4))*10000;
 						    } elseif($signal->status == '1'){
 						        $total_ppip += abs(round($signal->open_price - $signal->target_price, 4))*10000;
-						    } 
+						    }
 						} ?>
                             @endforeach
                             +{{$total_ppip}}
@@ -531,7 +534,7 @@ trader, ccopy trading, Copy trader, Copier trading, Copy trading platforms, Copy
 <!--3rd banner-->
 <!--<div class="container-fluid nopadd">
     <div class="row">
-        <div class="col-md-12"><img src="https://financialmarkets.club/images/new111.jpg" class="img-responsive" style="width: 100%;"></div> 
+        <div class="col-md-12"><img src="https://financialmarkets.club/images/new111.jpg" class="img-responsive" style="width: 100%;"></div>
     </div>
 </div>-->
 <!--End 3rd banner-->
@@ -573,7 +576,7 @@ trader, ccopy trading, Copy trader, Copier trading, Copy trading platforms, Copy
                                 <!--<th>Closed Price</th>-->
                                 <th style="width: 30px"></th>
                             </thead>
-    
+
                             <tbody>
                                 @if($signals)
                                 @foreach($signals as $signal)
@@ -585,7 +588,8 @@ trader, ccopy trading, Copy trader, Copier trading, Copy trading platforms, Copy
                                             <?php if(!empty($signal->signal_img)){ ?>
                                             <!--<img src="{{ asset('images/signals/'.$signal->signal_img) }}" alt="{{$signal->item_name}}" width="120px;" id="myImg" />-->
                                             <img src="{{ asset('images/signals/'.$signal->signal_img) }}"
-                                                alt="{{$signal->item_name}}" width="120px;" onclick="showme(this.src)" />
+                                                alt="{{$signal->item_name}}" width="120px;"
+                                                onclick="showme(this.src)" />
                                             <?php } ?>
                                         </div>
                                     </td>
@@ -600,111 +604,114 @@ trader, ccopy trading, Copy trader, Copier trading, Copy trading platforms, Copy
                                                     style="padding:5px 10px; background-color:gray;">FREE</span>
                                                 <?php } ?>
                                             </div>
-                                        </div>    
+                                        </div>
                                     </td>
-    
-    
+
+
                                     <td>
                                         <?= date('d/m/y', strtotime($signal->signal_date)); ?>
                                     </td>
-    
-    
-    
+
+
+
                                     <td style="">
                                         <span style="float:left;">{{$signal->item_name}} &nbsp;</span>
                                         <span>
-    
-    
-    
+
+
+
                                             <!--mac-->
                                             <?php if($signal->target_price > $signal->open_price){  ?>
-    
+
                                             <?php if($signal->status == 0 and $signal->signal_type == 'vip' ){
                                                        echo " ";
                                                    }else{ ?>
                                             <img src="{{ asset('/uploads/profit.png') }}" alt="Profit" width="20px" />
-    
-    
-    
+
+
+
                                             <?php  } } else {  ?>
-    
+
                                             <?php if($signal->signal_type == 'vip' && $signal->status == 0 ){
                                                        echo " ";
                                                    }else{ ?>
                                             <img src="{{ asset('/uploads/loss.png') }}" alt="Loss" width="20px" />
-    
+
                                             <?php }} ?>
                                             <!--mac-->
-    
-    
+
+
                                         </span>
                                     </td>
-    
-    
-    
+
+
+
                                     <?php if($signal->signal_privacy == 'private'){ ?>
-                                    <td><a href="{{ route('go-vip') }}" target="__blank" class="govp">Go VIP to See</a></td>
-                                    <td><a href="{{ route('go-vip') }}" target="__blank" class="govp">Go VIP to See</a></td>
-                                    <td><a href="{{ route('go-vip') }}" target="__blank" class="govp">Go VIP to See</a></td>
+                                    <td><a href="{{ route('go-vip') }}" target="__blank" class="govp">Go VIP to See</a>
+                                    </td>
+                                    <td><a href="{{ route('go-vip') }}" target="__blank" class="govp">Go VIP to See</a>
+                                    </td>
+                                    <td><a href="{{ route('go-vip') }}" target="__blank" class="govp">Go VIP to See</a>
+                                    </td>
                                     <?php } else{ ?>
                                     <td>{{$signal->open_price}}</td>
                                     <td>{{$signal->target_price}}</td>
                                     <td>{{$signal->stop_loss}}</td>
                                     <?php } ?>
-    
-    
-    
-    
+
+
+
+
                                     <!--sammy-->
                                     <td> {{abs(round(($signal->target_price - $signal->open_price)
                                         /($signal->open_price-$signal->stop_loss) , 0))}} : 1 </td>
-    
-    
-    
+
+
+
                                     <!--mac-->
                                     <?php if($signal->item_name == 'XAU/USD' || $signal->item_name == 'SP500' || $signal->item_name == 'US2000' || $signal->item_name == 'DJIA'){ ?>
-    
+
                                     <?php if($signal->status == '2'){ ?>
                                     <td> {{abs(round($signal->open_price - $signal->stop_loss, 4))*10}}</td>
                                     <?php } else{ ?>
                                     <td> {{abs(round($signal->open_price - $signal->target_price, 4))*10}}</td>
                                     <?php } ?>
-    
+
                                     <?php } else if($signal->item_name == 'NASDAQ'){ ?>
-    
+
                                     <?php if($signal->status == '2'){ ?>
                                     <td> {{abs(round($signal->open_price - $signal->stop_loss, 4))*10}}</td>
                                     <?php } else{ ?>
                                     <td> {{abs(round($signal->open_price - $signal->target_price, 4))*10}}</td>
                                     <?php } ?>
-    
+
                                     <?php } else if($signal->item_name == 'XBR/USD'){ ?>
-    
+
                                     <?php if($signal->status == '2'){ ?>
                                     <td> {{abs(round($signal->open_price - $signal->stop_loss, 4))*100}}</td>
                                     <?php } else{ ?>
                                     <td> {{abs(round($signal->open_price - $signal->target_price, 4))*100}}</td>
                                     <?php } ?>
-    
+
                                     <?php } else{ ?>
-    
+
                                     <?php if($signal->status == '2'){ ?>
                                     <td> {{abs(round($signal->open_price - $signal->stop_loss, 4))*10000}}</td>
                                     <?php } else{ ?>
                                     <td> {{abs(round($signal->open_price - $signal->target_price, 4))*10000}}</td>
                                     <?php } ?>
-    
+
                                     <?php } ?>
                                     <!--mac-->
-    
-    
+
+
                                     <!--<td> {{$signal->open_price - $signal->target_price}}</td>-->
                                     <!--R = absolute value [ ((target price - open price)  / open price - stop loss) ]-->
-    
-    
+
+
                                     <!--<td>{{$signal->closed_price}}</td>-->
-    
-    
+
+
                                     <td>
                                         <?php if($signal->status == 1){ ?>
                                         <span class="label label-success"
@@ -717,7 +724,7 @@ trader, ccopy trading, Copy trader, Copier trading, Copy trading platforms, Copy
                                             style="padding:5px 18px; background-color:gray;">Live</span>
                                         <?php } ?>
                                     </td>
-    
+
                                     <!--<td><a class = "btn typo-light btn-square btn-hv-dark theme-bg btn-sm" href="#" style="color: #fff;font-size: 15px;"><i class="fa fa-eye" aria-hidden="true"></i></a></td>-->
                                 </tr>
                                 <?php //} ?>
@@ -840,7 +847,7 @@ trader, ccopy trading, Copy trader, Copier trading, Copy trading platforms, Copy
       update();
 
 
-      
+
 
       var resizeTimer;
       window.addEventListener("resize", function() {
@@ -955,7 +962,7 @@ trader, ccopy trading, Copy trader, Copier trading, Copy trading platforms, Copy
       update();
 
 
-      
+
 
       var resizeTimer;
       window.addEventListener("resize", function() {
@@ -994,12 +1001,12 @@ trader, ccopy trading, Copy trader, Copier trading, Copy trading platforms, Copy
 <script>
     var modal=document.getElementById("modal");
     var modalImage=document.getElementById("modal-image");
-    
+
     function showme(src){
      modal.style.display="block";
      modalImage.src=src;
     }
-    
+
     document.getElementById("close").onclick=function(){
      modal.style.display="none";
     }
