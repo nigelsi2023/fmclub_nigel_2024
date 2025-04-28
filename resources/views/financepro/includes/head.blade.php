@@ -14,7 +14,7 @@
 
     <!-- TITLE-->
 
-    
+
 
     <!--mac-->
 
@@ -24,29 +24,29 @@
 
     </title>
 
-        
 
-        
+
+
 
         <meta name="description" content="@yield('meta_desc')">
 
-        
 
-        
+
+
 
         <meta name="keywords" content="@yield('meta_kewy')">
 
-    
+
 
     <!--mac-->
 
-    
+
 
 
 
     <link rel="icon" type="text/icon" href="{{ asset('icon.png') }}">
 
-    
+
 
 
 
@@ -62,7 +62,7 @@
 
         <!-- <link rel='stylesheet' id='sp-ea-font-awesome-css'href='https://learn2.trade/wp-content/plugins/easy-accordion-free/public/assets/css/font-awesome.min.css' media='all' /> -->
 
- 
+
 
         <!-- <link rel='stylesheet' id='omsc-shortcodes-tablet-css'href='https://learn2.trade/wp-content/plugins/olevmedia-shortcodes/assets/css/shortcodes-tablet.css' media='screen and (min-width: 768px) and (max-width: 959px)' /> -->
 
@@ -80,7 +80,7 @@
 
 
 
-    <!-- CSS BEGINS 
+    <!-- CSS BEGINS
 
             ================================================== -->
 
@@ -88,7 +88,7 @@
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/css/select2.min.css" rel="stylesheet" />
 
-    
+
 
     <!-- ELEMENTS BASE CSS -->
 
@@ -96,13 +96,14 @@
 
     <!-- THEME BASE CSS -->
 
-
+    <!-- Page CSS -->
+    @yield('css_links')
 
     @if(Request::is('/'))
 
         <link href="{{ asset('financepro/css/style2.css') }}" rel="stylesheet" type="text/css" />
 
-    @else 
+    @else
 
         <link href="{{ asset('financepro/css/style.css') }}" rel="stylesheet" type="text/css" />
 
@@ -116,9 +117,9 @@
 
     <!-- <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 
-    
 
-    
+
+
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 
@@ -197,11 +198,11 @@
 
     <!-- CSS ENDS ================================================== -->
 
-    
+
 
     <!--custom link-->
 
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8844859089842671" crossorigin="anonymous"></script>    
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8844859089842671" crossorigin="anonymous"></script>
 
 
 
@@ -217,7 +218,7 @@
 
             $url_parts = parse_url($current_url);
 
-            
+
 
             // Get Page URL
 
@@ -235,7 +236,7 @@
 
             // dd($affiliateId, $pageUrl, $visitorIp);
 
-            
+
 
             \DB::table('referrals')->insert([
 
@@ -251,6 +252,6 @@
 
             header("Location: $pageUrl");
 
-        }        
+        }
 
     @endphp

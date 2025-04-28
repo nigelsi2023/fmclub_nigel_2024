@@ -6,6 +6,16 @@ Oil, forex pair XBRUSD')
 @section('meta_kewy', 'forex trading strategies, forex trading for beginners, forex trading tips, SOCIAL TRADING, social
 trader, ccopy trading, Copy trader, Copier trading, Copy trading platforms, Copytrader, Forex copy trading')
 <!--mac-->
+
+@section('css_links')
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lite-youtube-embed@0.1.0/src/lite-yt-embed.css" />
+
+    <!-- Preloading Images -->
+    <link rel="preload" as="image" href="https://i.ytimg.com/vi/JV_Wmsygmpw/hqdefault.jpg">
+    <link rel="preload" as="image" href="https://i.ytimg.com/vi/8mpqRELw18I/hqdefault.jpg">
+    <!-- Preloading Images End -->
+@endsection
+
 @section('content')
 
 <header id="masthead" class="site-header" role="banner">
@@ -279,7 +289,9 @@ trader, ccopy trading, Copy trader, Copier trading, Copy trading platforms, Copy
                 }
             }
         </style>
-        <section class="top-banner" style="background:url({{asset('uploads/imgs/2020/04/banner-img-1.jpg')}})">
+
+        <section class="top-banner" style="position: relative; overflow: hidden; background-color: #33333340;">
+            <img src="{{asset('uploads/imgs/2020/04/banner-img-1.jpg')}}" alt="Virtual Employees" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
             <div class="container">
                 <div class="row">
                     <div class="banner-left-top">
@@ -376,10 +388,9 @@ trader, ccopy trading, Copy trader, Copier trading, Copy trading platforms, Copy
                     </div>
                     <div class="col-md-6">
                         <div class="card" style="background: transparent; ">
-                            <div class="card-body"> <iframe width="560" height="315"
-                                    src="https://www.youtube.com/embed/JV_Wmsygmpw" frameborder="0"
-                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    allowfullscreen></iframe></div>
+                            <div class="card-body">
+                                <lite-youtube videoid="JV_Wmsygmpw" style="width: 100%; height: 315px;" playlabel="Play Video"></lite-youtube>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -395,57 +406,57 @@ trader, ccopy trading, Copy trader, Copier trading, Copy trading platforms, Copy
             <div class="container">
 
                 <?php $cars = array();
-                       
+
                     ?>
 
 
                 @foreach($last30days as $last30day)
-                <?php if($last30day->item_name == 'XAU/USD' || $last30day->item_name == 'SP500' || $last30day->item_name == 'US2000' || $last30day->item_name == 'DJIA'){ 
-									    
-						    if($last30day->status == '2'){ 
+                <?php if($last30day->item_name == 'XAU/USD' || $last30day->item_name == 'SP500' || $last30day->item_name == 'US2000' || $last30day->item_name == 'DJIA'){
+
+						    if($last30day->status == '2'){
 						        $cars[$last30day->id] =  abs(round($last30day->open_price - $last30day->stop_loss, 4))*10;
 						    } elseif($last30day->status == '1'){
 						        $cars[$last30day->id] = abs(round($last30day->open_price - $last30day->target_price, 4))*10;
-						    } 
-						    
-						    
-						} else if($last30day->item_name == 'NASDAQ'){ 
-						    
-						    if($last30day->status == '2'){ 
+						    }
+
+
+						} else if($last30day->item_name == 'NASDAQ'){
+
+						    if($last30day->status == '2'){
 						        $cars[$last30day->id] =  abs(round($last30day->open_price - $last30day->stop_loss, 4))*10;
 						    } elseif($last30day->status == '1'){
 						        $cars[$last30day->id] = abs(round($last30day->open_price - $last30day->target_price, 4))*10;
-						    } 
-						    
-						    
-					    } else if($last30day->item_name == 'XBR/USD'){ 
-						    
-						    if($last30day->status == '2'){ 
+						    }
+
+
+					    } else if($last30day->item_name == 'XBR/USD'){
+
+						    if($last30day->status == '2'){
 						        $cars[$last30day->id] =  abs(round($last30day->open_price - $last30day->stop_loss, 4))*100;
 						    } elseif($last30day->status == '1'){
 						        $cars[$last30day->id] = abs(round($last30day->open_price - $last30day->target_price, 4))*100;
-						    } 
-						    
-						} else{ 
-						    
-						    if($last30day->status == '2'){ 
+						    }
+
+						} else{
+
+						    if($last30day->status == '2'){
 						        $cars[$last30day->id] =  abs(round($last30day->open_price - $last30day->stop_loss, 4))*10000;
 						    } elseif($last30day->status == '1'){
 						        $cars[$last30day->id] = abs(round($last30day->open_price - $last30day->target_price, 4))*10000;
-						    } 
-						    
+						    }
+
 						} ?>
 
 
                 @endforeach
-                <?php  
+                <?php
                         arsort($cars);
                         $hightpipsID = $hightpipsValue = $i = 0;
                             	foreach ($cars as $key => $value) {
                             	    if($i == 0){
                             	        $hightpipsID = $key;
                             	        $hightpipsValue = $value;
-                            	        
+
                             	    }
                             	    $i++;
                         		} ?>
@@ -550,15 +561,7 @@ trader, ccopy trading, Copy trader, Copier trading, Copy trading platforms, Copy
                                 <div class="col-md-6">
                                     <div class="card" style="background: transparent; ">
                                         <div class="card-body">
-                                            <iframe width="100%" height="315"
-                                                src="https://www.youtube.com/embed/8mpqRELw18I?si=9xpDHypYeR78uGtX"
-                                                frameborder="0"
-                                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                                allowfullscreen></iframe>
-
-
-
-
+                                            <lite-youtube videoid="8mpqRELw18I" style="width: 100%; height: 315px;" playlabel="Play Video"></lite-youtube>
                                         </div>
                                     </div>
                                 </div>
@@ -594,3 +597,7 @@ trader, ccopy trading, Copy trader, Copier trading, Copy trading platforms, Copy
             <div class="caption"></div>
         </div>
         @endsection
+
+@section('scripts')
+    <script type="module" src="https://cdn.jsdelivr.net/npm/lite-youtube-embed@0.1.0/src/lite-yt-embed.js"></script>
+@endsection
