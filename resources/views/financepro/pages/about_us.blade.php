@@ -1,9 +1,9 @@
 @extends('layouts.financepro_content')
 
 <!--mac-->
-@section('meta_title', 'About Financial Markets Club and Forex Signal Service')
+@section('meta_title', 'About Financial Markets Club and Copy Trading Service')
 @section('meta_desc', "Here's a little bit about who we and what we do to help you with your forex trading")
-@section('meta_kewy', 'forex trading strategies, forex trading for beginners, forex trading signals, forex signals, forex trading tips, free forex signals, learn forex trading, trading signals, best forex signals, forex day trading')
+@section('meta_kewy', 'forex trading strategies, forex trading for beginners, forex trading tips, SOCIAL TRADING, social trader, ccopy trading, Copy trader, Copier trading, Copy trading platforms, Copytrader, Forex copy trading')
 <!--mac-->
 @section('content')
 	<!-- PAGE HEADING SECTION -->
@@ -34,7 +34,7 @@
                     <div class="row">
                         <div class="col-md-7">
                             <!-- TITLE -->
-                            <h5 style="font-weight:700;" class="bottom-line title-small font-weight-light">ABOUT Financial Markets Club and Forex Signals</h5>
+                            <h5 style="font-weight:700;" class="bottom-line title-small font-weight-light">ABOUT Financial Markets Club and Copy Trading </h5>
 
                           <!--  <p class="bottom-margin-vsm">If you want to become a profitable Trader on the Stock Market, you have come to the right place. This is your portal for learning how to trade and make profits consistently. With a dedication in the field of Technical Analysis,at Financial Markets Club we will share with you Trade Ideas from our Traders, Forex Signals that you can copy and trade yourself.</p>
                           -->

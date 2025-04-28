@@ -41,38 +41,37 @@
 <section class="fs-bnr-sec mm-slideout" style="background-image:url('https://cdn.statically.io/img/learn2.trade/f=auto%2Cq=10/wp-content/uploads/2020/11/fs-bnr-img-1.jpg')">
     <div class="fs-container">
     <div class="fs-cont-left">
-    <div class="fs-bnr-cont-top"><span>Best XAUUSD Forex Signals <img src="{{asset('uploads/imgs/2020/11/fs-right-icon.png')}}"></span></div>
-    <h1>XAUUSD (Gold) FOREX SIGNALS WITH 100 - 800 pips PROFIT</h1>
-    <p>Hundreds of traders are joining our Forex Trading Signals daily. We build trust with our Forex Signals by only giving a Trade Signal when we are really confident and we will do it on our own account. Our signals are supplied by professional traders who have over 20 years experience in the Forex Market.</p>
-    <div class="fs-bnr-btn">
-    <a class="choose-plan-click" href="#premium-plan-outer" style="background:#f6bd00;">Get My Free Gold Trades Now</a> 
+    <div class="fs-bnr-cont-top"><span>Best XBRUSD Copy Trading<img src="{{asset('uploads/imgs/2020/11/fs-right-icon.png')}}"></span></div>
+    <h1>XBRUSD (Oil) FOREX Copy Trading WITH 100 - 500 pips PROFIT</h1>
+    <p>We are the only Oil Trading Company who is giving our Forex Crude Oil Trades for Copy Trading, to Small Retail Traders. When we post a Trade, you know that we are also doing this Trade in our Company Account. Our Copy Trades are supplied by professional traders who have over 22 years experience in the Stock Market.</p>
+    <!--<div class="fs-bnr-btn">
+    <a class="choose-plan-click" href="#premium-plan-outer" style="background:#f6bd00;">Start Copy Trading our Pro Traders for FREE, Now</a> 
     <!--get vip forex signals-->
-    </div>
+    </div>-->
     </div>
     <div class="fs-bnr-img">
+    
     <img src="{{asset('uploads/imgs/2020/12/fs-bnr-device-img-2.png')}}">
     </div>
     </div>
 </section>
 
-<section>
+<!--<section>
 <div class="fs-container-fluid nopadd">
     <div class="row">
         <div class="col-md-12"><img src="https://financialmarkets.club/images/new111.jpg" class="img-responsive" style="width: 100%;"></div> 
     </div>
 </div>
-</section>
+</section>-->
 
 
 <div class="fs-premium-plan-sec">
     <div class="fs-container">
         <div class="fs-head-sec">
             
-            <h2>WHAT IS DIFFERENT ABOUT US?</h2>
-            <p>We focus on quality over quantity. We focus on big profits over tiny small profits. This means we don't give tiny forex signals with 20, 30, 50 pips movement. Small move forex signals are very risky. We focus on larger moves, thus giving you much less risk, as a result our forex signals are generally 100 pips to 1000 pips, sometimes even few thousand pips!
-            We don't claim to send you X number of Forex Trade Signals per day. 
-            How can you even know how many opportunities there will be per day in an inpredictable market? 
-            If any Forex Trade Signal service is promising you specific number of Trade Signals you should be worried how accurate and genuine they are. </p>
+            <h2>We are the ONLY Oil Trading Company who gives our Trades<br /> to Small Retail Traders, like You!</h2>
+            <p>We focus on quality over quantity. We focus on big profits over tiny small profits. We don't do Risky Day Trading rubbish. We are dealing with Multi-Million dollar accounts. We focus Fundamental and Technical Analysis, thus giving you much less risk, as a result our Copy Trades are generally 100 pips to 500 pips!
+            </p>
         </div>
     </div>
      
@@ -97,9 +96,9 @@
                         <li>Real Time Alert on Every Trade we are doing</li>
                         <li>Exact Open and Target Prices</li>
                         <li>Stop Loss to Protect your Account</li>
-                        <li>Chart include with every Forex Signal</li>  
+                        <li>Chart include with every Copy Trade</li>  
                         <li>Real Time Alert when we Close a Trade </li>  
-                        <li>See how good our Signals are before you Pay $3 per day</li>  
+                        <li>See how good our Trades are before you Copy</li>  
                         <li>Traders Analysis direct to your telegram for you to trade quickly</li>  
                         <li>No Payment Needed</li>  
                     </ul>
@@ -108,7 +107,7 @@
                     </div>
                 </div>
             </div>      
-        <?php } elseif($package->id == 2){?>
+     <!--   <?php } elseif($package->id == 2){?>
             <div class="fs-premium-plan-box">
         <div class="fs-premium-plan-box-inr">
             <div class="fs-most-popular-tag">{{$package->p_name}}</div>
@@ -139,11 +138,11 @@
                 <a href="{{ route('checkout', $package->id) }}">choose plan</a>
             </div>
         </div>
-    </div>  
+    </div>  -->
         <?php } elseif($package->id == 3){?>
             <div class="fs-premium-plan-box fs-most-popular-plan">
                 <div class="fs-premium-plan-box-inr">
-                    <div class="fs-most-popular-tag">MOST POPULAR</div>
+                    <div class="fs-most-popular-tag">NORMAL PACKAGE</div>
                     <div class="fs-premium-plan-bill">{{$package->p_name}}</div>
             
                     @if(request()->hasCookie('discount50percent'))
@@ -174,7 +173,7 @@
             </div>
         <?php } else { ?>
         
-        	<div class="fs-premium-plan-box">
+        	<!--<div class="fs-premium-plan-box">
                 <div class="fs-premium-plan-box-inr">
                     <div class="fs-most-popular-tag">{{$package->p_name}}</div>
                     <div class="fs-premium-plan-bill">{{$package->p_name}}</div>
@@ -198,7 +197,7 @@
                         <a href="{{ route('checkout', $package->id) }}">choose plan</a>
                     </div>
                 </div>
-            </div>
+            </div>-->
         <?php } ?>
     @endforeach
     
@@ -211,7 +210,7 @@
 <div class="fs-container">
 <div class="fs-head-sec">
 <h2>Whats Included in our award winning Free Telegram Group </h2>
-<p>If you are new to the Forex market and you would like to get a taste of what our Forex signals are like then join our free Telegram group below!</p>
+<p>If you are new to the Forex market and you would like to get a taste of our Oil Trades, forex pair XBRUSD, then join our free Telegram group below!</p>
 
 </div>
 <div class="fs-free-serv-box-outer">
@@ -239,7 +238,7 @@
         <div class="fs-free-serv-box-img">
             <img src="{{asset('uploads/imgs/2020/12/icon-2.jpg')}}">
         </div>
-        <h3>Unlock Entry <br>Price</h3>
+        <h3>Trade Updates</h3>
     </div>
 </div>
 <div class="fs-free-serv-box">
@@ -247,7 +246,7 @@
         <div class="fs-free-serv-box-img">
             <img src="{{asset('uploads/imgs/2020/12/icon-4.jpg')}}">
         </div>
-        <h3>Mobile Notifications & Telegram Alerts on All Signals</h3>
+        <h3>Mobile Notifications & Telegram Alerts on All Trades</h3>
     </div>
 </div>
 <div class="fs-free-serv-box">
@@ -255,7 +254,7 @@
         <div class="fs-free-serv-box-img">
             <img src="{{asset('uploads/imgs/2020/12/icon-3.jpg')}}">
         </div>
-        <h3>3 VIP Signals a Week </h3>
+        <h3>All Live Trades </h3>
     </div>
 </div>
 <div class="fs-free-serv-mbl-img">
@@ -264,12 +263,15 @@
 </div>
 <div class="fs-broker-accnt-top-btn free-account-btn">
                                 <!--https://t.me/goldium_forex_signals-->
-<a class="choose-plan-click" href="#premium-plan-outer" target="_blank">Join Our Free Telegram Group</a>
+<a class="choose-plan-click" href="https://t.me/goldium_Free_FX_Signals" target="_blank">Join Our Free Telegram Group</a>
 <div class="fs-choose-broker-text">GetNow! <img src="{{asset('uploads/imgs/2020/11/get-now-img.png')}}" alt=""></div>
-</div>
-</div>
-</div>
+
 <br /><br /><br />
+
+</div>
+</div>
+</div>
+
 </section>
 
 <!--<section class="professional-traders-con premium-account-con mm-slideout">
@@ -314,284 +316,8 @@
 </section>
 
 -->
-<section class="professional-traders-con telegram-con mm-slideout" style="background:url(https://cdn.statically.io/img/learn2.trade/f=auto%2Cq=10/wp-content/uploads/2020/11/telegram-group-bg-img-1.png)center top no-repeat;background-size:cover;">
-<div class="fs-container">
-<div class="fs-inner-row">
-<!--<div class="fs-box"><img src="{{asset('uploads/imgs/2020/11/telegram-top-img.png')}}" alt=""></div>-->
-<div class="fs-box"><img src="{{asset('uploads/imgs/2020/11/telegram-top-img2.png')}}" alt=""></div>
-</div>
-<div class="fs-head-sec">
-<div class="small-heading">Join Our VIP Telegram Group </div>
-<h2>Are you ready to become a successful trader?</h2>
-<p>With our 30-day money back guarantee you've got absolutely no reason not to give us a try. You won't regret it.</p>
-<div class="traders-button-con"><a href="#premium-plan-outer">Join Financial Markets Club VIP Group</a></div>
-</div>
-</div>
-<div class="wpamc-carousel-wrap wpamc-row-clearfix">
-<div id="wpamc-carousel-1" class="swiper-container wpamc-swiper-carousel-wrapper">
-<div class="swiper-wrapper wpamc-swiper-carousel">
-<div class="amc-slide swiper-slide swiper-slide" style="width:273px">
-    <img src="{{asset('uploads/imgs/2020/11/app-slide-1.jpg')}}" alt="slider image" />
-</div>
-<div class="amc-slide swiper-slide swiper-slide" style="width:273px">
-    <img src="{{asset('uploads/imgs/2020/11/app-slide-2.jpg')}}" alt="slider image" />
-</div>
-<div class="amc-slide swiper-slide swiper-slide" style="width:273px">
-    <img src="{{asset('uploads/imgs/2020/11/app-slide-3.jpg')}}" alt="slider image" />
-</div>
-<div class="amc-slide swiper-slide swiper-slide" style="width:273px">
-    <img src="{{asset('uploads/imgs/2020/11/app-slide-4.jpg')}}" alt="slider image" />
-</div>
-<!--<div class="amc-slide swiper-slide swiper-slide" style="width:273px">-->
-    <!--<img src="{{asset('uploads/imgs/2020/11/app-slide-5.jpg')}}" alt="slider image" />-->
-<!--</div>-->
-</div>
-<div class="wpamc-carousel-conf">{"pagination":"false","pagination_type":"fraction","speed":"300","autoplay":"true","autoplay_speed":"3000","auto_stop":"false","loop":"false"}</div>
-<div class="player-overlay"><img src="https://cdn.statically.io/img/learn2.trade/f=auto%2Cq=10/wp-content/plugins/app-mockups-carousel//assets/images/iphone-white.png" /></div>
-<div class="swiper-button-next"></div>
-<div class="swiper-button-prev"></div>
-</div>
-</div>
-</section>
 
-
-<!--<section class="professional-traders-con pilot-reviews-con mm-slideout">-->
-<!--    <div class="fs-container">-->
-<!--        <div class="fs-head-sec">-->
-<!--            <div class="small-heading">Trading alone is boring...</div>-->
-<!--            <h2>Read Our Trust Pilot Reviews</h2>-->
-<!--            <p>Fancy finding out more about what forex signals are, how they work, and why they’re important for your long-terminvestment goals? If so, be sure to read our guide on the Free Forex Signals Service offered by</p>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--    <div class='white' style='background:rgba(255, 255, 255, 0); border:solid 0px #f0f0f0; border-radius:5px; padding:0px 0px 0px 0px;'>-->
-<!--        <div id='pilot_reviews_slider' class='owl-carousel sa_owl_theme owl-pagination-true autohide-arrows' data-slider-id='pilot_reviews_slider' style='visibility:hidden;'>-->
-<!--            <div id='pilot_reviews_slider_slide01' class='sa_hover_container' style='padding:5% 5%; margin:0px 0%; background-color:rgba(244, 204, 204, 0); min-height:0px; '>-->
-<!--                <div class="our-result-testimoninal">-->
-<!--                    <img class="our-result-testimoninal-profile" src="{{asset('uploads/imgs/2020/12/pilot_reviews_slider_4.jpg')}}" alt="" /><br /> -->
-<!--                    <img src="{{asset('uploads/imgs/2020/11/green-start.png')}}" alt="" />-->
-<!--                    <div class="our-result-content">I am a free signal user, and I have to say how much I appreciate that L2T sends out full signals for free users. I have checked a few other signal services, and most of them always mask out some part of the signals forcing the users to sign up for premium to make any trades. Not L2T. If you sign up, you will get all details such as the entry price, take profit and stop loss.</div>-->
-<!--                    <div class="our-result-top-con">-->
-<!--                        <h2>Stephen Smith</h2>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div id='pilot_reviews_slider_slide04' class='sa_hover_container' style='padding:5% 5%; margin:0px 0%; background-color:rgba(244, 204, 204, 0); min-height:0px; '><div class="our-result-testimoninal"><img class="our-result-testimoninal-profile" src="{{asset('uploads/imgs/2020/11/pilot_reviews_slider_3.png')}}" alt="" /><br /> <img src="{{asset('uploads/imgs/2020/11/green-start.png')}}" alt="" />-->
-<!--            <div class="our-result-content">This review is more focused on the course and learning materials rather than the signals. Though some might feel that the forex course is not worth a £99 plan, for an absolute beginner like me, there is plenty to learn from them. I don't find this amount a bad investment considering that I am likely to gain much more with what I have learnt. There are also several free articles that can show you the ropes about trading, understanding the market, and how to read the signals.-->
-<!--            </div>-->
-<!--            <div class="our-result-top-con">-->
-<!--                <h2>James Chiswell</h2>-->
-<!--            </div>-->
-<!--            </div></div>-->
-<!--            <div id='pilot_reviews_slider_slide05' class='sa_hover_container' style='padding:5% 5%; margin:0px 0%; background-color:rgba(244, 204, 204, 0); min-height:0px; '><div class="our-result-testimoninal"><img class="our-result-testimoninal-profile" src="{{asset('uploads/imgs/2020/12/pilot_reviews_slider_5.jpg')}}" alt="" /><br /> <img src="{{asset('uploads/imgs/2020/11/green-start.png')}}" alt="" />-->
-<!--            <div class="our-result-content">I am a VIP signal user and there are a few reasons I prefer L2T over other signal services. For one, they do not offer you mere triggers for buying and selling. Even the free signals come with the stop-loss, take-profit, and the risk-reward-ratio. The Telegram alerts also includes market evaluations, updates, trading analysis and more. For instance, this Monday they sent out a message on which market-moving factors they are considering such as FOMC meeting minutes</div>-->
-<!--            <div class="our-result-top-con">-->
-<!--                <h2>Olivia</h2>-->
-<!--            </div>-->
-<!--            </div></div>-->
-<!--            <div id='pilot_reviews_slider_slide02' class='sa_hover_container' style='padding:5% 5%; margin:0px 0%; background-color:rgba(244, 204, 204, 0); min-height:0px; '><div class="our-result-testimoninal"><img class="our-result-testimoninal-profile" src="{{asset('uploads/imgs/2020/11/pilot_reviews_slider_1.png')}}" alt="" /><br /> <img src="{{asset('uploads/imgs/2020/11/green-start.png')}}" alt="" />-->
-<!--            <div class="our-result-content">I am a free user of L2T forex signals. And I highly appreciate that they send so much information through Telegram for free users. You can join the Telegram group by searching in the app, and see for yourself how much information is available. The only thing is, if you need to access the full trading analysis you need to sign up for the premium. But as a beginner trader who mostly relies on the signals than the research, I am willing to look over that.</div>-->
-<!--            <div class="our-result-top-con">-->
-<!--                <h2>Mariyathasan Maccimas</h2>-->
-<!--            </div>-->
-<!--            </div></div>-->
-<!--            <div id='pilot_reviews_slider_slide03' class='sa_hover_container' style='padding:5% 5%; margin:0px 0%; background-color:rgba(244, 204, 204, 0); min-height:0px; '><div class="our-result-testimoninal"><img class="our-result-testimoninal-profile" src="{{asset('uploads/imgs/2020/11/pilot_reviews_slider_2.png')}}" alt="" /><br /> <img src="{{asset('uploads/imgs/2020/11/green-start.png')}}" alt="" />-->
-<!--            <div class="our-result-content">I have been trading for 4 years and have made few dollars here and there.I joined Learn2trade two weeks ago. It’s amazing for the first time I have made more than $3000.GBPJPY signal they sent was on point and just made $2000 and still 1000 pips to go. I have been trading for a year, and have been using L2T for the last six months. From my experience, L2T has a good win ratio.</div>-->
-<!--            <div class="our-result-top-con">-->
-<!--                <h2>Mathew Joy</h2>-->
-<!--            </div>-->
-<!--            </div></div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>-->
-<!--    <script>-->
-<!--        jQuery(document).ready(function() {-->
-<!--            jQuery('#pilot_reviews_slider').owlCarousel({-->
-<!--                responsive:{-->
-<!--                    0:{ items:1 },-->
-<!--                    480:{ items:2 },-->
-<!--                    768:{ items:3 },-->
-<!--                    980:{ items:4 },-->
-<!--                    1200:{ items:5 },-->
-<!--                    1500:{ items:5 }-->
-<!--                },-->
-<!--                autoplay : true,-->
-<!--                autoplayTimeout : 4000,-->
-<!--                autoplayHoverPause : true,-->
-<!--                smartSpeed : 300,-->
-<!--                fluidSpeed : 300,-->
-<!--                autoplaySpeed : 300,-->
-<!--                navSpeed : 300,-->
-<!--                dotsSpeed : 300,-->
-<!--                loop : true,-->
-<!--                nav : false,-->
-<!--                navText : ['Previous','Next'],-->
-<!--                dots : true,-->
-<!--                responsiveRefreshRate : 200,-->
-<!--                slideBy : 1,-->
-<!--                mergeFit : true,-->
-<!--                autoHeight : false,-->
-<!--                mouseDrag : false,-->
-<!--                touchDrag : true-->
-<!--            });-->
-<!--            jQuery('#pilot_reviews_slider').css('visibility', 'visible');-->
-<!--            var owl_goto = jQuery('#pilot_reviews_slider');-->
-<!--            jQuery('.pilot_reviews_slider_goto1').click(function(event){-->
-<!--            owl_goto.trigger('to.owl.carousel', 0);-->
-<!--            });-->
-<!--            jQuery('.pilot_reviews_slider_goto2').click(function(event){-->
-<!--            owl_goto.trigger('to.owl.carousel', 1);-->
-<!--            });-->
-<!--            jQuery('.pilot_reviews_slider_goto3').click(function(event){-->
-<!--            owl_goto.trigger('to.owl.carousel', 2);-->
-<!--            });-->
-<!--            jQuery('.pilot_reviews_slider_goto4').click(function(event){-->
-<!--            owl_goto.trigger('to.owl.carousel', 3);-->
-<!--            });-->
-<!--            jQuery('.pilot_reviews_slider_goto5').click(function(event){-->
-<!--            owl_goto.trigger('to.owl.carousel', 4);-->
-<!--            });-->
-<!--            var resize_33147 = jQuery('.owl-carousel');-->
-<!--            resize_33147.on('initialized.owl.carousel', function(e) {-->
-<!--                if (typeof(Event) === 'function') {-->
-<!--                window.dispatchEvent(new Event('resize'));-->
-<!--                } else {-->
-<!--                var evt = window.document.createEvent('UIEvents');-->
-<!--                evt.initUIEvent('resize', true, false, window, 0);-->
-<!--                window.dispatchEvent(evt);-->
-<!--                }-->
-<!--            });-->
-<!--        });-->
-<!--    </script>-->
-<!--</section>-->
-
-
-    <!--<section class="professional-traders-con telegram-con pilot-reviews-con mm-slideout" style="background:url(https://cdn.statically.io/img/learn2.trade/f=auto%2Cq=10/wp-content/uploads/2020/12/slider-bg.jpg)center top no-repeat;background-size:cover;">-->
-    <!--    <div class="fs-container">-->
-    <!--        <div class="fs-head-sec">-->
-    <!--        <div class="small-heading">our telegram group members</div>-->
-    <!--        <h2>Here is more proof of our results </h2>-->
-    <!--        <p>Genuine reviews from genuine members. Our Forex signals are voted by users the best in the world!</p>-->
-    <!--    </div>-->
-    <!--        <div class='white' style='background:rgba(255, 255, 255, 0); border:solid 0px #f0f0f0; border-radius:5px; padding:0px 0px 0px 0px;'>-->
-    <!--            <div id='sample_slider' class='owl-carousel sa_owl_theme autohide-arrows' data-slider-id='sample_slider' style='visibility:hidden;'>-->
-    <!--                <div id='sample_slider_slide02' class='sa_hover_container' style='padding:5% 10%; margin:0px 0%; background-color:rgba(244, 204, 204, 0); min-height:0px; '>-->
-    <!--                    <div class="our-result-testimoninal">-->
-    <!--                        <div class="our-result-top-con">-->
-    <!--                            <div><img src="{{asset('uploads/imgs/2019/09/L2T-testimonial-3-75x75.jpg')}}" alt=""/></div>-->
-    <!--                            <div>-->
-    <!--                                <h2>Karlos</h2>-->
-    <!--                                <span>2020-09-21</span>-->
-    <!--                            </div>-->
-    <!--                        </div>-->
-    <!--                        <img src="{{asset('uploads/imgs/2020/11/green-start.png')}}" alt=""/>-->
-    <!--                        <div class="our-result-content">Yes, I have to mention this also. Sometimes, the trades do not always go as you expect, L2T claims a track of 76% profit and from my trading experience, it comes close. I have had made up to 500 pips on good weeks. That is why you also need to refer to their other technical analysis. L2T also sends updates, chart analysis, and market feed along with the signals. This way you can cross-check the signals and make your own decisions on whether to trade or not. Just joined the VIP and swing trade telegram channels. Clear concise information with regards to trades and background information. Now, the best part is, apart from these signals, they also update their platform regularly with market feed, news, and trading styles, evaluations, and more.</div>-->
-    <!--                        <div class="our-result-content-bottom">“I came across Financial Markets Club through…”</div>-->
-    <!--                    </div>-->
-    <!--                </div>-->
-    <!--                <div id='sample_slider_slide04' class='sa_hover_container' style='padding:5% 10%; margin:0px 0%; background-color:rgba(244, 204, 204, 0); min-height:0px; '>-->
-    <!--                    <div class="our-result-testimoninal">-->
-    <!--                        <div class="our-result-top-con">-->
-    <!--                            <div><img src="{{asset('uploads/imgs/2019/09/L2T-testimonial-2-75x75.jpg')}}" alt=""/></div>-->
-    <!--                            <div>-->
-    <!--                                <h2>Frank Karlini</h2>-->
-    <!--                                <span>2020-09-21</span>-->
-    <!--                            </div>-->
-    <!--                        </div>-->
-    <!--                        <img src="{{asset('uploads/imgs/2020/11/green-start.png')}}" alt=""/>-->
-    <!--                        <div class="our-result-content">A recent subscriber to the VIP signals. I stumbled upon L2T through their articles on trading. I found them very resourceful, and learnt quite a bit from them. The signal services are also very straightforward, with clear instructions, and background on the analysis. Now, I heavily rely on them. With Telegram alerts, it is even easier to stay updated on the market now. They also send a month-end summary of how their signals performed, which you can study to better understand the market.I have had numerous hits and a few losses here and there. Overall maintaining between 70-80% in take profit, and I am satisfied with my gains. I would recommend L2T to newcomers to learn about trading strategies, and would tell professionals not to hesitate in joining their signal service.</div>-->
-    <!--                        <div class="our-result-content-bottom">“Learn To Trade has made my trading much…”</div>-->
-    <!--                    </div>-->
-    <!--                </div>-->
-    <!--                <div id='sample_slider_slide01' class='sa_hover_container' style='padding:5% 10%; margin:0px 0%; background-color:rgba(244, 204, 204, 0); min-height:0px; '>-->
-    <!--                    <div class="our-result-testimoninal">-->
-    <!--                        <div class="our-result-top-con">-->
-    <!--                            <div><img src="{{asset('uploads/imgs/2019/09/L2T-testimonial-4-75x75.jpg')}}" alt=""/></div>-->
-    <!--                            <div>-->
-    <!--                                <h2>Alison Williamson</h2>-->
-    <!--                                <span>2020-09-21</span>-->
-    <!--                            </div>-->
-    <!--                        </div>-->
-    <!--                        <img src="{{asset('uploads/imgs/2020/11/green-start.png')}}" alt=""/>-->
-    <!--                        <div class="our-result-content">I have waited a while to leave this review because I wanted to be absolutely sure. L2T has ticked off all the relevant boxes when it comes to a trading signal service. I started as a free subscriber before joining the VIP signal service. Regardless of your subscription type, you get real-time updates, followed by an in-depth explainer of the analysis behind the trade. This is incredibly useful in learning how to infer data from the market and use it to your advantage. Following their signals, I have been able to maintain a profit of around 30 - 40% during most months. And yes, occasionally, they also put up deals with brokers that will help you gain free access to the platform. So if you are on the lookout for a broker, you would be hitting two birds with one stone.</div>-->
-    <!--                        <div class="our-result-content-bottom">“The best signal provider I've ever tried…”</div>-->
-    <!--                    </div>-->
-    <!--                </div>-->
-    <!--                <div id='sample_slider_slide03' class='sa_hover_container' style='padding:5% 10%; margin:0px 0%; background-color:rgba(244, 204, 204, 0); min-height:0px; '>-->
-    <!--                    <div class="our-result-testimoninal">-->
-    <!--                        <div class="our-result-top-con">-->
-    <!--                            <div><img src="{{asset('uploads/imgs/2020/12/L2T-testimonial-7-img.jpg')}}" alt=""/></div>-->
-    <!--                            <div>-->
-    <!--                                <h2>John Hernandez</h2>-->
-    <!--                                <span>2020-09-21</span>-->
-    <!--                            </div>-->
-    <!--                        </div>-->
-    <!--                        <img src="{{asset('uploads/imgs/2020/11/green-start.png')}}" alt=""/>-->
-    <!--                        <div class="our-result-content">I am currently in the free telegram group. So far every trade I have placed and closed by L2T has been profitable. I feel like some of the comments here are from inexperienced traders and feel that when it is placed it will immediately be a profit. You need to wait it out because of how the trends are sometimes. Look at charts and review the information posted. This is one of the better signal services that I have used over the last few years. I would definitely recommend them and I have to a few friends. The signals are very clear and easy to follow. Of course, there are times when the trades don't go as planned, but, that in itself is a lesson for the future. Learn2Trade doesn't just give you signals telling you when to buy or sell</div>-->
-    <!--                        <div class="our-result-content-bottom">“Best company to use if your looking to…”</div>-->
-    <!--                    </div>-->
-    <!--                </div>-->
-    <!--            </div>-->
-    <!--        </div>-->
-    <!--        <script>-->
-    <!--            jQuery(document).ready(function() {-->
-    <!--                jQuery('#sample_slider').owlCarousel({-->
-    <!--                    responsive:{-->
-    <!--                        0:{ items:1 },-->
-    <!--                        480:{ items:2 },-->
-    <!--                        768:{ items:2 },-->
-    <!--                        980:{ items:3 },-->
-    <!--                        1200:{ items:3 },-->
-    <!--                        1500:{ items:3 }-->
-    <!--                    },-->
-    <!--                    autoplay : true,-->
-    <!--                    autoplayTimeout : 4000,-->
-    <!--                    autoplayHoverPause : true,-->
-    <!--                    smartSpeed : 300,-->
-    <!--                    fluidSpeed : 300,-->
-    <!--                    autoplaySpeed : 300,-->
-    <!--                    navSpeed : 300,-->
-    <!--                    dotsSpeed : 300,-->
-    <!--                    loop : true,-->
-    <!--                    nav : true,-->
-    <!--                    navText : ['Previous','Next'],-->
-    <!--                    dots : false,-->
-    <!--                    responsiveRefreshRate : 200,-->
-    <!--                    slideBy : 1,-->
-    <!--                    mergeFit : true,-->
-    <!--                    autoHeight : false,-->
-    <!--                    mouseDrag : false,-->
-    <!--                    touchDrag : true-->
-    <!--                });-->
-    <!--                jQuery('#sample_slider').css('visibility', 'visible');-->
-    <!--                var owl_goto = jQuery('#sample_slider');-->
-    <!--                jQuery('.sample_slider_goto1').click(function(event){-->
-    <!--                owl_goto.trigger('to.owl.carousel', 0);-->
-    <!--                });-->
-    <!--                jQuery('.sample_slider_goto2').click(function(event){-->
-    <!--                owl_goto.trigger('to.owl.carousel', 1);-->
-    <!--                });-->
-    <!--                jQuery('.sample_slider_goto3').click(function(event){-->
-    <!--                owl_goto.trigger('to.owl.carousel', 2);-->
-    <!--                });-->
-    <!--                jQuery('.sample_slider_goto4').click(function(event){-->
-    <!--                owl_goto.trigger('to.owl.carousel', 3);-->
-    <!--                });-->
-    <!--                var resize_32889 = jQuery('.owl-carousel');-->
-    <!--                resize_32889.on('initialized.owl.carousel', function(e) {-->
-    <!--                    if (typeof(Event) === 'function') {-->
-    <!--                        window.dispatchEvent(new Event('resize'));-->
-    <!--                    } else {-->
-    <!--                        var evt = window.document.createEvent('UIEvents');-->
-    <!--                        evt.initUIEvent('resize', true, false, window, 0);-->
-    <!--                        window.dispatchEvent(evt);-->
-    <!--                    }-->
-    <!--                });-->
-    <!--            });-->
-    <!--        </script>-->
-    <!--    </div>-->
-    <!--</section>-->
-
-
+<!--
 <section class="fs-accordion-new-sec mm-slideout">
 <div class="fs-container">
 <div class="forexnews forexnews-accordion">
@@ -675,7 +401,7 @@
             <p>Once again, this is why we offer a free forex signal service here at Financial Markets Club. With that said, our success rate on winning trades to date is 82%. In real-terms, this amounts to an average monthly profit of between 30-40%.</div></div></div>
         </div>
     </div>
-</section>
+</section>-->
 
 <!--<section class="professional-traders-con beat-on-trade-con mm-slideout">
     <div class="fs-container">

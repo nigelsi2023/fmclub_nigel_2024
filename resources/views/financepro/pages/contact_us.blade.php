@@ -1,8 +1,8 @@
 @extends('layouts.financepro_content')
 <!--mac-->
-@section('meta_title', 'Contact Financial Markets Club')
-@section('meta_desc', 'Get in touch with us if you have any questions or need help')
-@section('meta_kewy', 'forex trading strategies, forex trading for beginners, forex trading signals, forex signals, forex trading tips, free forex signals, learn forex trading, trading signals, best forex signals, forex day trading')
+@section('meta_title', 'Contact Financial Markets Club for Copy Trading')
+@section('meta_desc', 'Get in touch with us if you have any questions or need help Copy Trading')
+@section('meta_kewy', 'forex trading strategies, forex trading for beginners, forex trading tips, SOCIAL TRADING, social trader, ccopy trading, Copy trader, Copier trading, Copy trading platforms, Copytrader, Forex copy trading')
 <!--mac-->
 @section('content')
 
@@ -52,7 +52,7 @@
 								}
 								if(typeof(Ref) == 'undefined' || Ref === null)
    							{
-									var Ref = 'Want to ask something about Forex Signals?';
+									var Ref = 'Want to ask something about Copy Trading?';
 								}
 
 								

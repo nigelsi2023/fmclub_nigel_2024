@@ -43,5 +43,4 @@ class AdminSubscriberController extends Controller
             return redirect()->back()->with('error', $e->getMessage());
         }
     }
-    
 }
