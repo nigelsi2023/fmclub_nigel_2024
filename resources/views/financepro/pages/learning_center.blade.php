@@ -35,8 +35,8 @@
                                 <ul class="meta-list">
                                     <li><i class="fa fa-user text-color ileft"></i> @if($blog->user->role == 'admin') Admin @else {{ $blog->user->name }} @endif</li>
                                     <li><i class="fa fa-tags text-color ileft"></i> {{ $blog->category['name'] }}</li>
-                                    <li><i class="fa fa-comment text-color ileft"></i> 
-                                        @php 
+                                    <li><i class="fa fa-comment text-color ileft"></i>
+                                        @php
                                             $comments = DB::table('comments')->where('commentable_id', $blog->id)->get()->count();
                                         @endphp
 
@@ -49,18 +49,9 @@
                                     @if(Auth::check())
                                         <li><i class="fa fa-share-alt text-color ileft"></i></li>
                                         <li>
-                                            <style type="text/css">
-                                                .jssocials-share-link { 
-                                                    border-radius: 50%;
-                                                }
-                                                .jssocials-share{
-                                                    font-size: 8px;
-                                                    /*margin: 0px;*/
-                                                }
-                                            </style>
                                             <ul class="zozo-social-share-icons share-box typo-darks no-left-padding">
                                                 {{-- share --}}
-                                                
+
                                                 <li class="facebook">
                                                     <a onclick="window.open('https://www.facebook.com/sharer/sharer.php?u={{ route('fullpost', $blog->page_url) }}', '_blank', 'location=yes,height=570,width=520,scrollbars=yes,status=yes');" data-title="facebook" title="facebook">
                                                         <i class="fa fa-facebook"></i>
@@ -72,13 +63,13 @@
                                                         <i class="fa fa-twitter"></i>
                                                     </a>
                                                 </li>
-                                                    
+
                                                 <li class="linkedin">
                                                     <a onclick="window.open('https://www.linkedin.com/shareArticle?mini=true&url={{ route('fullpost', $blog->page_url) }}', '_blank', 'location=yes,height=570,width=520,scrollbars=yes,status=yes');">
                                                         <i class="fa fa-linkedin"></i>
                                                     </a>
                                                 </li>
-                                                
+
                                             </ul>
                                         </li>
                                     @endif
@@ -86,7 +77,7 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <!-- IMAGE -->
-                                      
+
                                         <div class="post-image">
                                             <img class="img-responsive" src="{{ asset('uploads/blogs/'.$blog->image) }}" alt="" style="width:100%;" />
                                             <div class="post-date-wrap">
