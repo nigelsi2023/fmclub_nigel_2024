@@ -6,6 +6,11 @@ $category->name Market")
 @section('meta_kewy', 'forex trading strategies, forex trading for beginners, forex trading signals, forex signals,
 forex trading tips, free forex signals, learn forex trading, trading signals, best forex signals, forex day trading')
 <!--mac-->
+
+@section('css_links')
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lite-youtube-embed@0.1.0/src/lite-yt-embed.css" />
+@endsection
+
 @section('content')
 
 <style>
@@ -205,7 +210,7 @@ forex trading tips, free forex signals, learn forex trading, trading signals, be
                                 <!-- IMAGE -->
                                 <div class="post-image">
                                     @if (empty($blog->image))
-                                        <iframe width="100%" height="200px" src="{{ $blog->videoLink }}"></iframe>
+                                        <lite-youtube videoid="{{ get_youtube_video_id($blog->videoLink) }}" style="width: 100%; height: 200px;" playlabel="Play Video"></lite-youtube>
                                     @else
                                         <a href="{{ route('fulltraderpost', $blog->trader_id) }}">
                                             <img class="img-responsive" src="{{ asset('uploads/traders/'.$blog->image) }}" width="100%" height="200px" alt="" />
@@ -278,4 +283,8 @@ forex trading tips, free forex signals, learn forex trading, trading signals, be
 </section>
 
 </div>
+@endsection
+
+@section('scripts')
+    <script type="module" src="https://cdn.jsdelivr.net/npm/lite-youtube-embed@0.1.0/src/lite-yt-embed.js"></script>
 @endsection

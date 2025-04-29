@@ -15,10 +15,10 @@ use PHPMailer\PHPMailer\Exception;
 if (! function_exists('smtp_email_send')) {
     function smtp_email_send($to_email,$subject,$from_name = null, $template,$msgBody,$controllerName) {
         try{
-            
+
             // This is the SMTP mail server
             $mail->Host = "smtp.gmail.com";
-            
+
             //$mail->SMTPDebug = 1;
 
             $mail->IsSMTP();
@@ -30,21 +30,21 @@ if (! function_exists('smtp_email_send')) {
             $mail->Port = 465;
 
             return true;
-            
+
         } catch (Exception $e) {
                  //Do Something
             return false;
         }
         return $msg;
     }
-    
-    
+
+
 
     if (! function_exists('send_smtp_email')) {
         function send_smtp_email($to_email,$subject,$template,$message){
             $from_name = 'Financial Markets Club';
             $from_email = 'nasir.financialmarketsclub@gmail.com';
-            
+
             Mail::send($template, ['bodyMessage' => $message], function($message) use ( $to_email, $subject,$from_name, $from_email) {
         		$message->to($to_email)
         		->subject($subject);
@@ -52,7 +52,7 @@ if (! function_exists('smtp_email_send')) {
         	});
 
         }
-    
+
     }
 
 }
@@ -92,5 +92,28 @@ if (! function_exists('send_to_mailer_lite')) {
             "message" => "Email sent successfully",
             "response" => $response
         ]);
+    }
+}
+
+if (!function_exists('get_youtube_video_id')) {
+    function get_youtube_video_id($url) {
+        $videoId = '';
+
+        // Regular expressions to match various YouTube URL formats
+        $patterns = [
+            '/youtube\.com\/watch\?v=([^\&\?\/]+)/',
+            '/youtube\.com\/embed\/([^\&\?\/]+)/',
+            '/youtube\.com\/v\/([^\&\?\/]+)/',
+            '/youtu\.be\/([^\&\?\/]+)/',
+        ];
+
+        foreach ($patterns as $pattern) {
+            if (preg_match($pattern, $url, $matches)) {
+                $videoId = $matches[1];
+                break;
+            }
+        }
+
+        return $videoId;
     }
 }
