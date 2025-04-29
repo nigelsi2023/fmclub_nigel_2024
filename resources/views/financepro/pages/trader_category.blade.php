@@ -9,6 +9,14 @@ forex trading tips, free forex signals, learn forex trading, trading signals, be
 
 @section('css_links')
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lite-youtube-embed@0.1.0/src/lite-yt-embed.css" />
+
+@if($blogs->count() > 0)
+    @foreach($blogs as $blog)
+        @if($blog->videoLink)
+            <link rel="preload" as="image" href="https://i.ytimg.com/vi/{{ get_youtube_video_id($blog->videoLink) }}/hqdefault.jpg">
+        @endif
+    @endforeach
+@endif
 @endsection
 
 @section('content')
