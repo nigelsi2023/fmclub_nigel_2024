@@ -8,32 +8,45 @@ forex trading tips, free forex signals, learn forex trading, trading signals, be
 <!--mac-->
 
 @section('css_links')
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lite-youtube-embed@0.1.0/src/lite-yt-embed.css" />
+{{-- Inline critical CSS --}}
+<style>
+    .nopadd {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
 
-{{-- Preload YouTube thumbnails with high priority --}}
+    lite-youtube {
+        background-color: #000;
+        position: relative;
+        display: block;
+        contain: content;
+        background-position: center center;
+        background-size: cover;
+        cursor: pointer;
+    }
+</style>
+
+<link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/lite-youtube-embed@0.1.0/src/lite-yt-embed.css" onload="this.onload=null;this.rel='stylesheet'">
+
+{{-- Preload only first video thumbnail --}}
 @if($blogs->count() > 0)
-    @foreach($blogs as $blog)
-        @if($blog->videoLink)
-            <link rel="preload" fetchpriority="high" as="image" href="https://i.ytimg.com/vi/{{ get_youtube_video_id($blog->videoLink) }}/mqdefault.jpg">
-        @endif
-    @endforeach
+    @php $firstBlog = $blogs->first(); @endphp
+    @if($firstBlog && $firstBlog->videoLink)
+        <link rel="preload"
+              fetchpriority="high"
+              as="image"
+              href="https://i.ytimg.com/vi/{{ get_youtube_video_id($firstBlog->videoLink) }}/mqdefault.jpg">
+    @endif
 @endif
 
-<link rel="preconnect" href="https://i.ytimg.com">
-<link rel="preconnect" href="https://www.youtube.com">
+<link rel="preconnect" href="https://i.ytimg.com" crossorigin>
+<link rel="preconnect" href="https://www.youtube.com" crossorigin>
 <link rel="dns-prefetch" href="https://i.ytimg.com">
 <link rel="dns-prefetch" href="https://www.youtube.com">
 @endsection
 
 @section('content')
 
-<style>
-    .nopadd {
-        padding-right: 0px;
-        padding-left: 0px;
-
-    }
-</style>
 
 <!-- PAGE HEADING SECTION -->
 <section class="page-header minimal page-title-left light-bg">
@@ -228,9 +241,15 @@ forex trading tips, free forex signals, learn forex trading, trading signals, be
                                             videoid="{{ get_youtube_video_id($blog->videoLink) }}"
                                             style="width: 100%; height: 200px;"
                                             playlabel="Play Video"
-                                            loading="lazy"
+                                            @if ($loop->first)
+                                                loading="eager"
+                                                fetchpriority="high"
+                                            @else
+                                                loading="lazy"
+                                            @endif
                                             class="lyt-activated"
                                             poster="mqdefault"
+                                            data-bg="https://i.ytimg.com/vi/{{ get_youtube_video_id($blog->videoLink) }}/mqdefault.jpg"
                                         ></lite-youtube>
                                     @else
                                         <a href="{{ route('fulltraderpost', $blog->trader_id) }}">
@@ -238,13 +257,21 @@ forex trading tips, free forex signals, learn forex trading, trading signals, be
                                                 <source
                                                     srcset="{{ asset('uploads/traders/'.$blog->image) }}"
                                                     type="image/webp"
+                                                    @if ($loop->first)
+                                                        fetchpriority="high"
+                                                    @endif
                                                 >
                                                 <img class="img-responsive"
                                                      src="{{ asset('uploads/traders/'.$blog->image) }}"
                                                      width="100%"
                                                      height="200px"
                                                      alt="{{ $blog->trader_name }}"
-                                                     loading="lazy"
+                                                     @if ($loop->first)
+                                                         loading="eager"
+                                                         fetchpriority="high"
+                                                     @else
+                                                         loading="lazy"
+                                                     @endif
                                                      decoding="async">
                                             </picture>
                                         </a>
@@ -319,5 +346,17 @@ forex trading tips, free forex signals, learn forex trading, trading signals, be
 @endsection
 
 @section('scripts')
-    <script type="module" src="https://cdn.jsdelivr.net/npm/lite-youtube-embed@0.1.0/src/lite-yt-embed.js" async defer></script>
+    {{-- Inline critical initialization --}}
+    <script>
+        // Initialize first video immediately
+        window.addEventListener('DOMContentLoaded', () => {
+            const firstVideo = document.querySelector('lite-youtube');
+            if (firstVideo) {
+                firstVideo.style.backgroundImage = `url(${firstVideo.dataset.bg})`;
+            }
+        });
+    </script>
+
+    {{-- Defer non-critical JS --}}
+    <script type="module" src="https://cdn.jsdelivr.net/npm/lite-youtube-embed@0.1.0/src/lite-yt-embed.js" async></script>
 @endsection
