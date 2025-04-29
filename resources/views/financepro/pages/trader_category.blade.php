@@ -10,13 +10,19 @@ forex trading tips, free forex signals, learn forex trading, trading signals, be
 @section('css_links')
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lite-youtube-embed@0.1.0/src/lite-yt-embed.css" />
 
+{{-- Preload YouTube thumbnails with high priority --}}
 @if($blogs->count() > 0)
     @foreach($blogs as $blog)
         @if($blog->videoLink)
-            <link rel="preload" as="image" href="https://i.ytimg.com/vi/{{ get_youtube_video_id($blog->videoLink) }}/hqdefault.jpg">
+            <link rel="preload" fetchpriority="high" as="image" href="https://i.ytimg.com/vi/{{ get_youtube_video_id($blog->videoLink) }}/mqdefault.jpg">
         @endif
     @endforeach
 @endif
+
+<link rel="preconnect" href="https://i.ytimg.com">
+<link rel="preconnect" href="https://www.youtube.com">
+<link rel="dns-prefetch" href="https://i.ytimg.com">
+<link rel="dns-prefetch" href="https://www.youtube.com">
 @endsection
 
 @section('content')
@@ -218,10 +224,29 @@ forex trading tips, free forex signals, learn forex trading, trading signals, be
                                 <!-- IMAGE -->
                                 <div class="post-image">
                                     @if (empty($blog->image))
-                                        <lite-youtube videoid="{{ get_youtube_video_id($blog->videoLink) }}" style="width: 100%; height: 200px;" playlabel="Play Video"></lite-youtube>
+                                        <lite-youtube
+                                            videoid="{{ get_youtube_video_id($blog->videoLink) }}"
+                                            style="width: 100%; height: 200px;"
+                                            playlabel="Play Video"
+                                            loading="lazy"
+                                            class="lyt-activated"
+                                            poster="mqdefault"
+                                        ></lite-youtube>
                                     @else
                                         <a href="{{ route('fulltraderpost', $blog->trader_id) }}">
-                                            <img class="img-responsive" src="{{ asset('uploads/traders/'.$blog->image) }}" width="100%" height="200px" alt="" />
+                                            <picture>
+                                                <source
+                                                    srcset="{{ asset('uploads/traders/'.$blog->image) }}"
+                                                    type="image/webp"
+                                                >
+                                                <img class="img-responsive"
+                                                     src="{{ asset('uploads/traders/'.$blog->image) }}"
+                                                     width="100%"
+                                                     height="200px"
+                                                     alt="{{ $blog->trader_name }}"
+                                                     loading="lazy"
+                                                     decoding="async">
+                                            </picture>
                                         </a>
                                     @endif
 
@@ -294,5 +319,5 @@ forex trading tips, free forex signals, learn forex trading, trading signals, be
 @endsection
 
 @section('scripts')
-    <script type="module" src="https://cdn.jsdelivr.net/npm/lite-youtube-embed@0.1.0/src/lite-yt-embed.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/lite-youtube-embed@0.1.0/src/lite-yt-embed.js" async defer></script>
 @endsection
