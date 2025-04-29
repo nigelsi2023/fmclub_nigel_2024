@@ -8,7 +8,7 @@ forex trading tips, free forex signals, learn forex trading, trading signals, be
 <!--mac-->
 
 @section('css_links')
-{{-- Inline critical CSS --}}
+{{-- Inline critical CSS with optimized lite-youtube styles --}}
 <style>
     .nopadd {
         padding-right: 0px;
@@ -23,24 +23,73 @@ forex trading tips, free forex signals, learn forex trading, trading signals, be
         background-position: center center;
         background-size: cover;
         cursor: pointer;
+        max-width: 720px;
+        margin: 0 auto;
+    }
+
+    lite-youtube::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=);
+        background-position: center;
+        background-size: 68px 48px;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        padding-bottom: 0;
+        transition: all 0.2s cubic-bezier(0, 0, 0.2, 1);
+    }
+
+    lite-youtube > iframe {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border: 0;
+    }
+
+    /* Add placeholder styling */
+    .youtube-placeholder {
+        background-color: #f1f1f1;
+        width: 100%;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 </style>
 
-<link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/lite-youtube-embed@0.1.0/src/lite-yt-embed.css" onload="this.onload=null;this.rel='stylesheet'">
-
-{{-- Preload only first video thumbnail --}}
+{{-- Preload critical assets --}}
 @if($blogs->count() > 0)
     @php $firstBlog = $blogs->first(); @endphp
     @if($firstBlog && $firstBlog->videoLink)
+        {{-- Preload first video thumbnail with highest priority --}}
         <link rel="preload"
-              fetchpriority="high"
               as="image"
+              fetchpriority="highest"
+              importance="highest"
               href="https://i.ytimg.com/vi/{{ get_youtube_video_id($firstBlog->videoLink) }}/mqdefault.jpg">
+
+        {{-- Prefetch next video thumbnail --}}
+        @if($blogs->count() > 1 && $blogs[1]->videoLink)
+            <link rel="prefetch"
+                  as="image"
+                  href="https://i.ytimg.com/vi/{{ get_youtube_video_id($blogs[1]->videoLink) }}/mqdefault.jpg">
+        @endif
     @endif
 @endif
 
+{{-- Early connection establishment --}}
 <link rel="preconnect" href="https://i.ytimg.com" crossorigin>
 <link rel="preconnect" href="https://www.youtube.com" crossorigin>
+
+{{-- Defer non-critical CSS --}}
+<link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/lite-youtube-embed@0.1.0/src/lite-yt-embed.css"
+      onload="this.onload=null;this.rel='stylesheet'" crossorigin>
+
 <link rel="dns-prefetch" href="https://i.ytimg.com">
 <link rel="dns-prefetch" href="https://www.youtube.com">
 @endsection
@@ -237,20 +286,26 @@ forex trading tips, free forex signals, learn forex trading, trading signals, be
                                 <!-- IMAGE -->
                                 <div class="post-image">
                                     @if (empty($blog->image))
-                                        <lite-youtube
-                                            videoid="{{ get_youtube_video_id($blog->videoLink) }}"
-                                            style="width: 100%; height: 200px;"
-                                            playlabel="Play Video"
+                                        <div class="post-image">
                                             @if ($loop->first)
-                                                loading="eager"
-                                                fetchpriority="high"
+                                                {{-- First video gets priority loading --}}
+                                                <lite-youtube
+                                                    videoid="{{ get_youtube_video_id($blog->videoLink) }}"
+                                                    style="width: 100%; height: 200px;"
+                                                    playlabel="Play Video"
+                                                    loading="eager"
+                                                    fetchpriority="highest"
+                                                    class="lyt-activated first-video"
+                                                    poster="mqdefault"
+                                                    data-bg="https://i.ytimg.com/vi/{{ get_youtube_video_id($blog->videoLink) }}/mqdefault.jpg"
+                                                ></lite-youtube>
                                             @else
-                                                loading="lazy"
+                                                {{-- Placeholder for lazy-loaded videos --}}
+                                                <div class="youtube-placeholder" data-video-id="{{ get_youtube_video_id($blog->videoLink) }}">
+                                                    <span>Loading video...</span>
+                                                </div>
                                             @endif
-                                            class="lyt-activated"
-                                            poster="mqdefault"
-                                            data-bg="https://i.ytimg.com/vi/{{ get_youtube_video_id($blog->videoLink) }}/mqdefault.jpg"
-                                        ></lite-youtube>
+                                        </div>
                                     @else
                                         <a href="{{ route('fulltraderpost', $blog->trader_id) }}">
                                             <picture>
@@ -348,15 +403,50 @@ forex trading tips, free forex signals, learn forex trading, trading signals, be
 @section('scripts')
     {{-- Inline critical initialization --}}
     <script>
-        // Initialize first video immediately
-        window.addEventListener('DOMContentLoaded', () => {
-            const firstVideo = document.querySelector('lite-youtube');
+        // Immediately initialize first video
+        document.addEventListener('DOMContentLoaded', () => {
+            const firstVideo = document.querySelector('lite-youtube.first-video');
             if (firstVideo) {
                 firstVideo.style.backgroundImage = `url(${firstVideo.dataset.bg})`;
             }
+
+            // Initialize intersection observer for lazy loading
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const placeholder = entry.target;
+                        const videoId = placeholder.dataset.videoId;
+
+                        // Create and replace with lite-youtube element
+                        const liteYt = document.createElement('lite-youtube');
+                        liteYt.setAttribute('videoid', videoId);
+                        liteYt.setAttribute('style', 'width: 100%; height: 200px;');
+                        liteYt.setAttribute('playlabel', 'Play Video');
+                        liteYt.setAttribute('loading', 'lazy');
+                        liteYt.classList.add('lyt-activated');
+                        liteYt.setAttribute('poster', 'mqdefault');
+                        liteYt.dataset.bg = `https://i.ytimg.com/vi/${videoId}/mqdefault.jpg`;
+
+                        placeholder.parentNode.replaceChild(liteYt, placeholder);
+                        liteYt.style.backgroundImage = `url(${liteYt.dataset.bg})`;
+
+                        observer.unobserve(placeholder);
+                    }
+                });
+            }, {
+                root: null,
+                rootMargin: '50px',
+                threshold: 0.1
+            });
+
+            // Observe all placeholders
+            document.querySelectorAll('.youtube-placeholder').forEach(placeholder => {
+                observer.observe(placeholder);
+            });
         });
     </script>
 
-    {{-- Defer non-critical JS --}}
+    {{-- Load lite-youtube script with module preload --}}
+    <link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/lite-youtube-embed@0.1.0/src/lite-yt-embed.js">
     <script type="module" src="https://cdn.jsdelivr.net/npm/lite-youtube-embed@0.1.0/src/lite-yt-embed.js" async></script>
 @endsection
