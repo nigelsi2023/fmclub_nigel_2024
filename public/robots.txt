@@ -1,2 +1,17 @@
 User-agent: *
 Disallow: /admin
+Disallow: /login
+Disallow: /register
+Disallow: /profile
+Disallow: /account-settings
+Disallow: /affiliate/login
+Disallow: /affiliate/register
+
+Allow: /
+Allow: /trader-blog
+Allow: /forex-signal
+Allow: /about-us
+Allow: /contact
+Allow: /faq
+
+Sitemap: https://financialmarkets.club/sitemap.xml
